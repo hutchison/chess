@@ -1,0 +1,247 @@
+% _das_ Mathepaket schlechthin:
+\usepackage[
+  %% Nummerierung von Gleichungen links:
+  leqno,
+  %% Ausgabe von Gleichungen linksbündig:
+  fleqn,
+]{mathtools}
+% und dazu noch ein paar Mathesymbole und so:
+% (muss vor mathspec geladen werden)
+\usepackage{amsmath, amssymb}
+
+\usepackage[]{parskip}
+
+% chemische Formeln
+%\usepackage{mhchem}
+
+% Um auch schöne Schriftarten auswählen zu können:
+\usepackage[MnSymbol]{mathspec}
+
+% Wir wollen, dass alle unsere Schriften für TeX und einander angepasst sind:
+\defaultfontfeatures{Mapping=tex-text, Scale=MatchLowercase}
+% Die Hauptschriftart:
+\setmainfont[]{Minion Pro}
+% Die Matheschriftart:
+\setmathfont(Digits,Latin,Greek)[
+  Numbers={Lining, Proportional}
+]{Minion Pro}
+\setmathrm{Minion Pro}
+% Die Schriftart für serifenlose Texte (z.B. Überschriften):
+\setallsansfonts[]{Myriad Pro}
+% Und die Schriftart für nichtproportionale Texte:
+\setallmonofonts[]{Fira Mono for Powerline}
+
+% Siehe https://tex.stackexchange.com/questions/99770/problem-with-digits-in-urls-when-using-mathspec-and-hyperref
+% bzgl. des folgenden
+\makeatletter
+  \DeclareMathSymbol{0}{\mathalpha}{\eu@DigitsArabic@symfont}{`0}
+  \DeclareMathSymbol{1}{\mathalpha}{\eu@DigitsArabic@symfont}{`1}
+  \DeclareMathSymbol{2}{\mathalpha}{\eu@DigitsArabic@symfont}{`2}
+  \DeclareMathSymbol{3}{\mathalpha}{\eu@DigitsArabic@symfont}{`3}
+  \DeclareMathSymbol{4}{\mathalpha}{\eu@DigitsArabic@symfont}{`4}
+  \DeclareMathSymbol{5}{\mathalpha}{\eu@DigitsArabic@symfont}{`5}
+  \DeclareMathSymbol{6}{\mathalpha}{\eu@DigitsArabic@symfont}{`6}
+  \DeclareMathSymbol{7}{\mathalpha}{\eu@DigitsArabic@symfont}{`7}
+  \DeclareMathSymbol{8}{\mathalpha}{\eu@DigitsArabic@symfont}{`8}
+  \DeclareMathSymbol{9}{\mathalpha}{\eu@DigitsArabic@symfont}{`9}
+\makeatother
+
+% Deutsche Sprache bei Silbentrennung und Datum:
+\usepackage[ngerman]{babel}
+
+% St. Mary Road, liefert Symbole für theoretische Informatik (z.B. \lightning):
+%\usepackage{stmaryrd}
+
+% nutze die volle Seite als Satzspiegel:
+\usepackage[
+  % Randbreite sei 1cm (sonst ist sie 1in):
+  cm,
+  % Kopf- und Fußzeile werden miteinbezogen:
+  %headings
+]{fullpage}
+% verbesserte Tabellen
+% bietet u.a. die Spaltenmöglichkeit 'm{width}' = zentrierte Spalte mit fester
+% Breite
+%\usepackage{array}
+% kann komplexe Linien in Tabellen ziehen:
+%\usepackage{hhline}
+% mehrseitige Tabellen:
+%\usepackage{longtable}
+% Tabellen mit gedehnten Spalten:
+%\usepackage{tabularx}
+% Pimpt enumerate auf (optionales Argument liefert Nummerierung):
+\usepackage{enumerate}
+% Kann descriptions auf die selbe Höhe bringen:
+%\usepackage{enumitem}
+% Liefert Hyperlinks (\hyperref, \url, \href}
+\usepackage{hyperref}
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+}
+%\usepackage{cleveref}
+% Farben (wie bei TikZ):
+\usepackage[dvipsnames]{xcolor}
+%\usepackage[]{pifont}
+% Ändert den Zeilenabstand:
+%\usepackage[
+%  % nur eine Möglichkeit auswählen:
+%  singlespacing
+%  %onehalfspacing
+%  %doublespacing
+%]{setspace}
+% Schönere Tabellen
+% dazu gibt's neue Kommandos:
+% - \toprule[(Dicke)], \midrule[(Dicke)], \bottomrule[(Dicke)]
+% - \addlinespace: Extrahöhe zwischen Zeilen
+\usepackage{booktabs}
+\usepackage{caption}
+% TODOs:
+%\usepackage{todo}
+% Schöne numerische Zitierungen:
+%\usepackage{cite}
+% Verbessert den Satz von Abbildungsüberschriften:
+%\usepackage{caption}
+% Ermöglicht durch \begin{linenumbers} Zeilennummern anzuzeigen:
+%\usepackage{lineno}
+% Ermöglicht Zugriff auf die letzte Seite (z.B. \pageref{LastPage}):
+%\usepackage{lastpage}
+% Quelltext schön setzen:
+%\usepackage{listings}
+% Logische Beweise:
+%\usepackage{bussproofs}
+% Unterstreichungen (\uline, \uuline, \sout: durchgestrichen, \uwave):
+%\usepackage{ulem}
+% Kann alle möglichen Maße ändern
+% will man Querformat, dann:
+%\usepackage[landscape]{geometry}
+% bietet gestrichelte vert. Linien in Tabellen (':')
+%\usepackage{arydshln}
+% Quelltext schön setzen:
+% (verlangt "xelatex -shell-escape"!)
+%\usepackage{minted}
+% um Bilder einzubinden:
+%\usepackage{graphicx}
+% um in Tabellen eine Zelle über mehrere Zeilen laufen zu lassen:
+%\usepackage{multirow}
+%\usepackage{float}
+% SI-Einheiten mittels \si{}:
+%\usepackage[mode=text]{siunitx}
+%\sisetup{%
+%  output-decimal-marker={,},
+%  per-mode=fraction,
+%  exponent-product=\cdot,
+%}
+%\DeclareSIUnit\cal{cal}
+%\DeclareSIUnit\diopter{dpt}
+%\DeclareSIUnit\fahrenheit{F}
+%\DeclareSIUnit\molar{\textsc{m}}
+%\DeclareSIUnit\pH{pH}
+%\DeclareSIUnit\gewprozent{Gew\%}
+%\DeclareSIUnit\poise{P}
+% nette Brüche mittels \sfrac{}{}:
+%\usepackage{xfrac}
+
+% Coole Zeichnungen:
+\usepackage{tikz}
+\usetikzlibrary{%
+  %backgrounds,
+  %mindmap,
+  %shapes.geometric,
+  %shapes.symbols,
+  %shapes.misc,
+  %shapes.multipart,
+  %positioning,
+  %fit,
+  calc,
+  arrows,
+  %automata,
+  %trees,
+  %decorations.pathreplacing,
+  %circuits.ee.IEC,
+}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+
+% eigens gebaute Lochmarken:
+%\usepackage{eso-pic}
+%\AddToShipoutPicture*{
+  %\put(\LenToUnit{0mm},\LenToUnit{228.5mm})
+    %{\rule{\LenToUnit{20pt}}{\LenToUnit{0.5pt}}}
+  %\put(\LenToUnit{0mm},\LenToUnit{68.5mm})
+    %{\rule{\LenToUnit{20pt}}{\LenToUnit{0.5pt}}}
+%}
+
+% Definitionen und Sätze:
+%\usepackage[]{amsthm}
+%
+%\newtheoremstyle{bonny}% schottisch für „ansehnlich“
+%  {9pt}% measure of space to leave above the theorem. E.g.: 3pt
+%  {6pt}% measure of space to leave below the theorem. E.g.: 3pt
+%  {}% name of font to use in the body of the theorem
+%  {}% measure of space to indent
+%  {\bfseries}% name of head font
+%  {\smallskip}% punctuation between head and body
+%  {\newline}% space after theorem head; " " = normal interword space
+%  {}% Manually specify head
+%
+%\theoremstyle{bonny}
+%
+%\newtheorem{definition}{Definition}
+%\newtheorem{gesetz}{Gesetz}
+%\newtheorem{satz}{Satz}
+%\newtheorem{beispiel}{Beispiel}
+%\newtheorem{bemerkung}{Bemerkung}
+
+%% coole Kopf- und Fußzeilen:
+%\usepackage{fancyhdr}
+%% Seitenstil ist natürlich fancy:
+%\pagestyle{fancy}
+%% alle Felder löschen:
+%\fancyhf{}
+%% Veranstaltung:
+%%\fancyhead[L]{Physik für Mediziner}
+%% Seriennummer:
+%\fancyhead[C]{}
+%% Name und Matrikelnummer:
+%%\fancyhead[R]{}
+%%\fancyfoot[L]{}
+%\fancyfoot[C]{\thepage}
+%%\fancyfoot[C]{\thepage\,/\,\pageref{LastPage}}
+%% Linie oben/unten:
+%\renewcommand{\headrulewidth}{0.0pt}
+%\renewcommand{\footrulewidth}{0.0pt}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\richtig}{\textcolor{ForestGreen}{\cmark}}
+\newcommand{\falsch}{\textcolor{BrickRed}{\xmark}}
+
+%\newcommand{\unterschrift}[2][5cm]{%
+%  \begin{tabular}{@{}p{#1}@{}}
+%    #2 \\[2\normalbaselineskip]
+%    \hrule \\[-12pt]
+%    {\small Unterschrift} \\[2\normalbaselineskip]
+%    \hrule \\[-12pt]
+%    {\small Datum}
+%  \end{tabular}
+%}
+%
+%\newcommand{\p}[1]{\text{p#1}}
+%\newcommand{\pKs}{\text{pK$_\text{S}$}}
+%\newcommand{\pKb}{\text{pK$_\text{B}$}}
+
+% Schachkram:
+% siehe: http://mirrors.ctan.org/macros/latex/contrib/chessboard/chessboard.pdf
+\usepackage{chessboard}
+\usepackage{xskak}
+
+% Index
+% Um einen Index erstellen zu können, muss das Paket geladen und der Befehl
+% \makeindex in der Präambel ausgeführt werden.
+% Im Dokument können wir dann \index{Schlüsselwort} benutzen.
+% Um den Index anzuzeigen, nehmen wir \printindex.
+\usepackage{makeidx}
+\makeindex
+

@@ -1,0 +1,426 @@
+\documentclass[
+%% alle weiteren Papierformat einstellbar:
+a5paper, %apaper,
+%% keine Seitenzahlen:
+%empty,
+%% Schriftgröße (12pt, 11pt (Standard)):
+11pt,
+%% kleinere Überschriften:
+%smallheadings,
+]
+{scrartcl}
+
+% chktex-file 8 Wrong length of dash may have been used.
+% chktex-file 11 You should use \ldots to achieve an ellipsis.
+% chktex-file 24 Delete this space to maintain correct pagereferences.
+
+\input{packages.latex}
+
+\def\arrowcolor{orange!80}
+\def\arrowlinewidth{2pt}
+\def\arrowopacity{0.618}
+
+\storechessboardstyle{standard}{%
+  arrow=to,
+  color=\arrowcolor,
+  linewidth=\arrowlinewidth,
+  opacity=\arrowopacity,
+  pgfstyle=straightmove,
+  shortenend=0.618ex,
+}
+
+\title{Taktiktraining}
+\author{Martin Darmüntzel via \href{https://lichess.org}{lichess.org}}
+
+\begin{document}
+
+\maketitle
+
+Was ist der beste Zug?
+
+Siehe auch \url{https://de.wikipedia.org/wiki/Taktik_(Schach)}. % chktex 36
+
+\pagebreak
+
+Folgende Fragen können bei der Suche helfen:
+\begin{itemize}
+  \item Gibt es eine erzwungene Mattsequenz? Überprüfe die schachgebenden Züge.
+    Überprüfe Züge, die dem König die Fluchtfelder nehmen.
+  \item Kannst du ein Matt androhen, was zu Materialgewinn führt?
+  \item Gibt es ungedeckte Figuren?
+  \item Kann ein Springer gabeln?
+  \item Gibt es überladene Figuren?
+  \item Gibt es eine Fesselung (Pin), die man ausnutzen kann?
+\end{itemize}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=r4b1r/pppqk1p1/3p1nQ1/3Pp1Bp/2P3bP/5NP1/PP1N1P2/2KR3R b - - 2 14,
+    moveid=14b
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={e1-c1},
+    inverse=true,
+  ]
+\end{center}
+
+\index{Damenfang}
+
+\pagebreak
+
+\mainline{14... Bf5} greift die Dame an und sperrt sie ein.
+Nach \mainline{15. Qxf5} nimmt Schwarz die Dame mit \mainline{15... Qxf5} und
+Weiß kann nichts dagegen tun.
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=true,
+  ]
+\end{center}
+
+Taktische Motive: Damenfang
+
+Quelle: \url{https://lichess.org/AuATzwQH/black#27}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=2r1r1k1/3n1p2/ppnP2pp/2pB4/P2bN3/7P/5PPB/3RR1K1 w - - 4 27,
+    moveid=27w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={a8-c8},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Abtausch}
+\index{Öffnung}
+\index{Opfer}
+\index{Scheinopfer}
+
+\pagebreak
+
+\mainline{27. Bxc6 Rxc6} ist ein einfacher Springer-gegen-Läufer-Abtausch.
+Darauf folgt \mainline{28. Nf6+} und Schwarz hat folgende Möglichkeiten:
+\begin{itemize}
+  \item \variation{28... Nxf6}, sodass Weiß mit \variation{29. Rxe8} den Turm
+    nimmt und mehr Material hat (2 Türme, 1 Läufer, 5 Bauern [18] gegen 1 Turm,
+    1 Läufer, 1 Springer, 6 Bauern [17]).
+  \item \variation{28... Bxf6} führt auch zu \variation{29. Rxe8} mit
+    Materialvorteil.
+  \item Den König bewegen (z.\,B. \variation{28... Kf8} führt sogar zu
+    \variation{29. Rxe8+}). Einzig möglicher Zug ist \variation{29. Kg7}, sodass
+    Weiß sich den Springer mit \variation{29... Nxd7} schnappt.
+\end{itemize}
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
+Taktische Motive: Abtausch, Öffnung, Opfer, Scheinopfer
+
+Quelle: \url{https://lichess.org/NDzBwBqn/white#52}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=r2qkb2/pp1n1pp1/2pPp1b1/6pr/3P1n1P/5N2/PPP1QP1B/RN2KBR1 w Qq - 1 14,
+    moveid=14w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={d5-f4},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Fesselung}
+\index{Öffnung}
+
+\pagebreak
+
+Die weiße Dame auf e2 fesselt den schwarzen Bauern auf e6. Gleichzeitig greift
+der schwarze Springer auf f4 die weiße Dame an. Das muss verhindert werden.
+Welche Möglichkeiten hat die Dame um auszuweichen ohne dabei die Verteidigung
+des Bauern auf c2 aufzugeben? \variation{14. Qc4} führt nur zu \variation{14...
+b5} und scheucht die Dame durch die Gegend.
+
+Also wird der Springer mit dem Läufer auf h2 genommen und Schwarz schlägt mit
+dem Bauern zurück: \mainline{14. Bf4 gxf4}.
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
+Damit öffnet Schwarz den Angriff des Turms auf g1 auf den Läufer auf g6.
+Der Läufer wird nur durch den Bauern auf f7 verteidigt, welcher aber indirekt
+durch die Dame gefesselt ist.
+Daher \mainline{15. Rxg6} und Weiß hat mehr Material.
+
+Taktische Motive: Fesselung, Öffnung
+
+Quelle: \url{https://lichess.org/d6nNxsVG#26}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=2krr3/ppp2ppp/3q4/3P3b/QnP1n3/4BN1P/P3BPP1/R4RK1 b - - 2 16,
+    moveid=16b,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={c2-a4},
+    inverse=true,
+  ]
+\end{center}
+
+\index{Gabel}
+
+\pagebreak
+
+Die weiße Dame und der weiße Läufer sind beide ungedeckt. \mainline{16... Nc3}
+gabelt beide. Weiß versucht den ursprünglichen Plan von \mainline{17. Qa7} zu
+verfolgen, aber \mainline{17... Nxe2} holt Material und die Initiative.
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=true,
+  ]
+\end{center}
+
+Taktische Motive: Gabel
+
+Quelle: \url{https://lichess.org/DhAfdSvP#31}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=r6r/2p4k/ppnqN1pb/3pp1p1/1P6/P1PP3Q/1BB2PK1/R7 w - - 2 25,
+    moveid=25w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={f8-h8},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Matt}
+\index{Opfer}
+
+\pagebreak
+
+„When in doubt, sac the Queen!“
+
+\mainline{25. Qxh6+} und Schwarz hat nur zwei mögliche Züge:
+\begin{itemize}
+  \item \variation{25... Kg8} und Weiß setzt Matt mit \variation{26. Qg7#}.
+  \item \mainline{25... Kxh6} und Weiß setzt Matt mit \mainline{26. Rh1#}.
+\end{itemize}
+
+Matt in 2 Zügen.
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
+Taktische Motive: Matt, Opfer
+
+Quelle: \url{https://lichess.org/XIRrUvb9/white#48}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=1k1r4/1p6/1P1p1ppp/2p1r3/4P2b/1B1K1P2/2P2q2/R4Q2 w - - 8 38,
+    moveid=38w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={h2-f2},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Matt}
+\index{Opfer}
+
+\pagebreak
+
+Halt dich fest: Matt in 6.
+
+\mainline{
+  38. Ra8+ Kxa8
+  39. Qa1+ Kb8
+  40. Qa7+ Kc8
+  41. Qa8+ Kd7
+  42. Qb7+ Ke8
+  43. Qf7#
+}
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
+Taktische Motive: Matt, Opfer
+
+Quelle: \url{https://lichess.org/guvoEh7j/white#74}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=3r3r/1pp2qk1/p4n2/3PN1p1/1PPQP1P1/5pK1/5P2/3R3R b - - 2 31,
+    moveid=31b,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={c3-d4},
+    inverse=true,
+  ]
+\end{center}
+
+\index{Matt}
+\index{Abzug}
+
+\pagebreak
+
+Halt dich fest: Matt in 4. Wir starten mit
+\mainline{
+  31... Nh5+
+}
+
+Weiß hat nur drei mögliche Züge und alle führen zu Matt.
+\begin{itemize}
+  \item Weicht der König mit \variation{32. Kh3} aus, dann wird der Springer mit
+    \variation{32... Ng3+} mit Schach durch den Turm abgezogen. Der König kann
+    nur noch den Springer schlagen (\variation{33. Kxg3}) und Schwarz setzt Matt
+    mit \variation{33... Qf4#}.
+  \item Weicht der König mit \variation{32. Kh2} aus, dann wird der Springer
+    auch hier mit \variation{32... Ng3+} mit Schach durch den Turm abgezogen.
+    Der König kann entweder ausweichen oder schlagen.
+    \begin{itemize}
+      \item Weicht der König mit \variation{33. Kg1} aus, dann folgt Matt mit
+        \variation{33... Rh1#}.
+      \item Schlägt der König den Springer mit \variation{33. Kxg3}, dann folgt
+        wieder Matt durch die Dame mit \variation{33... Qf4#}.
+    \end{itemize}
+  \item Der beste Zug für Weiß ist daher \mainline{32. Rxh5}. Schwarz muss nun
+    auf die Dame aufpassen und setzt sie mit Schachgebot auf \mainline{32...
+    Qf4+}. Einzig möglicher Zug für Weiß ist \mainline{33. Kh3} und Schwarz legt
+    nach mit \mainline{33... Rxh5+}.
+    Dies erzwingt \mainline{34. gxh5} % chktex 12
+    und Schwarz setzt Matt mit \mainline{34... Qh4#}.
+\end{itemize}
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    smallboard,
+    inverse=true,
+  ]
+\end{center}
+
+Taktische Motive: Matt, Abzug
+
+Quelle: \url{https://lichess.org/Kjr6x9qz/black#61} % chktex 29
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=r2q3r/4p1k1/pn4B1/3bP3/2p5/2N4R/PP6/2K3R1 w - - 1 29,
+    moveid=29w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={f8-h8},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Matt}
+\index{Abzug}
+
+\pagebreak
+
+Matt in 3.
+
+Um die möglichen Fluchtfelder so weit wie möglich einzuschränken, ziehen wir den
+Läufer auf \mainline{29. Be8+}, sodass Schwarz, um das Matt zu verzögern, nur
+noch den eigenen Läufer mit \mainline{29... Bg2} dazwischenwerfen kann.
+Dieser wird durch den Turm mit \mainline{30. Rxg2+} geschlagen und der König
+flieht mit \mainline{30... Kf8}. Weiß setzt Matt mit \mainline{31. Rh8#}.
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
+Taktische Motive: Matt, Abzug
+
+Quelle: \url{https://lichess.org/Ceg0A7Dp/white#56}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=r4rk1/7p/p1p1p3/PpPn1pqp/3P1P1R/2PQ2P1/2B3K1/3R4 b - - 0 34,
+    moveid=34b,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={f3-f4},
+    inverse=true,
+  ]
+\end{center}
+
+\pagebreak
+
+Der Springer auf d5 möchte den König und die Dame mit einem Sprung auf f4 gabeln, aber das
+Feld ist durch den Bauern auf g3 gedeckt.
+Dieser Bauer ist aber überladen, da er den Turm auf h4 und den Bauern auf f4 verteidigen
+muss.
+
+Mit \mainline{34... Qxh4} lenken wir den verteidigenden Bauern um (\mainline{35.
+gxh4}) und ermöglichen die Gabel durch den Springer: \mainline{35... Nxf4}.
+Der König weicht z.B. mit \mainline{36. Kf2} aus und wir nehmen die Dame mit
+\mainline{36... Nxd3}.
+
+\begin{center}
+  \chessboard[
+    inverse=true,
+  ]
+\end{center}
+
+Quelle: \url{https://lichess.org/Nh0rpDWV/black#67}
+
+\pagebreak
+
+\printindex
+
+\end{document}
