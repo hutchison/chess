@@ -53,7 +53,7 @@ Folgende Fragen können bei der Suche helfen:
   \item Gibt es eine Fesselung (Pin), die man ausnutzen kann?
 \end{itemize}
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -85,7 +85,7 @@ Taktische Motive: Damenfang
 
 Quelle: \url{https://lichess.org/AuATzwQH/black#27}
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -130,7 +130,7 @@ Taktische Motive: Abtausch, Öffnung, Opfer, Scheinopfer
 
 Quelle: \url{https://lichess.org/NDzBwBqn/white#52}
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -174,7 +174,7 @@ Taktische Motive: Fesselung, Öffnung
 
 Quelle: \url{https://lichess.org/d6nNxsVG#26}
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -207,7 +207,7 @@ Taktische Motive: Gabel
 
 Quelle: \url{https://lichess.org/DhAfdSvP#31}
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -247,7 +247,7 @@ Taktische Motive: Matt, Opfer
 
 Quelle: \url{https://lichess.org/XIRrUvb9/white#48}
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -288,7 +288,7 @@ Taktische Motive: Matt, Opfer
 
 Quelle: \url{https://lichess.org/guvoEh7j/white#74}
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -347,7 +347,7 @@ Taktische Motive: Matt, Abzug
 
 Quelle: \url{https://lichess.org/Kjr6x9qz/black#61} % chktex 29
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -385,7 +385,7 @@ Taktische Motive: Matt, Abzug
 
 Quelle: \url{https://lichess.org/Ceg0A7Dp/white#56}
 
-\pagebreak
+\pagebreak % neues Puzzle
 
 \begin{center}
   \newchessgame[
@@ -398,6 +398,10 @@ Quelle: \url{https://lichess.org/Ceg0A7Dp/white#56}
     inverse=true,
   ]
 \end{center}
+
+\index{Überlastung}
+\index{Gabel}
+\index{Opfer}
 
 \pagebreak
 
@@ -417,7 +421,129 @@ Der König weicht z.B. mit \mainline{36. Kf2} aus und wir nehmen die Dame mit
   ]
 \end{center}
 
+Taktische Motive: Überlastung, Gabel, Opfer
+
 Quelle: \url{https://lichess.org/Nh0rpDWV/black#67}
+
+\pagebreak % neues Puzzle
+
+\begin{center}
+  \newchessgame[
+    setfen=1r3r1k/7p/pp1p2p1/2p3P1/P3q1P1/2P3NK/1P1Q3P/4nR2 w - - 0 28,
+    moveid=28w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={d3-e1},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Abtausch}
+\index{Zwischenzug}
+
+\pagebreak
+
+Wären wir gierig, dann würden wir die Dame auf e4 sofort mit dem Springer auf g3 nehmen.
+Dann schlägt Schwarz jedoch unseren Turm auf f1 und der Computer schätzt die Situation als
+gleich ein.
+
+Es ist daher besser, wenn wir mit \mainline{28. Rxf8+} den Turm auf f8 mit Schachgebot
+schlagen, sodass Schwarz mit \mainline{28... Rxf8} zurückschlägt und wir dann die Dame
+mittels \mainline{29. Nxe4} schlagen. Dann hat Weiß signifikant mehr Material.
+
+\begin{center}
+  \chessboard[
+    inverse=false,
+  ]
+\end{center}
+
+Taktische Motive: Abtausch, Zwischenzug
+
+Quelle: \url{https://lichess.org/k6sOHsO7/white#54}
+
+\pagebreak % neues Puzzle
+
+\begin{center}
+  \newchessgame[
+    setfen=rnb1k2r/p1p2ppp/1p2pn2/6B1/1bpqP3/2N2P2/PPQ3PP/R3KBNR w KQkq - 0 8,
+    moveid=8w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={d8-d4},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Zwischenzug}
+
+\pagebreak
+
+Kann ich Schach geben und dann eine Figur gewinnen? Ja!
+
+\mainline{8. Qa4+} und Schwarz hat verschiedene Möglichkeiten, um das Schachgebot zu
+verteidigen, jedoch deckt keine davon den Läufer auf b4, sodass dieser im nächsten Zug
+geschlagen werden kann (z.\,B. über \mainline{8... Qd7 9. Qxb4}).
+
+\begin{center}
+  \chessboard[
+    inverse=false,
+  ]
+\end{center}
+
+Taktische Motive: Zwischenzug
+
+Quelle: \url{https://lichess.org/ViYrJQ6A/white#14}
+
+\pagebreak % neues Puzzle
+
+\begin{center}
+  \newchessgame[
+    setfen=8/4P1kp/5bp1/8/5P2/1pr5/4Q1PP/6K1 b - - 0 44,
+    moveid=44b,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={e6-e7},
+    inverse=true,
+  ]
+\end{center}
+
+\index{Damenfang}
+\index{Zwischenzug}
+
+\pagebreak
+
+Es gibt zwei Möglichkeiten um Weiß Schach zu geben: \variation{44... Rc1} oder
+\variation{44... Bd4}.
+
+\begin{itemize}
+  \item bei \variation{44... Rc1} kann sich der König auf mit \variation{45. Kf2}
+    verstecken und mit \variation{45... Bd4 46. Kf3} bleiben Schwarz zwar die Züge
+    \begin{itemize}
+      \item \variation{46... Rc2} um die Dame in Bedrängnis zu bringen,
+      \item \variation{46... Rc3} um den König weiter zu scheuchen oder
+      \item \variation{46... b2} um eine Umwandlung herbeizuführen. % chktex 12
+    \end{itemize}
+    Jedoch reicht nichts davon aus, um den König Matt zu setzen oder Material zu gewinnen.
+\end{itemize}
+
+Schauen wir uns daher den Läuferzug an: \mainline{44... Bd4} wird am besten durch die
+Flucht mit \mainline{45. Kf1} pariert. Schwarz gibt Schach durch \mainline{45... Rc1} und
+Weiß kann nur mit der Dame blockieren: \mainline{46. Qe1} und Schwarz schnappt sie sich
+mit \mainline{46... Rxe1}. Danach ist genug Zeit um den Bauern auf e7 mit dem König zu
+holen.
+
+\begin{center}
+  \chessboard[
+    inverse=true,
+  ]
+\end{center}
+
+Taktische Motive: Damenfang, Zwischenzug
+
+Quelle: \url{https://lichess.org/zN2hPmc9/black#87}
 
 \pagebreak
 
