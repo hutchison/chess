@@ -28,6 +28,7 @@ a5paper, %apaper,
   pgfstyle=straightmove,
   shortenend=0.618ex,
 }
+\renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
 
 \title{Taktiktraining}
 \author{Martin Darmüntzel via \href{https://lichess.org}{lichess.org}}
@@ -547,9 +548,75 @@ Quelle: \url{https://lichess.org/zN2hPmc9/black#87}
 
 \pagebreak
 
-\url{https://lichess.org/training/95056}
+\begin{center}
+  \newchessgame[
+    setfen=3r3k/2P1p1bp/p3Q1p1/1p2P3/8/N1P1q1P1/1P4K1/1R3R2 b - - 0 39,
+    moveid=39b,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={c6-c7},
+    inverse=true,
+  ]
+\end{center}
 
-Matt in 5
+\pagebreak
+
+Wunderschönes Matt in maximal 5 Zügen: \mainline{39... Rd2+} scheucht den König.
+Weiß hat drei Möglichkeiten:
+
+\begin{center}
+  \chessboard[
+    smallboard,
+    style=standard,
+    markmoves={g2-h1, g2-h3, f1-f2},
+    inverse=true,
+  ]
+\end{center}
+
+\begin{itemize}
+  \item Flieht er auf h1, dann kommt das Matt noch schneller:
+    \variation{
+      40. Kh1 Qe4+
+      41. Rf3 Qxf3+
+      42. Kg1 Qg2#
+    }
+  \item Blockiert der Turm, dann braucht Schwarz auch nur 3 Züge:
+    \variation{
+      40. Rf2 Rxf2! \xskakcomment{ (und nicht mit der Dame)}
+    }
+    Die Fluchtmöglichkeiten sind beschränkt:
+    \begin{itemize}
+      \item \variation{
+          41. Kg1 Qg3+
+          42. Kh1 Rh2#
+        }
+      \item \variation{
+          41. Kh1 Qf3+
+          42. Kg1 Qg2#
+        }
+      \item \variation{
+          41. Kh3 Qh6+
+          42. Kg4 Qh5#
+        }
+    \end{itemize}
+  \item Am längsten dauert's mit \mainline{
+      40. Kh3 Qh6+
+      41. Kg4 Qh5+
+      42. Kf4 Bh6+
+      43. Ke4 Qe2#
+    }
+    \begin{center}
+      \chessboard[
+        tinyboard,
+        style=standard,
+        inverse=true,
+      ]
+    \end{center}
+\end{itemize}
+
+Quelle: \url{https://lichess.org/training/95056}
+
 
 \pagebreak
 
@@ -628,6 +695,57 @@ Matt in 2 mit Damenopfer
 Smothered Mate in 4.
 
 \pagebreak
+
+\url{https://lichess.org/training/95616}
+
+Fork mit der Dame.
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=r1bq4/1p5k/p1n3p/3p2r/3B/5Qp/PPP3BP/3R2K w - - 0 26,
+    moveid=26w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={h5-g5},
+    inverse=false,
+  ]
+\end{center}
+
+\pagebreak
+
+Matt in 4, nur mit der Dame.
+
+\mainline{26. Qf7+ Kh6 27. Qg7+ Kh5 28. Qh7+ Kg4 29. Qh3#}
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=3r2k1/rpp5/p1n3N1/2Ppp3/3P4/P1B1P3/1P4QP/5R1K w - - 5 36
+    moveid=36w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={f7-g8},
+    inverse=false,
+  ]
+\end{center}
+
+\pagebreak
+
+Matt in 3.
+
+Quelle: \url{https://lichess.org/pvk4f77s/white#70}
 
 \printindex
 
