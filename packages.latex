@@ -21,7 +21,10 @@
   \usepackage[MnSymbol]{mathspec}
 
   % Wir wollen, dass alle unsere Schriften für TeX und einander angepasst sind:
-  \defaultfontfeatures{Mapping=tex-text, Scale=MatchLowercase}
+  \defaultfontfeatures{
+    Ligatures=TeX,
+    Scale=MatchLowercase,
+  }
   % Die Hauptschriftart:
   \setmainfont[]{Minion Pro}
   % Die Matheschriftart:
@@ -30,7 +33,9 @@
   ]{Minion Pro}
   \setmathrm{Minion Pro}
   % Die Schriftart für serifenlose Texte (z.B. Überschriften):
-  \setallsansfonts[]{Myriad Pro}
+  \setallsansfonts[
+    BoldFont = {MyriadPro-Regular},
+  ]{Myriad Pro}
   % Und die Schriftart für nichtproportionale Texte:
   \setallmonofonts[]{Fira Mono for Powerline}
 
@@ -48,9 +53,7 @@
     \DeclareMathSymbol{8}{\mathalpha}{\eu@DigitsArabic@symfont}{`8}
     \DeclareMathSymbol{9}{\mathalpha}{\eu@DigitsArabic@symfont}{`9}
   \makeatother
-
 \else
-
   \usepackage[utf8]{inputenc}
 \fi
 
@@ -250,6 +253,5 @@
 % \makeindex in der Präambel ausgeführt werden.
 % Im Dokument können wir dann \index{Schlüsselwort} benutzen.
 % Um den Index anzuzeigen, nehmen wir \printindex.
-\usepackage{makeidx}
-\makeindex
-
+%\usepackage{makeidx}
+%\makeindex

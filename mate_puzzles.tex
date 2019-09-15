@@ -1,0 +1,44 @@
+\documentclass[
+%% alle weiteren Papierformat einstellbar:
+a4paper, %apaper,
+%% keine Seitenzahlen:
+%empty,
+%% Schriftgröße (12pt, 11pt (Standard)):
+11pt,
+%% kleinere Überschriften:
+%smallheadings,
+]
+{scrartcl}
+
+% chktex-file 8 Wrong length of dash may have been used.
+% chktex-file 11 You should use \ldots to achieve an ellipsis.
+% chktex-file 24 Delete this space to maintain correct pagereferences.
+
+\input{packages.latex}
+
+\hypersetup{
+  urlcolor=black
+}
+
+\def\arrowcolor{orange!80}
+\def\arrowlinewidth{2pt}
+\def\arrowopacity{0.618}
+
+\storechessboardstyle{standard}{%
+  arrow=to,
+  color=\arrowcolor,
+  linewidth=\arrowlinewidth,
+  opacity=\arrowopacity,
+  pgfstyle=straightmove,
+  shortenend=0.618ex,
+}
+
+\begin{document}
+
+\input{mate_in_one_puzzles.tex}
+
+\pagebreak
+
+\input{mate_in_two_puzzles.tex}
+
+\end{document}
