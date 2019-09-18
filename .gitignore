@@ -262,3 +262,5 @@ TSWLatexianTemp*
 
 # glossaries-extra
 *.ist
+
+.ipython/
