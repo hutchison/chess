@@ -1,0 +1,634 @@
+\documentclass[
+  a4paper,
+  justified,
+  nobib,
+]{tufte-handout}
+
+% chktex-file 1
+
+% Deutsche Sprache bei Silbentrennung und Datum:
+\usepackage[ngerman]{babel}
+
+\title{Schach}
+\subtitle{Konzept des Sportkurses}
+\author{Martin Darmüntzel}
+%\publisher{Hochschulsport der Universität Rostock}
+%\date{} % without \date command, current date is supplied
+
+% page background color
+% Comment out the following line if you do want to add a page background color (e.g. for
+% printing)
+% \pagecolor{LightChamois}
+
+% Schachkram:
+% siehe: http://mirrors.ctan.org/macros/latex/contrib/chessboard/chessboard.pdf
+\usepackage{chessboard}
+\usepackage{xskak}
+
+\def\arrowcolor{orange!80}
+\def\arrowlinewidth{2pt}
+\def\arrowopacity{0.618}
+
+\storechessboardstyle{standard}{%
+  arrow=to,
+  color=\arrowcolor,
+  linewidth=\arrowlinewidth,
+  opacity=\arrowopacity,
+  pgfstyle=straightmove,
+  shortenend=0.618ex,
+  moverbottomlift=-3ex,
+  movertoplift=-2ex,
+  movershift=-1.618ex,
+  marginleft=false,
+  marginright=false,
+  %marginrightwidth=0pt,
+  %marginleftwidth=0pt,
+  marginbottomwidth=1.5em,
+}
+\renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
+
+\usepackage{enumerate}
+
+\newenvironment{notiz}{
+  \color{Maroon}
+  \paragraph*{Notiz}
+}{
+  \color{black}
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Ziele}%
+\label{sec:ziele}
+
+\begin{itemize}
+  \item gemeinsame Lernerfahrung
+  \begin{itemize}
+    \item niemand ist dumm, alle sind dumm
+  \end{itemize}
+  \item Regeln
+  \item Endspiele
+  \item Taktiken
+  \item Puzzle lösen
+  \item Schach als Kunstform erkennen
+  \item Schachvarianten
+\end{itemize}
+
+\pagebreak
+
+\section{Regeln}%
+\label{sec:regeln}
+
+\subsection{Grundspielregeln}%
+\label{sub:grundspielregeln}
+
+\paragraph{Artikel 1: Wesen und Ziele des Schachspiels}
+
+\begin{enumerate}[{1}.1]
+  \item Das Schachspiel wird zwischen zwei Gegnern gespielt, die ihre Figuren auf einem
+    quadratischen Spielbrett, \emph{Schachbrett} genannt, ziehen.
+  \item Der Spieler mit den hellen Figuren (Weiß) führt den ersten Zug aus, dann ziehen
+    die Spieler abwechselnd, wobei der Spieler mit den dunklen Figuren (Schwarz) den
+    nächsten Zug ausführt.
+    \marginnote{Dabei gilt auch Zugpflicht.}
+  \item Ein Spieler ist am \emph{am Zug}, sobald der Zug seines Gegners ausgeführt worden
+    ist.
+  \item Das Ziel eines jeden Spielers ist es, den gegnerischen König so
+    \emph{anzugreifen}, dass der Gegner keinen regelmäßigen Zug zur Verfügung hat.
+    \marginnote{Also eben \emph{nicht} den gegnerischen König schlagen. Alternativ wäre
+    möglich: den gegnerischen König so anzugreifen, dass dieser weder schlagen,
+    blockieren oder ausweichen kann. Denn das sind die möglichen Züge um dem Schachgebot
+    zu entkommen. Daher die Quizfrage: wie kann man dem Schachgebot entkommen?}
+    \begin{enumerate}[{1.4}.1]
+      \item Der Spieler, der dieses Ziel erreicht, hat den gegnerischen König \emph{matt
+        gesetzt} und das Spiel gewonnen. Es ist nicht erlaubt, den eigenen König im Angriff
+        stehen zu lassen, den eigenen König einem Angriff auszusetzen oder den König des
+        Gegners zu schlagen.
+      \item Der Gegner, dessen König matt gesetzt worden ist, hat das Spiel verloren.
+    \end{enumerate}
+  \item Ist eine Stellung erreicht, in der keinem der beiden Spieler das Mattsetzen des
+    gegnerischen Königs mehr möglich ist, ist das Spiel \emph{remis}
+    (unentschieden siehe Artikel 5.2.2).
+\end{enumerate}
+
+\paragraph{Artikel 2: Die Anfangsstellung der Figuren auf dem Schachbrett}%
+
+\begin{enumerate}[{2}.1]
+  \item Das Schachbrett besteht aus einem $8 \times 8$ Gitter von $64$ gleich großen
+    Quadraten, die abwechselnd hell und dunkel sind (die \emph{weißen} und die
+    \emph{schwarzen} Felder).
+    Das Schachbrett wird so zwischen die beiden Spieler gelegt, dass auf der Seite vor
+    einem Spieler das rechte Eckfeld weiß ist.
+    \marginnote{Merke: alphabetisch kommt erst \emph{schwarz} und dann \emph{weiß}, daher
+    ist die linke Ecke schwarz und die rechte weiß. Diese Eselsbrücke funktioniert auch
+    auf Englisch.}
+
+  \item Zu Beginn der Partie hat der eine Spieler 16 helle (\emph{weiße}), der andere 16
+    dunkle (\emph{schwarze}) Figuren.
+
+    Diese Figuren sind die folgenden:
+    \marginnote{Auf Englisch: King, Queen, Rook, Bishop, Knight, Pawn.}
+    \begin{center}
+      \begin{tabular}{llll}
+        \toprule
+        ein weißer König    & \WhiteKingOnWhite   & K & K\\
+        eine weiße Dame     & \WhiteQueenOnWhite  & D & Q\\
+        zwei weiße Türme    & \WhiteRookOnWhite   & T & R\\
+        zwei weiße Läufer   & \WhiteBishopOnWhite & L & B\\
+        zwei weiße Springer & \WhiteKnightOnWhite & S & N\\
+        acht weiße Bauern   & \WhitePawnOnWhite          \\
+        \midrule
+        ein schwarzer König    & \BlackKingOnWhite    & K & K\\
+        eine schwarze Dame     & \BlackQueenOnWhite   & D & Q\\
+        zwei schwarze Türme    & \BlackRookOnWhite    & T & R\\
+        zwei schwarze Läufer   & \BlackBishopOnWhite  & L & B\\
+        zwei schwarze Springer & \BlackKnightOnWhite  & S & N\\
+        acht schwarze Bauern   & \BlackPawnOnWhite           \\
+        \bottomrule
+      \end{tabular}
+    \end{center}
+
+  \item Die Anfangsstellung der Figuren auf dem Schachbrett ist die folgende:
+    \marginnote{Merke: die Dame steht auf dem Feld ihrer Farbe.}
+    \begin{center}
+      \newchessgame[]
+      \chessboard[showmover=false]
+    \end{center}
+
+  \item Die acht senkrechten Spalten von Feldern heißen \emph{Linien}; die acht
+    waagerechten Zeilen von Feldern heißen \emph{Reihen}. Eine geradlinige Folge von
+    Felder gleicher Farbe, von einem Rand des Schachbrettes zum benachbarten Rand
+    verlaufend, heißt \emph{Diagonale}.
+\end{enumerate}
+
+\paragraph{Artikel 3: Die Gangart der Figuren}%
+
+\begin{enumerate}[{3}.1]
+  \item Es ist nicht gestattet eine Figur auf ein Feld zu ziehen, das bereits von einer
+    Figur der gleichen Farbe besetzt ist.
+
+    \begin{enumerate}[{3.1}.1]
+      \item Wenn eine Figur auf ein Feld zieht, das von einer gegnerischen Figur besetzt
+        ist, wird letztere geschlagen und als Teil desselben Zuges vom Schachbrett
+        entfernt.
+      \item Eine Figur greift eine gegnerische Figur an, wenn sie auf jenem Feld gemäß
+        Artikel 3.2 bis 3.8 schlagen könnte.
+      \item Eine Figur greift ein Feld an, auch wenn sie am Zug gehindert ist, weil sie
+        andernfalls den eigenen König im Angriff stehen lassen oder ihn einem Angriff
+        aussetzen würde.
+        \begin{marginfigure}
+          \begin{center}
+            \newchessgame[
+              setfen=6Q1/1k4bR/2pP4/2B5/2B5/8/Rp6/K7 w - - 0 1 % chktex 8
+              moveid=1w
+            ]
+            \chessboard[
+              style=standard,
+              smallboard,
+            ]
+          \end{center}
+
+          Weiß steht im Schach. Wenn der weiße Turm den Bauern schlägt, dann ist dieser
+          durch den Läufer gefesselt, setzt aber trotzdem den schwarzen König matt.
+        \end{marginfigure}
+    \end{enumerate}
+
+  \item\label{regeln:läufer}
+    Der Läufer darf auf ein beliebiges anderes Feld entlang einer der Diagonalen
+    ziehen, auf der er steht.
+    \begin{center}
+      \chessboard[
+        setpieces={be4},
+        showmover=false,
+        padding=-0.8ex,
+        pgfstyle={[fill]circle},
+        markfields={d5, c6, b7, a8, f3, g2, h1, b1, c2, d3, f5, g6, h7}
+      ]
+    \end{center}
+
+  \item Der Turm darf auf ein beliebiges Feld entlang der Linie oder der Reihe ziehen, auf
+    der er steht.
+    \begin{center}
+      \chessboard[
+        setpieces={rd3},
+        showmover=false,
+        padding=-0.8ex,
+        pgfstyle={[fill]circle},
+        markfields={d1, d2, d4, d5, d6, d7, d8, a3, b3, c3, e3, f3, g3, h3}
+      ]
+    \end{center}
+
+  \item Die Dame darf auf ein beliebiges anderes Feld entlang der Linie, der Reihe oder
+    einer der Diagonalen ziehen, auf der sie steht.
+    \begin{center}
+      \chessboard[
+        setpieces={qe4},
+        showmover=false,
+        padding=-0.8ex,
+        pgfstyle={[fill]circle},
+        markfields={
+          a4, b4, c4, d4, f4, g4, h4,
+          e1, e2, e3, e5, e6, e7, e8,
+          a8, b7, c6, d5, f3, g2, h1,
+          b1, c2, d3, f5, g6, h7
+        }
+      ]
+    \end{center}
+
+  \item Beim Ausführen dieser Züge dürfen Dame, Turm und Läufer nicht über dazwischen
+    stehende Figuren hinweg ziehen.
+
+  \item Der Springer darf auf eines der Felder ziehen, die seinem Standfeld am nächsten,
+    aber nicht auf gleicher Linie, Reihe oder Diagonalen mit diesem liegen.
+    \begin{marginfigure}[10ex]
+      \begin{center}
+        \chessboard[
+          smallboard,
+          setpieces={Nd4},
+          showmover=false,
+          padding=-0.8ex,
+          markstyle=circle,
+          markfields={b3, b5, c2, c6, e2, e6, f3, f5},
+          addpgf={
+            \tikz[overlay] \draw [Maroon, line width=0.1em] (d4) circle (2.236em);
+          },
+        ]
+
+      \end{center}
+      Der Springer springt im Kreis.
+    \end{marginfigure}
+    \begin{center}
+      \chessboard[
+        setpieces={Nc3, bf8, ng8, rh8, pf7, pg7, ph7},
+        showmover=false,
+        padding=-0.8ex,
+        markstyle=circle,
+        markfields={a2, b1, a4, b5, d5, e4, e2, d1},
+        pgfstyle={[fill]circle},
+        markfields={e7, f6, h6},
+      ]
+    \end{center}
+
+  \item
+    Der Bauer
+  \begin{enumerate}[{3.7}.1]
+    \item darf vorwärts auf das Feld direkt vor ihm auf derselben Linie ziehen,
+      sofern dieses Feld nicht besetzt ist, oder
+    \item in seinem ersten Zug entweder wie unter 3.7.1 ziehen oder um zwei
+      Felder auf derselben Linie vorrücken, sofern beide Felder nicht besetzt sind, oder
+    \item auf ein von einer gegnerischen Figur besetztes Feld diagonal vor ihm auf einer
+      benachbarten Linie ziehen, indem er die Figur schlägt.
+
+      \begin{center}
+        \chessboard[
+          setpieces={Pc2, pg5},
+          showmover=false,
+          padding=-0.8ex,
+          markstyle=circle,
+          markfields={c3, c4},
+          pgfstyle={[fill]circle},
+          markfields={g4},
+          markstyle=cross,
+          shorten=0.6ex,
+          markfields={b3, d3, f4, h4},
+        ]
+      \end{center}
+
+    \begin{enumerate}[{3.7.4}.1]
+      \item Ein Bauer, der auf derselben Reihe auf einem unmittelbar angrenzenden Feld wie
+        ein gegnerischer Bauer, der soeben zwei Felder von seiner Anfangsstellung
+        vorgerückt ist, steht, darf diesen gegnerischen Bauern so schlagen, als ob
+        letzterer nur um ein Feld vorgerückt wäre.
+
+      \item Dieses Schlagen ist nur in dem unmittelbar nachfolgenden Zug regelmäßig und
+        wird \emph{Schlagen en passant} genannt.
+
+      \begin{center}
+        \chessboard[
+          setpieces={Pd5, pe7},
+          showmover=false,
+          padding=-0.8ex,
+          pgfstyle={[fill]circle},
+          markfields={e5},
+          markstyle=cross,
+          shorten=0.6ex,
+          markfields={e6},
+        ]
+      \end{center}
+    \end{enumerate}
+
+    \begin{enumerate}[{3.7.5}.1]
+      \item Wenn ein Spieler, der am Zug ist, seinen Bauern auf die von seiner
+        Anfangsstellung entfernteste Reihe zieht, muss er diesen als Teiler desselben
+        Zuges gegen eine Dame, einen Turm, Läufer oder Springer derselben Farbe auf dem
+        Ankunftsfeld austauschen. Dieses wird Umwandlungsfeld genannt.
+      \item Die Auswahl des Spielers ist nicht auf bereits geschlagene Figuren beschränkt.
+      \item Dieser Austausch eines Bauern für eine andere Figur wird \emph{Umwandlung}
+        genannt. Die Wirkung der neuen Figur tritt sofort ein.
+    \end{enumerate}
+
+  \end{enumerate}
+
+  \item Es gibt zwei verschiedene Arten den König zu ziehen:
+    \begin{enumerate}[{3.8}.1]
+      \item durch Ziehen auf ein beliebiges angrenzendes Feld,
+
+      \begin{center}
+        \chessboard[
+          setpieces={Kc3, ke8},
+          showmover=false,
+          padding=-0.8ex,
+          markstyle=circle,
+          markfields={b2, b3, b4, c2, c4, d2, d3, d4},
+          pgfstyle={[fill]circle},
+          markfields={d7, d8, e7, f7, f8},
+        ]
+      \end{center}
+
+      \item durch Rochieren.
+        Die Rochade ist ein Zug des Königs und eines gleichfarbigen
+        Turmes auf der ersten Reihe des Spielers, der als ein Königszug gilt und
+        folgendermaßen ausgeführt wird: Der König wird von seiner Anfangsstellung um zwei
+        Felder in Richtung des Turmes, der auf seiner Anfangsstellung stehen muss, hin
+        versetzt; dann wird dieser Turm auf das Feld gesetzt, das der König soeben
+        überquert hat.
+        \begin{marginfigure}
+          \begin{center}
+            \newchessgame[
+              setfen=3k/8/8/8/8/8/1r/R3K w Q - 0 1 % chktex 8
+              moveid=1w
+            ]
+            \chessboard[
+              style=standard,
+              smallboard,
+            ]
+          \end{center}
+          Bester Zug für Weiß?
+        \end{marginfigure}
+
+
+      \begin{center}
+        \begin{tabular}{ll}
+          \chessboard[
+            fontsize=13pt,
+            labelleft=false,
+            labelbottom=false,
+            margin=false,
+            setpieces={Ke1, Rh1, ke8, ra8},
+            showmover=false,
+            padding=-0.8ex,
+          ]
+
+          &
+
+          \chessboard[
+            fontsize=13pt,
+            labelleft=false,
+            labelbottom=false,
+            margin=false,
+            setpieces={Kg1, Rf1, kc8, rd8},
+            showmover=false,
+            padding=-0.8ex,
+          ]
+          \\
+          Vor weißer kurzer Rochade & Nach weißer kurzer Rochade\\
+          Vor schwarzer langer Rochade & Nach schwarzer langer Rochade\\[2ex]
+
+          \chessboard[
+            fontsize=13pt,
+            labelleft=false,
+            labelbottom=false,
+            margin=false,
+            setpieces={Ke1, Ra1, ke8, rh8},
+            showmover=false,
+            padding=-0.8ex,
+          ]
+
+          &
+
+          \chessboard[
+            fontsize=13pt,
+            labelleft=false,
+            labelbottom=false,
+            margin=false,
+            setpieces={Kc1, Rd1, kg8, rf8},
+            showmover=false,
+            padding=-0.8ex,
+          ]
+          \\
+          Vor weißer langer Rochade & Nach weißer langer Rochade\\
+          Vor schwarzer kurzer Rochade & Nach schwarzer kurzer Rochade\\
+        \end{tabular}
+      \end{center}
+
+      \begin{enumerate}[{3.8.2}.1]
+        \item Das Recht zu rochieren ist verloren:
+          \begin{enumerate}[{3.8.2.1}.1]
+            \item wenn der König bereits gezogen hat, oder
+            \item mit einem Turm, der bereits gezogen hat.
+          \end{enumerate}
+      \end{enumerate}
+
+      \begin{enumerate}[{3.8.2}.2]
+        \item Die Rochade ist vorübergehend verhindert,
+          \begin{enumerate}[{3.8.2.2}.1]
+            \item wenn das Standfeld des Königs oder das Feld, das er überqueren muss,
+              oder sein Zielfeld von einer oder mehreren gegnerischen Figuren angegriffen
+              wird,
+            \item wenn sich zwischen dem König und dem Turm, mit dem rochiert werden soll,
+              irgendeine Figur befindet.
+          \end{enumerate}
+      \end{enumerate}
+    \end{enumerate}
+
+  \begin{enumerate}[{3.9}.1]
+    \item Ein König steht \emph{im Schach}, wenn er von einer oder mehreren gegnerischen
+      Figuren angegriffen wird, auch wenn diese selbst nicht auf das vom König besetzte Feld
+      ziehen können, weil sie anderenfalls den eigenen König im Angriff stehen lassen oder
+      diesen einem Angriff aussetzen würden.
+    \item Keine Figur darf einen Zug machen, der entweder den König derselben Farbe einem
+      Schachgebot aussetzt oder diesen in einem Schachgebot stehen lässt.
+  \end{enumerate}
+
+  \begin{enumerate}[{3.10}.1]
+    \item Ein Zug ist regelmäßig, wenn die maßgeblichen Bedingungen der Artikel 3.1 bis
+      3.9 erfüllt wurden.
+    \item Ein Zug ist regelwidrig, wenn er eine der maßgeblichen Bedingungen der Artikel
+      3.1 bis 3.9 nicht erfüllt.
+    \item Eine Stellung ist regelwidrig, wenn sie nicht durch irgendeine Folge
+      regelgemäßer Züge erreicht werden kann.
+  \end{enumerate}
+\end{enumerate}
+
+\paragraph{Weitere ausgewählte Regeln}%
+\label{par:weitere_ausgewahlte_regeln}
+
+\begin{enumerate}
+  \item[4.1] Jeder Zug muss mit einer Hand alleine ausgeführt werden.
+  \item[4.2.1] Nur der Spieler, der am Zug ist, darf eine oder mehrere Figuren auf ihren
+    Felder zurechtrücken, vorausgesetzt, dass er seine Absicht im Voraus bekannt gibt (zum
+    Beispiel durch die Ankündigung \emph{j’adoube} oder \emph{ich korrigiere}).
+  \item[4.2.2] Jede andere Berührung einer Figur gilt als absichtliche Berührung, außer
+    dies geschieht offensichtlich aus Versehen.
+  \item[4.4.2] Wenn der am Zug befindliche Spieler absichtlich seinen Turm und danach
+    seinen König berührt, darf er mit diesem Turm in diesem Zug nicht rochieren und der
+    Fall wird durch Artikel 4.3.1 geregelt.
+  \item[5.1.1] Die Partie ist von dem Spieler gewonnen, der den gegnerischen König
+    mattgesetzt hat.
+    Damit ist die Partie sofort beendet, vorausgesetzt, dass der Zug, der die Mattstellung
+    herbeigeführt hat, mit Artikel 3 und den Artikeln 4.2 bis 4.7
+    übereinstimmte.
+  \item[5.1.2] Die Partie ist von dem Spieler gewonnen, dessen Gegner erklärt, dass er
+    aufgebe. Damit ist die Partie sofort beendet.
+  \item[5.2.1] Die Partie ist remis, wenn der Spieler, der am Zug ist, keinen regelgemäßen
+    Zug zur Verfügung hat und sein König nicht im Schach steht. Eine solche Stellung heißt
+    \emph{Pattstellung}.
+    Damit ist die Partie sofort beendet, vorausgesetzt, dass der Zug, der die Mattstellung
+    herbeigeführt hat, mit Artikel 3 und den Artikeln 4.2 bis 4.7 übereinstimmte.
+  \item[5.2.2] Die Partie ist remis, sobald eine Stellung entstanden ist, in welcher
+    keiner der Spieler den gegnerischen König mit irgendeiner Folge regelmäßiger Züge matt
+    setzen kann. Eine solche Stellung heißt \emph{tote Stellung}.
+    \marginnote{Mögliche tote Stellungen: KL–K, KS–K, KSS–K}
+    Damit ist die Partie sofort beendet, vorausgesetzt, dass der Zug, der die Mattstellung
+    herbeigeführt hat, mit Artikel 3 und den Artikeln 4.2 bis 4.7 übereinstimmte.
+  \item[5.2.3] Die Partie ist remis durch eine von den beiden Spielern während der Partie
+    getroffene Übereinkunft, sofern beide Spieler mindestens einen Zug ausgeführt haben.
+    Damit ist die Partie sofort beendet.
+  \item[9.2.1] Die Partie ist remis aufgrund eines korrekten Antrages des Spielers, der am
+    Zug ist, wenn die gleiche Stellung mindestens zum dritten Mal (nicht notwendigerweise
+    durch Zugwiederholung)
+  \item[9.2.1.1] sogleich entstehen wird, falls der Spieler als erstes seinen Zug, der
+    nicht geändert werden kann, auf sein Partieformular schreibt und dem Schiedsrichter
+    seine Absicht erklärt, diesen Zug ausführen zu wollen, oder
+  \item[9.2.1.2] soeben entstanden ist und der Antragsteller am Zug ist.
+  \item[9.2.2] Stellungen gelten nur dann als gleich, wenn derselbe Spieler am Zug ist,
+    Figuren der gleichen Art und Farbe die gleichen Felder besetzen und die
+    Zugmöglichkeiten aller Figuren beider Spieler gleich sind.
+    Demgemäß sind Stellungen nicht gleich, wenn
+  \item[9.2.2.1] ein Bauer zu Beginn der Zugfolge \emph{en passant} geschlagen werden
+    konnte, oder
+  \item[9.2.2.2] ein König das Recht zur Rochade mit einem Turm, der noch nicht bewegt
+    worden ist, hatte, dieses aber nach dem Zug verloren hat. Das Rochaderecht geht erst
+    verloren, nachdem der König oder Turm gezogen hat.
+  \item[9.3] Die Partie ist remis aufgrund eines korrekten Antrages des Spieler, der am
+    Zug ist, falls
+  \item[9.3.1] er einen Zug, der nicht geändert werden kann, auf sein Partieformular
+    schreibt und dem Schiedsrichter seine Absicht erklärt, diesen Zug ausführen zu wollen,
+    der zur Folge habe, dass dann die letzten 50 aufeinanderfolgenden Züge eines jeden
+    Spieler ausgeführt worden sind, ohne dass ein Bauer gezogen hat und ohne dass eine
+    Figur geschlagen worden ist, oder
+  \item[9.3.2] die letzten 50 aufeinanderfolgenden Züge von jedem Spieler abgeschlossen
+    worden sind, ohne dass ein Bauer gezogen hat und ohne dass eine Figure geschlagen
+    worden ist.
+  \item[9.6] Falls eine oder beide der folgenden Situationen auftreten, ist die Partie
+    remis:
+  \item[9.6.1] sobald eine gleiche Stellung, entsprechend Artikel 9.2.2, mindestens
+    fünfmal entstanden ist,
+  \item[9.6.2] sobald wenigstens 75 Tüge von jedem Spieler ausgeführt worden sind, ohne
+    dass ein Bauer gezogen hat und ohne dass eine Figur geschlagen worden ist.
+    Wenn der letzte Zug matt setzt, hat dies Vorrang.
+  \item[11.1] Die Spieler dürfen nichts unternehmen, das dem Ansehen des Schachspiels
+    abträglich sein könnte.
+  \item[11.5] Es ist verboten, den Gegner auf irgendwelche Art abzulenken oder zu stören.
+    Dazu gehört auch ungerechtfertigtes Antragstellen oder ungerechtfertigtes Anbieten von
+    Remis oder das Mitbringen einer Geräuschquelle in den Spielbereich.
+  \item[11.7] Andauernde Weigerung eines Spieler, sich an die Schachregeln zu halten, wird
+    mit Partieverlust bestraft. Die vom Gegner erzielte Punktzahl wird vom Schiedsrichter
+    bestimmt.
+  \item[11.8] Wenn sich beide Spieler gemäß Artikel 11.7 schuldig machen, wird für beide
+    das Spiel für verloren erklärt.
+\end{enumerate}
+
+\pagebreak
+
+\section{Matt setzen}%
+\label{sec:matt_setzen}
+
+(siehe \texttt{mate\_puzzles.pdf})
+
+\section{Taktik}%
+\label{sec:taktik}
+
+\begin{notiz}
+  \begin{itemize}
+    \item ungedeckte Figuren
+    \item Gabel
+    \item Zwischenzug, Zwischenschach
+    \item Fesselung
+    \item Überlastung
+    \item Opfer
+    \item Fangen von Figuren
+  \end{itemize}
+\end{notiz}
+
+\section{Schachprobleme}%
+\label{sec:schachprobleme}
+
+\paragraph{Paul Morphy, 1856}%
+
+\begin{center}
+  \newchessgame[
+    setfen=kbK/pp/1P/8/8/8/8/R w - - 0 1 % chktex 8
+    moveid=1w
+  ]
+  \chessboard[
+    style=standard,
+  ]
+\end{center}
+
+\paragraph{Leonid Iwanowitsch Kubbel, 1924}%
+
+\begin{center}
+  \newchessgame[
+    setfen=N5Q/nkPP/8/8/4K/8/8/8 w - - 0 1 % chktex 8
+    moveid=1w
+  ]
+  \chessboard[
+    style=standard,
+  ]
+\end{center}
+
+
+\section{Eröffnungen}%
+\label{sec:eroffnungen}
+
+\begin{notiz}
+  Ziele der Eröffnung, Raum – Zeit – Material – Sicherheit des Königs, Wie erreichen
+  bestimmte Eröffnungen diese Ziele?
+\end{notiz}
+
+\subsection{Wichtige Eröffnungen}%
+\label{sub:wichtige_eroffnungen}
+
+\begin{itemize}
+  \item Spanische Partie
+  \item Italienische Partie
+  \item Damengambit
+  \item Sizilianische Verteidigung
+\end{itemize}
+
+\subsection{Problematische Eröffnungen}%
+\label{sub:problematische_eroffnungen}
+
+\begin{itemize}
+  \item \url{https://en.wikipedia.org/wiki/Greco_Defence}
+\end{itemize}
+
+\pagebreak
+
+\section{Schachvarianten}%
+\label{sec:schachvarianten}
+
+\begin{itemize}
+  \item Fischer Random Chess bzw. Chess960
+  \item Atomic Chess
+  \item Crazyhouse
+  \item Horde
+  \item Antichess
+  \item King of the Hill
+  \item Racing Kings
+\end{itemize}
+
+\end{document}
