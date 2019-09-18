@@ -16,6 +16,14 @@ a5paper, %apaper,
 
 \input{packages.latex}
 
+% Index
+% Um einen Index erstellen zu können, muss das Paket geladen und der Befehl
+% \makeindex in der Präambel ausgeführt werden.
+% Im Dokument können wir dann \index{Schlüsselwort} benutzen.
+% Um den Index anzuzeigen, nehmen wir \printindex.
+\usepackage{makeidx}
+\makeindex
+
 \def\arrowcolor{orange!80}
 \def\arrowlinewidth{2pt}
 \def\arrowopacity{0.618}
@@ -759,6 +767,85 @@ Matt in 5.
 
 Quelle: \url{https://lichess.org/q0Nu0Xdk/black#55}
 
-\printindex
+\pagebreak
+
+Matt in 4.
+
+Quelle:
+\url{https://lichess.org/analysis/standard/r4k1r/pp3ppp/8/4Q3/3NnP2/4q3/PP4PP/5R1K_b_-_-}
+
+\pagebreak
+
+Matt in 2 mit Damenopfer am Ende: \url{https://www.youtube.com/watch?v=T5I_fB-wNPA}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=r4rk1/2p2pb1/2np3p/4p3/pPP1N2P/P3Pq2/1B6/1QK3RR w - - 0 1
+    moveid=1w,
+  ]
+  \chessboard[
+    style=standard,
+    markmoves={f5-f3},
+    inverse=false,
+  ]
+\end{center}
+
+Weiß kann einen signifikanten Vorteil erringen.
+
+Quelle:
+\url{https://www.reddit.com/r/chess/comments/d5p2w9/neat_tactic_from_a_bullet_game_white_to_play_and/}
+
+\pagebreak
+
+GorillaS0up: There's just no way I'd find this DURING a game. No matter how much time I
+had.
+
+muntoo: No matter the time? If it was an hour long game, I'm sure you'd probably recognize
+the tactical themes in this position. \variation{1. Nf6+} is the first thing anyone that
+knows how the knight moves looks at.  \variation{1. Nf6+ Qh7#}? Nope don't work cuz
+black's queen guards f6.
+
+You'd probably check \variation{1. Rxg7} because you have literally 40 minutes on the
+clock and it's probably a more interesting way to spend your afternoon than arguing about
+the positional bonuses of bringing your damn bishop outside the pawn chain.
+Yawn.
+\variation{1. Rxg7} \ldots can't find no followups.
+Rook lifts would be nice, but no time for that... the queen's hitting your unguarded
+e3 pawn!
+
+How to guard that e3 pawn? \variation{1. Qd3} and \variation{1. Kd2}.
+Hmm... which one's better?
+Is the King safe on d2? Can black open things up? I guess \variation{1. Qd3} is safer
+since black has d5 in the near future, simultaneously hitting both your pawn and your
+knight, forcing cxd5.
+
+So \variation{1. Qd3}?
+That sounds lame as hell, given the sharp position.
+Black can probably kill off my attack if I waste time like that.
+And my king will then come under some heavy fire!
+But what else can I do, really?
+Maybe I'll check the forcing lines again.
+Maybe I missed an idea.
+
+Perhaps out of sheer boredom, you'd begin to look for ways to piss off black's queen
+while guarding your e3 pawn.
+\variation{1. Rf1}? No that's dropping the pawn and removing your beautiful pin.
+Your other rook is useless. Maybe use that? \variation{1. Rf2}. Lift!
+Oooh, doubled rooks. But wait... your e3 pawn is still unguared.
+Maybe we still have to play \variation{1. Qd3}.
+Lame.
+
+Hold on. The black queen has an important responsibility on guarding f6. It has to
+stay on the f-file. Not just important. Vital. Fatal. Literally mate if the queen
+moves away. Can I play one of those fancy deflection sacrifices here?
+
+OH!!!
+
+Lösung: \mainline{1. Rh3! Qf5 2. Rhg3}
+Wenn die Dame den Turm schlägt: \variation{1. Rh3! Qxh3 2. Nf6+ Kh8 3. Qh7#}
+
+%\printindex
 
 \end{document}
