@@ -27,14 +27,15 @@ a5paper, %apaper,
 \def\arrowcolor{orange!80}
 \def\arrowlinewidth{2pt}
 \def\arrowopacity{0.618}
+\def\lastmovecolor{CornflowerBlue}
 
 \storechessboardstyle{standard}{%
   arrow=to,
-  color=\arrowcolor,
+  color=\lastmovecolor,
   linewidth=\arrowlinewidth,
   opacity=\arrowopacity,
-  pgfstyle=straightmove,
-  shortenend=0.618ex,
+  shortenend=0.5ex,
+  pgfstyle=color,
 }
 \renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
 
@@ -71,7 +72,7 @@ Folgende Fragen können bei der Suche helfen:
   ]
   \chessboard[
     style=standard,
-    markmoves={e1-c1},
+    backfields={e1,c1},
     inverse=true,
   ]
 \end{center}
@@ -103,7 +104,7 @@ Quelle: \url{https://lichess.org/AuATzwQH/black#27}
   ]
   \chessboard[
     style=standard,
-    markmoves={a8-c8},
+    backfields={a8,c8},
     inverse=false,
   ]
 \end{center}
@@ -148,7 +149,7 @@ Quelle: \url{https://lichess.org/NDzBwBqn/white#52}
   ]
   \chessboard[
     style=standard,
-    markmoves={d5-f4},
+    backfields={d5,f4},
     inverse=false,
   ]
 \end{center}
@@ -192,7 +193,7 @@ Quelle: \url{https://lichess.org/d6nNxsVG#26}
   ]
   \chessboard[
     style=standard,
-    markmoves={c2-a4},
+    backfields={c2,a4},
     inverse=true,
   ]
 \end{center}
@@ -225,7 +226,7 @@ Quelle: \url{https://lichess.org/DhAfdSvP#31}
   ]
   \chessboard[
     style=standard,
-    markmoves={f8-h8},
+    backfields={f8,h8},
     inverse=false,
   ]
 \end{center}
@@ -265,7 +266,7 @@ Quelle: \url{https://lichess.org/XIRrUvb9/white#48}
   ]
   \chessboard[
     style=standard,
-    markmoves={h2-f2},
+    backfields={h2,f2},
     inverse=false,
   ]
 \end{center}
@@ -306,7 +307,7 @@ Quelle: \url{https://lichess.org/guvoEh7j/white#74}
   ]
   \chessboard[
     style=standard,
-    markmoves={c3-d4},
+    backfields={c3,d4},
     inverse=true,
   ]
 \end{center}
@@ -365,7 +366,7 @@ Quelle: \url{https://lichess.org/Kjr6x9qz/black#61} % chktex 29
   ]
   \chessboard[
     style=standard,
-    markmoves={f8-h8},
+    backfields={f8,h8},
     inverse=false,
   ]
 \end{center}
@@ -403,7 +404,7 @@ Quelle: \url{https://lichess.org/Ceg0A7Dp/white#56}
   ]
   \chessboard[
     style=standard,
-    markmoves={f3-f4},
+    backfields={f3,f4},
     inverse=true,
   ]
 \end{center}
@@ -443,7 +444,7 @@ Quelle: \url{https://lichess.org/Nh0rpDWV/black#67}
   ]
   \chessboard[
     style=standard,
-    markmoves={d3-e1},
+    backfields={d3,e1},
     inverse=false,
   ]
 \end{center}
@@ -480,7 +481,7 @@ Quelle: \url{https://lichess.org/k6sOHsO7/white#54}
   ]
   \chessboard[
     style=standard,
-    markmoves={d8-d4},
+    backfields={d8,d4},
     inverse=false,
   ]
 \end{center}
@@ -514,7 +515,7 @@ Quelle: \url{https://lichess.org/ViYrJQ6A/white#14}
   ]
   \chessboard[
     style=standard,
-    markmoves={e6-e7},
+    backfields={e6,e7},
     inverse=true,
   ]
 \end{center}
@@ -563,7 +564,7 @@ Quelle: \url{https://lichess.org/zN2hPmc9/black#87}
   ]
   \chessboard[
     style=standard,
-    markmoves={c6-c7},
+    backfields={c6,c7},
     inverse=true,
   ]
 \end{center}
@@ -577,6 +578,7 @@ Weiß hat drei Möglichkeiten:
   \chessboard[
     smallboard,
     style=standard,
+    pgfstyle=straightmove,
     markmoves={g2-h1, g2-h3, f1-f2},
     inverse=true,
   ]
@@ -695,7 +697,7 @@ Matt in 2 mit Damenopfer
   ]
   \chessboard[
     style=standard,
-    markmoves={g1-h1},
+    backfields={g1,h1},
     inverse=true,
   ]
 \end{center}
@@ -717,7 +719,7 @@ Fork mit der Dame.
   ]
   \chessboard[
     style=standard,
-    markmoves={h5-g5},
+    backfields={h5,g5},
     inverse=false,
   ]
 \end{center}
@@ -744,7 +746,7 @@ Matt in 4, nur mit der Dame.
   ]
   \chessboard[
     style=standard,
-    markmoves={f7-g8},
+    backfields={f7,g8},
     inverse=false,
   ]
 \end{center}
@@ -787,7 +789,7 @@ Matt in 2 mit Damenopfer am Ende: \url{https://www.youtube.com/watch?v=T5I_fB-wN
   ]
   \chessboard[
     style=standard,
-    markmoves={f5-f3},
+    backfields={f5,f3},
     inverse=false,
   ]
 \end{center}
@@ -846,6 +848,22 @@ OH!!!
 Lösung: \mainline{1. Rh3! Qf5 2. Rhg3}
 Wenn die Dame den Turm schlägt: \variation{1. Rh3! Qxh3 2. Nf6+ Kh8 3. Qh7#}
 
-%\printindex
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=r3n3/p6p/b1p1P1k1/b2pR3/1p5P/3n2N1/PBK3P1/R7 w - - 1 29
+    moveid=29w,
+  ]
+  \chessboard[
+    style=standard,
+    pgfstyle=color,
+    color=CornflowerBlue,
+    backfields={c5,d3},
+    inverse=false,
+  ]
+\end{center}
+
+\printindex
 
 \end{document}
