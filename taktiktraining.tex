@@ -627,7 +627,6 @@ Weiß hat drei Möglichkeiten:
 
 Quelle: \url{https://lichess.org/training/95056}
 
-
 \pagebreak
 
 \url{https://lichess.org/training/95287}
@@ -814,11 +813,11 @@ clock and it's probably a more interesting way to spend your afternoon than argu
 the positional bonuses of bringing your damn bishop outside the pawn chain.
 Yawn.
 \variation{1. Rxg7} \ldots can't find no followups.
-Rook lifts would be nice, but no time for that... the queen's hitting your unguarded
+Rook lifts would be nice, but no time for that \ldots the queen's hitting your unguarded
 e3 pawn!
 
 How to guard that e3 pawn? \variation{1. Qd3} and \variation{1. Kd2}.
-Hmm... which one's better?
+Hmm \ldots which one's better?
 Is the King safe on d2? Can black open things up? I guess \variation{1. Qd3} is safer
 since black has d5 in the near future, simultaneously hitting both your pawn and your
 knight, forcing cxd5.
@@ -835,7 +834,7 @@ Perhaps out of sheer boredom, you'd begin to look for ways to piss off black's q
 while guarding your e3 pawn.
 \variation{1. Rf1}? No that's dropping the pawn and removing your beautiful pin.
 Your other rook is useless. Maybe use that? \variation{1. Rf2}. Lift!
-Oooh, doubled rooks. But wait... your e3 pawn is still unguared.
+Oooh, doubled rooks. But wait \ldots your e3 pawn is still unguared.
 Maybe we still have to play \variation{1. Qd3}.
 Lame.
 
@@ -852,7 +851,7 @@ Wenn die Dame den Turm schlägt: \variation{1. Rh3! Qxh3 2. Nf6+ Kh8 3. Qh7#}
 
 \begin{center}
   \newchessgame[
-    setfen=r3n3/p6p/b1p1P1k1/b2pR3/1p5P/3n2N1/PBK3P1/R7 w - - 1 29
+    setfen=r3n3/p6p/b1p1P1k1/b2pR3/1p5P/3n2N1/PBK3P1/R7 w - - 1 29,
     moveid=29w,
   ]
   \chessboard[
@@ -860,6 +859,79 @@ Wenn die Dame den Turm schlägt: \variation{1. Rh3! Qxh3 2. Nf6+ Kh8 3. Qh7#}
     pgfstyle=color,
     color=CornflowerBlue,
     backfields={c5,d3},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Matt}
+
+\pagebreak
+
+Matt in 2.
+
+\mainline{29. Rg5+} erzwingt \mainline{29... Kh6} und \mainline{30. Nf5#} macht’s fertig.
+Zeigt schön, dass man ungefähr 3 Figuren für ein Matt braucht.
+
+Quelle: \url{https://lichess.org/MiGbsYhV#56}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=5rk1/6b1/pqn3B1/1p6/2p5/2P5/P3RnPP/RN1Q2K1 w - - 0 24,
+    moveid=24w,
+  ]
+  \chessboard[
+    style=standard,
+    backfields={g4,f2},
+    inverse=false,
+  ]
+\end{center}
+
+\pagebreak
+
+Matt in 4. Wir starten mit \mainline{24. Qd5+}. Egal wie Schwarz pariert, es wird Matt.
+
+Wenn mit dem Turm blockiert wird: \variation{24... Rf7 25. Qxf7+ Kh8}. Dann kann entweder
+die Dame oder der Turm auf e8: \variation{26. Re8+ Bf8} und wir können uns ein Matt
+aussuchen: \variation{27. Rxf8#} oder \variation{27. Qxf8#} oder \variation{27. Qh7#}.
+
+Wenn der König stattdessen ausweicht, dann wird’s einfach:
+\mainline{24... Kh8 25. Qh5+ Bh6 26. Qxh6+ Kg8 27. Qh7#}.
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
+\pagebreak
+
+\begin{center}
+  \newchessgame[
+    setfen=rnbk1r2/p1q1p3/1ppNP1Q1/8/4p3/2P5/P1P2PPP/R3K2R w KQ - 0 1,
+    moveid=1w,
+  ]
+  \chessboard[
+    style=standard,
+    backfields={e8,d8},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Matt}
+\index{Ersticktes Matt}
+\index{Opfer}
+\index{Damenopfer}
+
+\pagebreak
+
+Smothered Mate in 2 with Queen Sac on top: \mainline{1. Qe8+ Rxe8 2. Nf7#}.
+
+\begin{center}
+  \chessboard[
+    style=standard,
     inverse=false,
   ]
 \end{center}
