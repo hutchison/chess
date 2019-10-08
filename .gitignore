@@ -265,3 +265,5 @@ TSWLatexianTemp*
 
 .ipython/
 bobby_fischer_teaches_chess/
+
+*.doc
