@@ -814,32 +814,38 @@
 
 \RequirePackage{ifxetex}
 \ifxetex
-\RequirePackage{mathspec}
-	% set default fonts
-	\defaultfontfeatures{
-		Ligatures=TeX,
-		Scale=MatchLowercase,
-	}
-	\setmainfont{Minion Pro}[Mapping=TeX-text]
-	\setsansfont{Gill Sans}[Mapping=TeX-text,Scale=MatchUppercase]
-	\setmonofont{Fira Mono}[Scale=MatchLowercase]
-	\setmathfont(Digits,Latin,Greek)[
-	  Numbers={Lining, Proportional}
-	]{Minion Pro}
+  \RequirePackage{mathspec}
+  % set default fonts
+  \defaultfontfeatures{
+    Ligatures=TeX,
+    Scale=MatchLowercase,
+  }
+  \IfFontExistsTF{Minion Pro}{
+    \setmainfont{Minion Pro}[Mapping=TeX-text]
+    \setmathfont(Digits,Latin,Greek)[
+      Numbers={Lining, Proportional}
+    ]{Minion Pro}
+  }{}
+  \IfFontExistsTF{Gill Sans}{
+    \setsansfont{Gill Sans}[Mapping=TeX-text,Scale=MatchUppercase]
+  }{}
+  \IfFontExistsTF{Fira Mono}{
+    \setmonofont{Fira Mono}[Scale=MatchLowercase]
+  }{}
 
-	% XeTeX-compatible workaround for letter spacing
-	\newcommand{\textls}[2][5]{\begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup}
-	\renewcommand{\allcapsspacing}[1]{\textls[15]{#1}}
+  % XeTeX-compatible workaround for letter spacing
+  \newcommand{\textls}[2][5]{\begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup}
+  \renewcommand{\allcapsspacing}[1]{\textls[15]{#1}}
 
-	\renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
+  \renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
 
-	\renewcommand{\smallcapsspacing}[1]{\textls[10]{#1}}
-	\renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeUppercase{#1}}}
-	\renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
-	\renewcommand{\textsc}[1]{\smallcaps{#1}}
+  \renewcommand{\smallcapsspacing}[1]{\textls[10]{#1}}
+  \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeUppercase{#1}}}
+  \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+  \renewcommand{\textsc}[1]{\smallcaps{#1}}
 
-	\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
-	\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+  \renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+  \renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
 \fi
 
 %%

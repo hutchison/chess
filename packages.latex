@@ -260,15 +260,41 @@
 \def\arrowopacity{0.618}
 \def\lastmovecolor{CornflowerBlue}
 
-\storechessboardstyle{standard}{%
-  arrow=to,
+\storechessboardstyle{puzzle}{%
   color=\lastmovecolor,
-  linewidth=\arrowlinewidth,
-  opacity=\arrowopacity,
-  shortenend=0.5ex,
   pgfstyle=color,
 }
+\storechessboardstyle{solution}{%
+  arrow=to,
+  color=\arrowcolor,
+  linewidth=\arrowlinewidth,
+  opacity=\arrowopacity,
+  shortenend=0.2ex,
+  pgfstyle=straightmove,
+}
 \renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
+
+% \chesspuzzle{<fen>}{<moveid>}{<inverse>}{<backfields>}{<markmoves>}
+\newcommand{\chesspuzzle}[5]{
+  \newchessgame[
+      setfen=#1,
+      moveid=#2
+  ]
+  \chessboard[
+      smallboard,
+      inverse=#3,
+      pgfstyle=color,
+      color=\lastmovecolor,
+      backfields={#4},
+      arrow=to,
+      color=\arrowcolor,
+      linewidth=\arrowlinewidth,
+      opacity=\arrowopacity,
+      shortenend=0.2ex,
+      pgfstyle=straightmove,
+      markmoves={#5}
+  ]
+}
 
 % Index
 % Um einen Index erstellen zu können, muss das Paket geladen und der Befehl

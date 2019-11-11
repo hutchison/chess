@@ -16,27 +16,12 @@ empty,
 
 \input{packages.latex}
 
-\def\arrowcolor{orange!80}
-\def\arrowlinewidth{2pt}
-\def\arrowopacity{0.618}
-
-\storechessboardstyle{standard}{%
-  arrow=to,
-  color=\arrowcolor,
-  linewidth=\arrowlinewidth,
-  opacity=\arrowopacity,
-  pgfstyle=straightmove,
-  shortenend=0.618ex,
-}
-
 \begin{document}
 
 \setchessboard{
   showmover=false,
   boardfontsize=50pt,
 }
-
-%\newchessgame{}
 
 \begin{center}
   \chessboard[
