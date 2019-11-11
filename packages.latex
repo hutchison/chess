@@ -274,8 +274,8 @@
 }
 \renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
 
-% \chesspuzzle{<fen>}{<moveid>}{<inverse>}{<backfields>}{<markmoves>}
-\newcommand{\chesspuzzle}[5]{
+% \matepuzzle{<fen>}{<moveid>}{<inverse>}{<backfields>}{<markmoves>}
+\newcommand{\matepuzzle}[5]{
   \newchessgame[
       setfen=#1,
       moveid=#2
