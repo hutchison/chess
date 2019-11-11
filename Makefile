@@ -1,13 +1,13 @@
-.PHONY: taktiktraining.pdf konzept.pdf clean
+LATEX = latexmk -pdf -xelatex
+LATEX_OPTS = -pvc
+
+.PHONY: clean all
 
 clean:
 	$(RM) *.aux *.bbl *.blg *.dvi *.fdb_latexmk *.fls *.idx *.ilg *.ind *.log *.out *.toc *.xdv
 
-taktiktraining.pdf: taktiktraining.tex packages.latex
-	latexmk -pvc -pdf -xelatex taktiktraining.tex
+all:
+	$(LATEX) *.tex
 
-konzept.pdf: konzept.tex
-	latexmk -pvc -pdf -xelatex konzept.tex
-
-mate_puzzles.pdf: mate_puzzles.tex packages.latex
-	latexmk -pvc -pdf -xelatex mate_puzzles.tex
+%.pdf: %.tex
+	$(LATEX) $(LATEX_OPTS) $<
