@@ -566,11 +566,102 @@ beide das Spiel für verloren erklärt.
 \subsection{Bauernendspiel}%
 \label{sub:bauernendspiel}
 
-\begin{itemize}
-  \item Quadratregel
-  \item nur ein Bauer
-  \item Bauerndurchbruch
-\end{itemize}
+\paragraph{Quadratregel}%
+\label{par:quadratregel}
+
+Betrachte die Endspielstellung am Rand. Kann Schwarz den Bauern noch einholen?
+
+\begin{marginfigure}
+  \begin{center}
+    \newchessgame[
+      setfen=8/8/8/8/5P/k/8/K w - - 0 1 % chktex 8
+      moveid=1w
+    ]
+    \chessboard[
+      smallboard,
+      showmover=false,
+    ]
+  \end{center}
+\end{marginfigure}
+
+Es hängt davon ab, wer am Zug ist. Wenn Schwarz am Zug ist, dann kann der König das
+\emph{Quadrat} noch betreten und holt den Bauern ein. Wenn Weiß am Zug ist, dann nicht,
+denn dann ist der Bauer eher am Umwandlungsfeld. Das \emph{Quadrat} wird vom Bauernfeld
+bis zum Umwandlungsfeld gezogen. Es gilt also: wer am Zug ist gewinnt.
+
+\begin{center}
+  \newchessgame[
+    setfen=8/8/8/8/5P/k/8/K w - - 0 1 % chktex 8
+    moveid=1w
+  ]
+  \chessboard[
+    smallboard,
+    shorten=0.6ex,
+    showmover=false,
+    markstyle=cross,
+    markfields={f5, f6, f7, e4, d4, c4, b5, b6, b7, b8, c8, d8, e8},
+    padding=-0.8ex,
+    pgfstyle={[fill]circle},
+    markfields={b4, c5, d6, e7, f8},
+  ]
+\end{center}
+
+\paragraph{Nur ein Bauer}%
+\label{par:nur_ein_bauer}
+
+Zauberwort: \emph{Opposition}. Betrachten wir zuerst die \emph{direkte Opposition}. Dabei
+stehen sich die König auf einer Linie gegenüber, sodass nur ein Feld zwischen ihnen ist.
+Wer \emph{nicht} am Zug ist, hat die Opposition.
+
+\begin{center}
+  \newchessgame[
+    setfen=8/8/8/3k/8/3K/8/8 w - - 0 1 % chktex 8
+    moveid=1w
+  ]
+  \chessboard[
+    smallboard,
+    shorten=0.6ex,
+    showmover=false,
+    markstyle=cross,
+    markfields={c4, d4, e4},
+  ]
+\end{center}
+
+Dabei kämpfen die Könige um die Kontrolle der markierten Felder. Wer am Zug ist, muss eins
+der Felder aufgeben. Daraufhin kann der andere König flankieren.
+
+\begin{center}
+  \chessboard[
+    style=standard,
+    smallboard,
+    markmoves={d5-c5, d3-e4},
+    showmover=false,
+  ]
+\end{center}
+
+Betrachte folgende Ausgangsposition für dieses Endspiel:
+\begin{center}
+  \newchessgame[
+    setfen=8/8/8/3k/8/8/3PK/8 w - - 0 1 % chktex 8
+    moveid=1w
+  ]
+  \chessboard[
+    smallboard,
+    showmover=false,
+  ]
+\end{center}
+Wer am Zug ist, gewinnt durch Nehmen der Opposition.
+\begin{center}
+  \chessboard[
+    style=standard,
+    smallboard,
+    markmoves={d5-e4, e2-d3},
+    showmover=false,
+  ]
+\end{center}
+
+\paragraph{Bauerndurchbruch}%
+\label{par:bauerndurchbruch}
 
 Siehe \url{https://de.wikipedia.org/wiki/Elementare_Mattführung}
 
