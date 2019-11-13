@@ -1,0 +1,435 @@
+\documentclass[
+  aspectratio=1610,
+]{beamer}
+
+% chktex-file 1
+% chktex-file 26
+
+\usefonttheme{professionalfonts}
+\usefonttheme[stillsansseriflarge, stillsansserifsmall]{serif}
+
+%\usetheme{Frankfurt}
+%\usecolortheme{dove}
+
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\usepackage[MnSymbol]{mathspec}
+\setmathfont(Digits,Latin,Greek)[
+  Numbers={Lining, Proportional}
+]{Minion Pro}
+\setmathrm{Minion Pro}
+
+\defaultfontfeatures{
+  Ligatures=TeX,
+  Scale=MatchLowercase,
+}
+\setsansfont{Gill Sans}
+\setmainfont{Minion Pro}
+\setmonofont{Fira Mono}
+
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+
+\usepackage{hyperref}
+
+\setbeamertemplate{navigation symbols}{}
+
+\graphicspath{{./bilder/}}
+
+% Schachkram:
+% siehe: http://mirrors.ctan.org/macros/latex/contrib/chessboard/chessboard.pdf
+\usepackage{chessboard}
+\usepackage{xskak}
+
+\newcommand{\wplogo}{\includegraphics[height=2ex]{enwiki.png}}
+
+\author{Martin Darmüntzel}
+\title{Schach für Anfänger}
+\subtitle{Endspiele}
+%\institute{Universität Rostock}
+%\date{6. September 2019}
+
+\begin{document}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=7k/6pQ/8/5B2/8/8/8/4K3,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Die weiße Dame gibt Schach. Der schwarze König:
+      \begin{itemize}
+        \item[$\square$] kann schlagen
+        \only<1>{\item[$\square$] kann nicht schlagen}
+        \only<2>{\item[$\checkmark$] \textbf{kann nicht schlagen}}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=k/Q/8/8/2B/8/8/4K,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Die weiße Dame gibt Schach. Der schwarze König:
+      \begin{itemize}
+        \only<1>{\item[$\square$] kann schlagen}
+        \only<2>{\item[$\checkmark$] \textbf{kann schlagen}}
+        \item[$\square$] kann nicht schlagen
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=6Rk/7p/8/5N/8/8/8/6K,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Der schwarze König:
+      \begin{itemize}
+        \only<1>{\item[$\square$] kann den weißen Turm schlagen}
+        \only<2>{\item[$\checkmark$] \textbf{kann den weißen Turm schlagen}}
+        \item[$\square$] kann den weißen Turm nicht schlagen
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=6Rk/4N2p/8/8/8/8/8/6K,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Der schwarze König:
+      \begin{itemize}
+        \item[$\square$] kann den weißen Turm schlagen
+        \only<1>{\item[$\square$] kann den weißen Turm nicht schlagen}
+        \only<2>{\item[$\checkmark$] \textbf{kann den weißen Turm nicht schlagen}}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=R/kp/1p/8/8/8/1K/8,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Der schwarze König:
+      \begin{itemize}
+        \only<1>{\item[$\square$] kann den weißen Turm schlagen}
+        \only<2>{\item[$\checkmark$] \textbf{kann den weißen Turm schlagen}}
+        \item[$\square$] kann den weißen Turm nicht schlagen
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=k1R/pp/8/8/8/4K/8/8,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Der schwarze König:
+      \begin{itemize}
+        \item[$\square$] kann den weißen Turm schlagen
+        \only<1>{\item[$\square$] kann den weißen Turm nicht schlagen}
+        \only<2>{\item[$\checkmark$] \textbf{kann den weißen Turm nicht schlagen}}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, was der schwarze König in dieser Position tun kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=7k/7p/8/3B/3B/6K/8/8,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Der schwarze König:
+      \begin{itemize}
+        \item[$\square$] kann den Angreifer schlagen
+        \item[$\square$] kann flüchten
+        \only<1>{\item[$\square$] kann nichts tun}
+        \only<2>{\item[$\checkmark$] \textbf{kann nichts tun}}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, was der schwarze König in dieser Position tun kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=4k2q/2pp1Q/8/1b2N/p/8/3P1PP/4K,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Der schwarze König:
+      \begin{itemize}
+        \item[$\square$] kann den Angreifer schlagen
+        \only<1>{\item[$\square$] kann flüchten}
+        \only<2>{\item[$\checkmark$] \textbf{kann flüchten} – wohin?}
+        \item[$\square$] kann nichts tun
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, was der schwarze König in dieser Position tun kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=4R1k/6p/6Pp/8/8/8/6K/8,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Der schwarze König:
+      \begin{itemize}
+        \item[$\square$] kann den Angreifer schlagen
+        \item[$\square$] kann flüchten
+        \only<1>{\item[$\square$] kann nichts tun}
+        \only<2>{\item[$\checkmark$] \textbf{kann nichts tun}}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Aufwärmaufgaben}
+  Entscheide, was der schwarze König in dieser Position tun kann.
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=7k/4N1pR/8/8/8/8/3K/8,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Der schwarze König:
+      \begin{itemize}
+        \only<1>{\item[$\square$] kann den Angreifer schlagen}
+        \only<2>{\item[$\checkmark$] \textbf{kann den Angreifer schlagen}}
+        \item[$\square$] kann flüchten
+        \item[$\square$] kann nichts tun
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Matt in 1}
+  Finde den Mattzug. Für jeden zusätzlichen Mattzug gibt’s 1 Bonuspunkt.
+\end{frame}
+
+\begin{frame}{Nachtrag von letzter Woche}
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \only<1-1>{
+        \chessboard[
+          setfen=6Q1/1k4bR/2pP4/2B5/2B5/8/Rp6/K7 w - - 0 1, % chktex 8
+          showmover=false,
+        ]
+      }
+      \only<2-2>{
+        \chessboard[
+          setfen=6Q1/1k4bR/2pP4/2B5/2B5/8/1R/K7 w - - 0 1, % chktex 8
+          showmover=false,
+        ]
+      }
+      \only<3-3>{
+        \chessboard[
+          setfen=6Q1/1k4bR/2pP4/2B5/2B5/8/1R/K7 w - - 0 1, % chktex 8
+          showmover=false,
+          arrow=to,
+          pgfstyle=straightmove,
+          color=red,
+          linewidth=2pt,
+          opacity=0.8,
+          markmoves={b2-b7,g7-a1},
+        ]
+      }
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      Eine Figur greift ein Feld an, auch wenn sie am Zug gehindert ist, weil sie
+      andernfalls den eigenen König im Angriff stehen lassen oder ihn einem Angriff
+      aussetzen würde.
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \titlepage{}
+\end{frame}
+
+\setbeamercolor{frametitle}{fg=black}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteQueenOnWhite \WhiteRookOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/3k/8/8/8/5RQK w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteRookOnWhite \WhiteRookOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/8/8/4k/6R/6RK w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/3k/8/8/8/6QK w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteRookOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/3k/8/8/8/6RK w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteBishopOnWhite \WhiteBishopOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/3k/8/8/8/5BBK w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteRookOnWhite \WhiteBishopOnWhite \WhiteKnightOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/3k/8/8/8/4NBRK w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+
+    Der weiße König darf nicht bewegt werden.
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackPawnOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=4k/4p/8/8/8/8/8/6QK w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackBishopOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/3b/6k/8/8/2K/Q w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackKnightOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/3nk/8/3Q/8/7K w - - 0 1, % chktex 8
+      moveid=1w,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item \WhiteKingOnWhite \WhiteQueenOnWhite \WhiteRookOnWhite \BlackKingOnWhite
+    \item \WhiteKingOnWhite \WhiteRookOnWhite \WhiteRookOnWhite \BlackKingOnWhite
+    \item \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite
+    \item \WhiteKingOnWhite \WhiteRookOnWhite \BlackKingOnWhite
+    \item \WhiteKingOnWhite \WhiteBishopOnWhite \WhiteBishopOnWhite \BlackKingOnWhite
+    \item \WhiteKingOnWhite \WhiteRookOnWhite \WhiteBishopOnWhite \WhiteKnightOnWhite \BlackKingOnWhite
+    \item \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackPawnOnWhite
+    \item \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackBishopOnWhite
+    \item \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackKnightOnWhite
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \chessboard[
+    setfen=4k/4p/8/8/8/8/8/6QK w - - 0 1, % chktex 8
+    moveid=1w,
+    tinyboard,
+    showmover=false,
+  ]
+  \chessboard[
+    setfen=8/8/3b/6k/8/8/2K/Q w - - 0 1, % chktex 8
+    moveid=1w,
+    tinyboard,
+    showmover=false,
+  ]
+  \chessboard[
+    setfen=8/8/8/3nk/8/3Q/8/7K w - - 0 1, % chktex 8
+    moveid=1w,
+    tinyboard,
+    showmover=false,
+  ]
+\end{frame}
+
+\end{document}
