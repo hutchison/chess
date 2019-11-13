@@ -26,18 +26,25 @@
     Scale=MatchLowercase,
   }
   % Die Hauptschriftart:
-  \setmainfont[]{Minion Pro}
-  % Die Matheschriftart:
-  \setmathfont(Digits,Latin,Greek)[
-    Numbers={Lining, Proportional}
-  ]{Minion Pro}
-  \setmathrm{Minion Pro}
+  \IfFontExistsTF{Minion Pro}{
+    \setmainfont[]{Minion Pro}
+    % Die Matheschriftart:
+    \setmathfont(Digits,Latin,Greek)[
+      Numbers={Lining, Proportional}
+    ]{Minion Pro}
+    \setmathrm{Minion Pro}
+  }{}
   % Die Schriftart für serifenlose Texte (z.B. Überschriften):
-  \setallsansfonts[
-    BoldFont = {MyriadPro-Regular},
-  ]{Myriad Pro}
+  \IfFontExistsTF{MyriadPro}{
+    \setallsansfonts[BoldFont={MyriadPro-Regular}]{MyriadPro}
+  }{}
+  \IfFontExistsTF{Ubuntu}{
+    \setallsansfonts[]{Ubuntu}
+  }{}
   % Und die Schriftart für nichtproportionale Texte:
-  \setallmonofonts[]{Fira Mono for Powerline}
+  \IfFontExistsTF{Fira Mono for Powerline}{
+    \setallmonofonts[]{Fira Mono for Powerline}
+  }{}
 
   % Siehe https://tex.stackexchange.com/questions/99770/problem-with-digits-in-urls-when-using-mathspec-and-hyperref
   % bzgl. des folgenden
@@ -173,7 +180,7 @@
   %circuits.ee.IEC,
 }
 \usepackage{pgfplots}
-%\pgfplotsset{compat=1.15}
+\pgfplotsset{compat=1.15}
 
 % eigens gebaute Lochmarken:
 %\usepackage{eso-pic}
@@ -247,6 +254,47 @@
 % siehe: http://mirrors.ctan.org/macros/latex/contrib/chessboard/chessboard.pdf
 \usepackage{chessboard}
 \usepackage{xskak}
+
+\def\arrowcolor{orange!80}
+\def\arrowlinewidth{2pt}
+\def\arrowopacity{0.618}
+\def\lastmovecolor{CornflowerBlue}
+
+\storechessboardstyle{puzzle}{%
+  color=\lastmovecolor,
+  pgfstyle=color,
+}
+\storechessboardstyle{solution}{%
+  arrow=to,
+  color=\arrowcolor,
+  linewidth=\arrowlinewidth,
+  opacity=\arrowopacity,
+  shortenend=0.2ex,
+  pgfstyle=straightmove,
+}
+\renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
+
+% \matepuzzle{<fen>}{<moveid>}{<inverse>}{<backfields>}{<markmoves>}
+\newcommand{\matepuzzle}[5]{
+  \newchessgame[
+      setfen=#1,
+      moveid=#2
+  ]
+  \chessboard[
+      smallboard,
+      inverse=#3,
+      pgfstyle=color,
+      color=\lastmovecolor,
+      backfields={#4},
+      arrow=to,
+      color=\arrowcolor,
+      linewidth=\arrowlinewidth,
+      opacity=\arrowopacity,
+      shortenend=0.2ex,
+      pgfstyle=straightmove,
+      markmoves={#5}
+  ]
+}
 
 % Index
 % Um einen Index erstellen zu können, muss das Paket geladen und der Befehl

@@ -24,21 +24,6 @@ a5paper, %apaper,
 \usepackage{makeidx}
 \makeindex
 
-\def\arrowcolor{orange!80}
-\def\arrowlinewidth{2pt}
-\def\arrowopacity{0.618}
-\def\lastmovecolor{CornflowerBlue}
-
-\storechessboardstyle{standard}{%
-  arrow=to,
-  color=\lastmovecolor,
-  linewidth=\arrowlinewidth,
-  opacity=\arrowopacity,
-  shortenend=0.5ex,
-  pgfstyle=color,
-}
-\renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
-
 \title{Taktiktraining}
 \author{Martin Darmüntzel via \href{https://lichess.org}{lichess.org}}
 
@@ -71,7 +56,7 @@ Folgende Fragen können bei der Suche helfen:
     moveid=14b
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={e1,c1},
     inverse=true,
   ]
@@ -86,7 +71,7 @@ Nach \mainline{15. Qxf5} nimmt Schwarz die Dame mit \mainline{15... Qxf5} und
 Weiß kann nichts dagegen tun.
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=true,
   ]
 \end{center}
@@ -103,7 +88,7 @@ Quelle: \url{https://lichess.org/AuATzwQH/black#27}
     moveid=27w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={a8,c8},
     inverse=false,
   ]
@@ -131,7 +116,7 @@ Darauf folgt \mainline{28. Nf6+} und Schwarz hat folgende Möglichkeiten:
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=false,
   ]
 \end{center}
@@ -148,7 +133,7 @@ Quelle: \url{https://lichess.org/NDzBwBqn/white#52}
     moveid=14w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={d5,f4},
     inverse=false,
   ]
@@ -170,7 +155,7 @@ dem Bauern zurück: \mainline{14. Bf4 gxf4}.
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=false,
   ]
 \end{center}
@@ -192,7 +177,7 @@ Quelle: \url{https://lichess.org/d6nNxsVG#26}
     moveid=16b,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={c2,a4},
     inverse=true,
   ]
@@ -208,7 +193,7 @@ verfolgen, aber \mainline{17... Nxe2} holt Material und die Initiative.
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=true,
   ]
 \end{center}
@@ -225,7 +210,7 @@ Quelle: \url{https://lichess.org/DhAfdSvP#31}
     moveid=25w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={f8,h8},
     inverse=false,
   ]
@@ -248,7 +233,7 @@ Matt in 2 Zügen.
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=false,
   ]
 \end{center}
@@ -265,7 +250,7 @@ Quelle: \url{https://lichess.org/XIRrUvb9/white#48}
     moveid=38w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={h2,f2},
     inverse=false,
   ]
@@ -289,7 +274,7 @@ Halt dich fest: Matt in 6.
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=false,
   ]
 \end{center}
@@ -306,7 +291,7 @@ Quelle: \url{https://lichess.org/guvoEh7j/white#74}
     moveid=31b,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={c3,d4},
     inverse=true,
   ]
@@ -347,7 +332,7 @@ Weiß hat nur drei mögliche Züge und alle führen zu Matt.
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     smallboard,
     inverse=true,
   ]
@@ -365,7 +350,7 @@ Quelle: \url{https://lichess.org/Kjr6x9qz/black#61} % chktex 29
     moveid=29w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={f8,h8},
     inverse=false,
   ]
@@ -386,7 +371,7 @@ flieht mit \mainline{30... Kf8}. Weiß setzt Matt mit \mainline{31. Rh8#}.
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=false,
   ]
 \end{center}
@@ -403,7 +388,7 @@ Quelle: \url{https://lichess.org/Ceg0A7Dp/white#56}
     moveid=34b,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={f3,f4},
     inverse=true,
   ]
@@ -443,7 +428,7 @@ Quelle: \url{https://lichess.org/Nh0rpDWV/black#67}
     moveid=28w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={d3,e1},
     inverse=false,
   ]
@@ -480,7 +465,7 @@ Quelle: \url{https://lichess.org/k6sOHsO7/white#54}
     moveid=8w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={d8,d4},
     inverse=false,
   ]
@@ -514,7 +499,7 @@ Quelle: \url{https://lichess.org/ViYrJQ6A/white#14}
     moveid=44b,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={e6,e7},
     inverse=true,
   ]
@@ -563,7 +548,7 @@ Quelle: \url{https://lichess.org/zN2hPmc9/black#87}
     moveid=39b,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={c6,c7},
     inverse=true,
   ]
@@ -577,7 +562,7 @@ Weiß hat drei Möglichkeiten:
 \begin{center}
   \chessboard[
     smallboard,
-    style=standard,
+    style=puzzle,
     pgfstyle=straightmove,
     markmoves={g2-h1, g2-h3, f1-f2},
     inverse=true,
@@ -619,7 +604,7 @@ Weiß hat drei Möglichkeiten:
     \begin{center}
       \chessboard[
         tinyboard,
-        style=standard,
+        style=puzzle,
         inverse=true,
       ]
     \end{center}
@@ -695,7 +680,7 @@ Matt in 2 mit Damenopfer
     setfen=2r2rk1/4bppp/pq2p3/1p1p4/4n3/PP1Q1NP1/2P1N1PP/2RR3K b - - 0 1
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={g1,h1},
     inverse=true,
   ]
@@ -717,7 +702,7 @@ Fork mit der Dame.
     moveid=26w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={h5,g5},
     inverse=false,
   ]
@@ -731,7 +716,7 @@ Matt in 4, nur mit der Dame.
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=false,
   ]
 \end{center}
@@ -744,7 +729,7 @@ Matt in 4, nur mit der Dame.
     moveid=36w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={f7,g8},
     inverse=false,
   ]
@@ -787,7 +772,7 @@ Matt in 2 mit Damenopfer am Ende: \url{https://www.youtube.com/watch?v=T5I_fB-wN
     moveid=1w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={f5,f3},
     inverse=false,
   ]
@@ -855,7 +840,7 @@ Wenn die Dame den Turm schlägt: \variation{1. Rh3! Qxh3 2. Nf6+ Kh8 3. Qh7#}
     moveid=29w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     pgfstyle=color,
     color=CornflowerBlue,
     backfields={c5,d3},
@@ -882,7 +867,7 @@ Quelle: \url{https://lichess.org/MiGbsYhV#56}
     moveid=24w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={g4,f2},
     inverse=false,
   ]
@@ -901,7 +886,7 @@ Wenn der König stattdessen ausweicht, dann wird’s einfach:
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=false,
   ]
 \end{center}
@@ -914,7 +899,7 @@ Wenn der König stattdessen ausweicht, dann wird’s einfach:
     moveid=1w,
   ]
   \chessboard[
-    style=standard,
+    style=puzzle,
     backfields={e8,d8},
     inverse=false,
   ]
@@ -931,7 +916,7 @@ Smothered Mate in 2 with Queen Sac on top: \mainline{1. Qe8+ Rxe8 2. Nf7#}.
 
 \begin{center}
   \chessboard[
-    style=standard,
+    style=puzzle,
     inverse=false,
   ]
 \end{center}

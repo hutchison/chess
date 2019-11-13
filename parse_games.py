@@ -19,6 +19,19 @@ def read_games(pgn_file):
     return games
 
 
+def find_mate_moves(node):
+    mate_moves = []
+
+    board = node.board()
+    for move in board.legal_moves:
+        board.push(move)
+        if board.is_checkmate():
+            mate_moves.append(move)
+        board.pop()
+
+    return mate_moves
+
+
 def find_mate_in(game, nr):
     eval_w = "[%eval #" + str(nr) + "]"
     eval_b = "[%eval #-" + str(nr) + "]"
@@ -39,13 +52,15 @@ def number_of_pieces(board):
     return len(board.piece_map())
 
 
-def find_puzzles(pgn_file, nr):
-    games = read_games(pgn_file)
-
+def find_puzzles(games, nr):
     puzzles = []
     for i, game in enumerate(games):
         nodes = find_mate_in(game, nr)
-        print(f"{i}/{len(games)}: {len(nodes)}", file=sys.stderr)
+        print(
+            f"\r{i}/{len(games)}: {len(nodes)}\t{len(puzzles)}",
+            file=sys.stderr,
+            end="\r"
+        )
         puzzles.extend(nodes)
 
     puzzles = sorted(puzzles, key=lambda p: number_of_pieces(p.board()))
@@ -53,40 +68,44 @@ def find_puzzles(pgn_file, nr):
     return puzzles
 
 
-def print_puzzle(node):
+def print_puzzle(node, solution=False):
     board = node.board()
     move_number = board.fullmove_number
     color = 'w' if board.turn else 'b'
     from_sq = chess.SQUARE_NAMES[node.move.from_square]
     to_sq = chess.SQUARE_NAMES[node.move.to_square]
-    last_move = f"{from_sq}-{to_sq}"
+    last_move = f"{from_sq},{to_sq}"
     inverse = 'false' if board.turn else 'true'
-    puzzle_tex = f"""
-        \\newchessgame[
-            setfen={board.fen()},
-            moveid={move_number}{color}
-        ]
-        \\chessboard[
-            style=standard,
-            smallboard,
-            markmoves={last_move},
-            inverse={inverse},
-        ]
-        """
+
+    solution_moves = []
+    if solution:
+        mate_moves = find_mate_moves(node)
+        for move in mate_moves:
+            mate_from_sq = chess.SQUARE_NAMES[move.from_square]
+            mate_to_sq = chess.SQUARE_NAMES[move.to_square]
+            solution_moves.append(f"{mate_from_sq}-{mate_to_sq}")
+    solution_moves_str = ','.join(solution_moves)
+
+    puzzle_tex = "\\chesspuzzle{%s}{%s %s}{%s}{%s}{%s}" % (
+        board.fen(), move_number, color, inverse, last_move, solution_moves_str
+    )
     print(dedent(puzzle_tex))
 
 
-def print_puzzles(puzzles, nr):
+def print_puzzles(puzzles, nr, solution=False):
     zeile = 0
     spalte = 0
     urls = []
 
     for node in puzzles:
         if zeile == 0 and spalte == 0:
-            print(r"\subsection*{Matt in " + str(nr) + "}\n")
+            print(r"\subsection*{Matt in " + str(nr), end="")
+            if solution:
+                print(" – Lösung", end="")
+            print("}")
             print(r"\begin{tabular}{ccc}")
 
-        print_puzzle(node)
+        print_puzzle(node, solution)
         urls.append(node.url)
 
         if spalte == 2:
@@ -125,11 +144,19 @@ def print_urls(urls):
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print("usage: parse_games.py games.pgn mate_in_nr")
+        print("usage: parse_games.py games.pgn mate_in_nr <solutions>")
         sys.exit(1)
 
     pgn_file = sys.argv[1]
     nr = int(sys.argv[2])
+    if len(sys.argv) == 4:
+        solutions = sys.argv[3] == 'yes'
+    else:
+        solutions = False
 
-    puzzles = find_puzzles(pgn_file, nr)
-    print_puzzles(puzzles, nr)
+    if solutions:
+        print("Computing solutions", file=sys.stderr)
+
+    games = read_games(pgn_file)
+    puzzles = find_puzzles(games, nr)
+    print_puzzles(puzzles, nr, solution=solutions)
