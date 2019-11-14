@@ -405,31 +405,28 @@
     \item \WhiteKingOnWhite \WhiteRookOnWhite \BlackKingOnWhite
     \item \WhiteKingOnWhite \WhiteBishopOnWhite \WhiteBishopOnWhite \BlackKingOnWhite
     \item \WhiteKingOnWhite \WhiteRookOnWhite \WhiteBishopOnWhite \WhiteKnightOnWhite \BlackKingOnWhite
-    \item \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackPawnOnWhite
     \item \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackBishopOnWhite
     \item \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackKnightOnWhite
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \chessboard[
-    setfen=4k/4p/8/8/8/8/8/6QK w - - 0 1, % chktex 8
-    moveid=1w,
-    tinyboard,
-    showmover=false,
-  ]
-  \chessboard[
-    setfen=8/8/3b/6k/8/8/2K/Q w - - 0 1, % chktex 8
-    moveid=1w,
-    tinyboard,
-    showmover=false,
-  ]
-  \chessboard[
-    setfen=8/8/8/3nk/8/3Q/8/7K w - - 0 1, % chktex 8
-    moveid=1w,
-    tinyboard,
-    showmover=false,
-  ]
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=8/8/3b/6k/8/8/2K/Q w - - 0 1, % chktex 8
+        moveid=1w,
+        showmover=false,
+      ]
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \chessboard[
+        setfen=8/8/8/3nk/8/3Q/8/7K w - - 0 1, % chktex 8
+        moveid=1w,
+        showmover=false,
+      ]
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \end{document}
