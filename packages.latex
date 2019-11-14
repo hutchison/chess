@@ -37,10 +37,11 @@
   % Die Schriftart für serifenlose Texte (z.B. Überschriften):
   \IfFontExistsTF{MyriadPro}{
     \setallsansfonts[BoldFont={MyriadPro-Regular}]{MyriadPro}
-  }{}
-  \IfFontExistsTF{Ubuntu}{
-    \setallsansfonts[]{Ubuntu}
-  }{}
+  }{
+    \IfFontExistsTF{Ubuntu}{
+      \setallsansfonts[]{Ubuntu}
+    }{}
+  }
   % Und die Schriftart für nichtproportionale Texte:
   \IfFontExistsTF{Fira Mono for Powerline}{
     \setallmonofonts[]{Fira Mono for Powerline}
