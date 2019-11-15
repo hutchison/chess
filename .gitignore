@@ -267,3 +267,5 @@ TSWLatexianTemp*
 bobby_fischer_teaches_chess/
 
 *.doc
+
+__pycache__/
