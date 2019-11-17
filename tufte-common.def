@@ -42,6 +42,9 @@
 \newboolean{@tufte@debug}
 \DeclareOptionX[tufte]<common>{debug}{\setboolean{@tufte@debug}{true}}
 
+\newboolean{@tufte@showframe}\setboolean{@tufte@showframe}{false}
+\DeclareOptionX[tufte]<common>{showframe}{\setboolean{@tufte@showframe}{true}}
+
 %%
 % `nofonts' option -- doesn't load any fonts
 % `fonts' option -- tries to load fonts
@@ -476,7 +479,10 @@
   {}
   {\geometry{asymmetric}}% forces internal LaTeX `twoside'
 
-% \geometry{showframe} % display margins for debugging page layout
+% display margins for debugging page layout
+\ifthenelse{\boolean{@tufte@showframe}}
+  {\geometry{showframe}}
+  {}
 
 %%
 % Separation marginpars by a line's worth of space.
