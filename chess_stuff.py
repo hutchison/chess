@@ -17,32 +17,49 @@ def read_games(pgn_file):
     return games
 
 
-def check_opp_turn(board, depth):
-    if board.is_stalemate():
-        return False
-    for opp_move in board.legal_moves:
-        board.push(opp_move)
-        result = mate_in_n(board, depth-1)
-        board.pop()
-        if result == False:
-            return False
-    return True
-
-
-def mate_in_n(board, depth):
+def generate_variations(board, depth):
     if board.is_checkmate():
         return True
-    if depth == 0:
+    elif board.is_stalemate():
         return False
-    for move in board.legal_moves:
-        board.push(move)
-        result = check_opp_turn(board, depth)
-        if result:
-            print(board.move_stack)
-            return True
-        else:
+    elif board.is_insufficient_material():
+        return False
+    elif depth == 0:
+        # print(board.move_stack)
+        return {}
+    else:
+        variations = {}
+        for move in board.legal_moves:
+            move_san = board.san(move)
+            board.push(move)
+            variations[move_san] = generate_variations(board, depth-1)
             board.pop()
-    return False
+        return variations
+
+
+def mate_in_n(b, n):
+    if n == 0:
+        return []
+    else:
+        good_moves = []
+        for move in b.legal_moves:
+            b.push(move)
+            if b.is_checkmate():
+                good_moves.append(b.san(move))
+            elif b.is_stalemate() or b.is_insufficient_material():
+                pass
+            else:
+                # Der Gegner versucht alle Züge zu finden, die _nicht_ zu Matt
+                # führen:
+                opp_moves = list(b.legal_moves)
+                for opp_move in opp_moves:
+                    board.push(opp_move)
+
+                    if not mate_in_n(b, n-1):
+                        break
+
+            b.pop()
+        return good_moves
 
 
 def find_mate_moves(node):
