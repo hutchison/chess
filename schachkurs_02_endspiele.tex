@@ -1,5 +1,6 @@
 \documentclass[
   aspectratio=1610,
+  xcolor={dvipsnames},
 ]{beamer}
 
 % chktex-file 1
@@ -8,12 +9,8 @@
 \usefonttheme{professionalfonts}
 \usefonttheme[stillsansseriflarge, stillsansserifsmall]{serif}
 
-%\usetheme{Frankfurt}
-%\usecolortheme{dove}
-
 \usepackage{amsmath, amssymb}
 \usepackage{booktabs}
-\usepackage{xcolor}
 
 \usepackage[MnSymbol]{mathspec}
 \setmathfont(Digits,Latin,Greek)[
@@ -43,6 +40,8 @@
 % siehe: http://mirrors.ctan.org/macros/latex/contrib/chessboard/chessboard.pdf
 \usepackage{chessboard}
 \usepackage{xskak}
+
+%\usepackage{showframe}
 
 \newcommand{\wplogo}{\includegraphics[height=2ex]{enwiki.png}}
 
@@ -430,6 +429,73 @@
       ]
     \end{column}
   \end{columns}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhitePawnOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/8/5P/k/8/K w - - 0 1 % chktex 8
+      moveid=1w
+      smallboard,
+      showmover=false,
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhitePawnOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      showmover=false,
+      setfen=8/8/8/8/5P/k/8/K w - - 0 1, % chktex 8
+      moveid=1w,
+      padding=-0.8ex,
+      pgfstyle={[fill]circle},
+      markfields={b4, c5, d6, e7, f8},
+      pgfstyle=color,
+      padding=-0.3ex,
+      opacity=0.3,
+      color=Maroon,
+      markregion={b4-f8},
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhitePawnOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/8/8/8/6P/2k/8/K w - - 0 1, % chktex 8
+      moveid=1w
+      smallboard,
+      showmover=true,
+    ]
+
+    Kann Weiß den Bauern noch befördern?
+  \end{center}
+\end{frame}
+
+\begin{frame}{\WhiteKingOnWhite \WhitePawnOnWhite \BlackKingOnWhite}
+  \begin{center}
+    \chessboard[
+      setfen=8/6k1/8/8/1P6/8/8/7K b - - 0 1, % chktex 8
+      moveid=1b
+      smallboard,
+      showmover=true,
+      inverse=true,
+    ]
+
+    Kann Schwarz den Bauern einholen?
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \chessboard[
+      setfen=4k3/8/8/8/8/8/4P3/4K3 w - - 0 1, % chktex 8
+      moveid=1w
+      smallboard,
+      showmover=false,
+    ]
+  \end{center}
 \end{frame}
 
 \end{document}
