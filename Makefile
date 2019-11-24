@@ -4,7 +4,7 @@ LATEX_OPTS = -pvc
 .PHONY: clean all
 
 clean:
-	$(RM) *.aux *.bbl *.blg *.dvi *.fdb_latexmk *.fls *.idx *.ilg *.ind *.log *.out *.toc *.xdv
+	$(RM) *.aux *.bbl *.blg *.dvi *.fdb_latexmk *.fls *.idx *.ilg *.ind *.log *.out *.toc *.xdv *.nav *.snm
 
 all:
 	$(LATEX) *.tex
