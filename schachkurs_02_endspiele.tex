@@ -311,6 +311,31 @@
   \titlepage{}
 \end{frame}
 
+\begin{frame}
+  \begin{center}
+    \begin{tabular}{ll}
+      \WhiteKingOnWhite \WhiteQueenOnWhite \WhiteRookOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteRookOnWhite \WhiteRookOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteRookOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteBishopOnWhite \WhiteBishopOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteRookOnWhite \WhiteBishopOnWhite \WhiteKnightOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite \BlackBishopOnWhite\\
+      \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite \BlackKnightOnWhite\\
+      \WhiteKingOnWhite \WhitePawnOnWhite & \BlackKingOnWhite
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \begin{tabular}{ll}
+      \WhiteKingOnWhite \WhiteQueenOnWhite \WhiteRookOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteRookOnWhite \WhiteRookOnWhite & \BlackKingOnWhite\\
+    \end{tabular}
+  \end{center}
+\end{frame}
+
 \setbeamercolor{frametitle}{fg=black}
 
 \begin{frame}{\WhiteKingOnWhite \WhiteQueenOnWhite \WhiteRookOnWhite \BlackKingOnWhite}
@@ -369,15 +394,6 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{\WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackPawnOnWhite}
-  \begin{center}
-    \chessboard[
-      setfen=4k/4p/8/8/8/8/8/6QK w - - 0 1, % chktex 8
-      moveid=1w,
-    ]
-  \end{center}
-\end{frame}
-
 \begin{frame}{\WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackBishopOnWhite}
   \begin{center}
     \chessboard[
@@ -407,12 +423,17 @@
       \WhiteKingOnWhite \WhiteRookOnWhite \WhiteBishopOnWhite \WhiteKnightOnWhite &
       \BlackKingOnWhite\\
       \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite \BlackBishopOnWhite\\
-      \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite \BlackKnightOnWhite
+      \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite \BlackKnightOnWhite\\
+      \WhiteKingOnWhite \WhitePawnOnWhite & \BlackKingOnWhite
     \end{tabular}
   \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{
+    \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackBishopOnWhite
+    \hfill
+    \WhiteKingOnWhite \WhiteQueenOnWhite \BlackKingOnWhite \BlackKnightOnWhite
+  }
   \begin{columns}[c]
     \begin{column}{0.5\textwidth}
       \chessboard[
@@ -495,6 +516,23 @@
       smallboard,
       showmover=false,
     ]
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \begin{tabular}{ll}
+      \WhiteKingOnWhite \WhiteQueenOnWhite \WhiteRookOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteRookOnWhite \WhiteRookOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteRookOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteBishopOnWhite \WhiteBishopOnWhite & \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteRookOnWhite \WhiteBishopOnWhite \WhiteKnightOnWhite &
+      \BlackKingOnWhite\\
+      \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite \BlackBishopOnWhite\\
+      \WhiteKingOnWhite \WhiteQueenOnWhite & \BlackKingOnWhite \BlackKnightOnWhite\\
+      \WhiteKingOnWhite \WhitePawnOnWhite & \BlackKingOnWhite
+    \end{tabular}
   \end{center}
 \end{frame}
 
