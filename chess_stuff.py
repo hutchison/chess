@@ -31,18 +31,29 @@ def check_opp_turn(board, depth):
 
 def mate_in_n(board, depth):
     if board.is_checkmate():
+        print(board.move_stack)
         return True
     if depth == 0:
         return False
     for move in board.legal_moves:
         board.push(move)
         result = check_opp_turn(board, depth)
+        board.pop()
         if result:
             print(board.move_stack)
             return True
-        else:
-            board.pop()
     return False
+
+
+def m(board, depth):
+    if board.is_checkmate():
+        print(board.move_stack, '→ mate!')
+    elif board.is_stalemate() or board.is_insufficient_material():
+        print(board.move_stack, '→ remis')
+    elif depth == 0:
+        print(board.move_stack, '→ no mate')
+    else:
+        print(list(board.legal_moves))
 
 
 def find_mate_moves(node):
