@@ -17,61 +17,57 @@ def read_games(pgn_file):
     return games
 
 
-def generate_variations(board, depth):
-    if board.is_checkmate():
-        print(board.move_stack)
-        return True
-    elif board.is_stalemate():
-        return False
-    elif board.is_insufficient_material():
-        return False
-    elif depth == 0:
-        # print(board.move_stack)
-        return {}
-    else:
-        variations = {}
-        for move in board.legal_moves:
-            move_san = board.san(move)
-            board.push(move)
-            variations[move_san] = generate_variations(board, depth-1)
-            board.pop()
-        return variations
-
-
 def mate_in_n(b, n):
-    if n == 0:
-        return []
-    else:
-        good_moves = []
+    good_moves = {}
+
+    if n > 0:
         for move in b.legal_moves:
+            san_move = b.san(move)
             b.push(move)
+
             if b.is_checkmate():
-                good_moves.append(b.san(move))
+                # ist es mate in 1?
+                # dann ist es ein guter zug
+                good_moves[san_move] = {}
             elif b.is_stalemate() or b.is_insufficient_material():
+                # ist es ein draw?
+                # dann probier den nächsten aus
                 pass
             else:
-                # Der Gegner versucht alle Züge zu finden, die _nicht_ zu Matt
-                # führen:
-                opp_moves = list(b.legal_moves)
-                for opp_move in opp_moves:
-                    board.push(opp_move)
-
-                    if not mate_in_n(b, n-1):
+                # Der Gegner versucht alle Züge zu finden,
+                # die _nicht_ zu Matt führen:
+                for opp_move in b.legal_moves:
+                    san_opp_move = b.san(opp_move)
+                    b.push(opp_move)
+                    if b.is_stalemate() or b.is_insufficient_material():
+                        # opp hat einen Remis-Zug gefunden
+                        # die letzten beiden Halbzüge führen zum Remis, also
+                        # ziehen wir sie zurück und der nächste Halbzug wird
+                        # probiert
+                        # der letzte Halbzug wird jetzt zurückgezogen und der
+                        # davor hinter der for-Schleife
+                        b.pop()
                         break
+                    else:
+                        # kann auf opp_move ein mate in n-1 gefunden werden?
+                        continuation = mate_in_n(b, n-1)
+                        if continuation:
+                            # wenn ja, dann speichern wir das ab:
+                            good_moves[san_move] = {san_opp_move: continuation}
+                        b.pop()
 
             b.pop()
+
         return good_moves
 
 
-def m(board, depth):
-    if board.is_checkmate():
-        print(board.move_stack, '→ mate!')
-    elif board.is_stalemate() or board.is_insufficient_material():
-        print(board.move_stack, '→ remis')
-    elif depth == 0:
-        print(board.move_stack, '→ no mate')
-    else:
-        print(list(board.legal_moves))
+def print_mate_solution(d, indent=0):
+    for m in sorted(d):
+        print('  ' * indent + m)
+        if isinstance(d[m], dict):
+            print_mate_solution(d[m], indent+1)
+        else:
+            print('  ' * (indent+1) + d[m])
 
 
 def find_mate_moves(node):
@@ -197,4 +193,6 @@ def print_urls(urls):
             print(r"\\")
 
 
-b1 = chess.Board(fen='7K/8/8/5kq1/8/8/8/8 b - - 6 62')
+b = chess.Board(fen='7K/8/8/5kq1/8/8/8/8 b - - 6 62')
+m1 = chess.Board(fen='8/7K/5k2/6q1/8/8/8/8 b - - 8 63')
+m2 = chess.Board(fen='8/8/8/8/8/5k1K/6p1/4q3 b - - 1 79')
