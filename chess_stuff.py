@@ -61,7 +61,13 @@ def mate_in_n(b, n):
         return good_moves
 
 
-def print_mate_solution(d, indent=0):
+def number_of_solutions(mate_tree):
+    if len(mate_tree) == 0:
+        return 1
+    else:
+        return sum([number_of_solutions(mate_tree[m]) for m in mate_tree])
+
+
 def print_mate_tree(d, indent=0):
     for m in sorted(d):
         print('  ' * indent + m)
