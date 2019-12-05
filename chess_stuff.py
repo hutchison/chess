@@ -62,10 +62,11 @@ def mate_in_n(b, n):
 
 
 def print_mate_solution(d, indent=0):
+def print_mate_tree(d, indent=0):
     for m in sorted(d):
         print('  ' * indent + m)
         if isinstance(d[m], dict):
-            print_mate_solution(d[m], indent+1)
+            print_mate_tree(d[m], indent+1)
         else:
             print('  ' * (indent+1) + d[m])
 
