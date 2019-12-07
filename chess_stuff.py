@@ -54,6 +54,13 @@ def mate_in_n(b, n):
                         if continuation:
                             # wenn ja, dann speichern wir das ab:
                             good_moves[san_move] = {san_opp_move: continuation}
+                        else:
+                            # wenn nicht, dann ist anfängliche Zug nicht gut
+                            # und wir müssen alles löschen:
+                            if san_move in good_moves:
+                                del good_moves[san_move]
+                            b.pop()
+                            break
                         b.pop()
 
             b.pop()
@@ -202,4 +209,5 @@ def print_urls(urls):
 
 b = chess.Board(fen='7K/8/8/5kq1/8/8/8/8 b - - 6 62')
 m1 = chess.Board(fen='8/7K/5k2/6q1/8/8/8/8 b - - 8 63')
-m2 = chess.Board(fen='8/8/8/8/8/5k1K/6p1/4q3 b - - 1 79')
+m21 = chess.Board(fen='8/8/8/8/8/5k1K/6p1/4q3 b - - 1 79')
+m22 = chess.Board('8/8/5N2/p7/6Q1/P3K3/8/5k2 w - - 5 78')
