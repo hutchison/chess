@@ -3,6 +3,28 @@ import chess.pgn
 import sys
 from textwrap import dedent
 
+
+class Puzzle:
+    def __init__(self, board, depth, white, black, url):
+        self.board = board
+        self.depth = depth
+        self.white = white
+        self.black = black
+        self.url = url
+
+        self.solution = mate_in_n(board, depth)
+        self.length = number_of_solutions(self.solution)
+
+    def __len__(self):
+        return self.length
+
+    def __str__(self):
+        return f'{self.white} vs. {self.black} {self.url} #{self.depth} {self.length}'
+
+    def __repr__(self):
+        return f'<Puzzle {self.white} vs. {self.black} {self.url} #{self.depth} {self.length}>'
+
+
 def read_games(pgn_file):
     with open(pgn_file) as pgn:
         games = []
@@ -75,13 +97,71 @@ def number_of_solutions(mate_tree):
         return sum([number_of_solutions(mate_tree[m]) for m in mate_tree])
 
 
-def print_mate_tree(d, indent=0):
-    for m in sorted(d):
+def number_of_possible_moves(board, depth):
+    legal_moves = list(board.legal_moves)
+    if depth == 0:
+        return 0
+    elif depth == 1:
+        return len(legal_moves)
+    else:
+        m = 0
+        for move in legal_moves:
+            board.push(move)
+            m += number_of_possible_moves(board, depth-1)
+            board.pop()
+        return m
+
+
+def print_solution(solution, indent=0):
+    for m in sorted(solution):
         print('  ' * indent + m)
-        if isinstance(d[m], dict):
-            print_mate_tree(d[m], indent+1)
+        if isinstance(solution[m], dict):
+            print_mate_tree(solution[m], indent+1)
         else:
-            print('  ' * (indent+1) + d[m])
+            print('  ' * (indent+1) + solution[m])
+
+
+def serialize(T, cur_path=None, variations=None):
+    if variations is None:
+        variations = []
+    if cur_path is None:
+        cur_path = []
+
+    if len(T) == 0:
+        variations.append(cur_path)
+    else:
+        for move in T:
+            serialize(T[move], cur_path + [move], variations)
+        return variations
+
+
+def pgn_variation(variation, turn):
+    n = 1
+    if turn:
+        s = ''
+        start = 0
+    else:
+        s = '1. ..'
+        start = 1
+
+    for h, move in enumerate(variation, start):
+        if h % 2 == 0:
+            s += f' {n}. {move}'
+        else:
+            s += f' {move}'
+            n += 1
+
+    return s.strip()
+
+
+def print_variations(solution, turn):
+    s = ''
+
+    for variation in serialize(solution):
+        s += pgn_variation(variation, turn)
+        s += '\n'
+
+    return s
 
 
 def find_mate_moves(node):
@@ -107,8 +187,14 @@ def find_mate_in(game, nr):
         b = node.board()
         if (node.comment == eval_w and b.turn == True
             or node.comment == eval_b and b.turn == False):
-            node.url = game.headers["Site"]
-            puzzles.append(node)
+            p = Puzzle(
+                b,
+                nr,
+                game.headers['White'],
+                game.headers['Black'],
+                game.headers['Site'],
+            )
+            puzzles.append(p)
 
     return puzzles
 
@@ -120,15 +206,15 @@ def number_of_pieces(board):
 def find_puzzles(games, nr):
     puzzles = []
     for i, game in enumerate(games):
-        nodes = find_mate_in(game, nr)
+        ps = find_mate_in(game, nr)
         print(
-            f"\r{i}/{len(games)}: {len(nodes)}\t{len(puzzles)}",
+            f"\r{i}/{len(games)}: {len(ps)}\t{len(puzzles)}",
             file=sys.stderr,
             end="\r"
         )
-        puzzles.extend(nodes)
+        puzzles.extend(ps)
 
-    puzzles = sorted(puzzles, key=lambda p: number_of_pieces(p.board()))
+    puzzles = sorted(puzzles, key=len)
 
     return puzzles
 
