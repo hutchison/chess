@@ -216,7 +216,9 @@ def number_of_pieces(board):
     return len(board.piece_map())
 
 
-def find_puzzles(games, nr):
+def find_puzzles(games, nr, sort_func=abs):
+    # sort_func sortiert die Puzzle. abs sortiert nach Anzahl Figuren und len
+    # sortiert nach Anzahl der Lösungen.
     puzzles = []
     for i, game in enumerate(games):
         ps = find_mate_in(game, nr)
@@ -227,7 +229,7 @@ def find_puzzles(games, nr):
         )
         puzzles.extend(ps)
 
-    puzzles = sorted(puzzles, key=abs)
+    puzzles = sorted(puzzles, key=sort_func)
 
     return puzzles
 
