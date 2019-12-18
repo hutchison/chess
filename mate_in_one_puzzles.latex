@@ -1,12 +1,20 @@
+\newcounter{game}
+\stepcounter{game}
+
 \subsection*{Matt in 1}
 \begin{tabular}{ccc}
 \matepuzzle{8/7K/5k2/6q1/8/8/8/8 b - - 8 63}{63 b}{true}{h8,h7}{}
 & \matepuzzle{8/8/8/8/8/5k1K/6p1/4q3 b - - 1 79}{79 b}{true}{h2,h3}{}
 & \matepuzzle{2K5/1P6/3k4/8/q7/8/8/8 b - - 10 58}{58 b}{true}{b8,c8}{}
 \\
-\href{https://lichess.org/MpmHZ8zl\#125}{\texttt{lichess.org/MpmHZ8zl\#125}}
-& \href{https://lichess.org/hsDAaFrc\#157}{\texttt{lichess.org/hsDAaFrc\#157}}
-& \href{https://lichess.org/BFYUWcCx\#115}{\texttt{lichess.org/BFYUWcCx\#115}}
+  \thegame\stepcounter{game}\quad
+  \href{https://lichess.org/MpmHZ8zl\#125}{\texttt{/MpmHZ8zl\#125}}
+  &
+  \thegame\stepcounter{game}\quad
+  \href{https://lichess.org/hsDAaFrc\#157}{\texttt{/hsDAaFrc\#157}}
+  &
+  \thegame\stepcounter{game}\quad
+  \href{https://lichess.org/BFYUWcCx\#115}{\texttt{/BFYUWcCx\#115}}
 \\
 \matepuzzle{K7/8/8/8/6k1/2q5/8/1q6 b - - 7 66}{66 b}{true}{b7,a8}{}
 & \matepuzzle{8/8/8/4k3/8/5K2/6r1/7q b - - 3 64}{64 b}{true}{f2,f3}{}
