@@ -227,7 +227,7 @@ def find_puzzles(games, nr):
         )
         puzzles.extend(ps)
 
-    puzzles = sorted(puzzles, key=len)
+    puzzles = sorted(puzzles, key=abs)
 
     return puzzles
 
