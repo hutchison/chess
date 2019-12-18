@@ -1,7 +1,6 @@
 import chess
 import chess.pgn
 import sys
-from textwrap import dedent
 
 
 class Puzzle:
@@ -10,13 +9,18 @@ class Puzzle:
         self.depth = depth
         self.white = white
         self.black = black
-        self.url = url
+        self.url = url + '\\#' + str(len(board.move_stack))
 
         self.solution = mate_in_n(board, depth)
         self.length = number_of_solutions(self.solution)
 
     def __len__(self):
+        # Gibt die Anzahl der Lösungen zurück
         return self.length
+
+    def __abs__(self):
+        # Gibt die Anzahl der Figuren auf dem Brett zurück
+        return len(self.board.piece_map())
 
     def __str__(self):
         return f'{self.white} vs. {self.black} {self.url} #{self.depth} {self.length}'
@@ -30,11 +34,20 @@ def read_games(pgn_file):
         games = []
 
         game = chess.pgn.read_game(pgn)
+        nr_games = 0
 
         while game is not None:
             if game.headers['Termination'] == 'Normal':
                 games.append(game)
             game = chess.pgn.read_game(pgn)
+
+            nr_games += 1
+            print(
+                f"\rreading games: {len(games)}/{nr_games}",
+                file=sys.stderr,
+                end="\r"
+            )
+        print()
 
     return games
 
@@ -87,7 +100,7 @@ def mate_in_n(b, n):
 
             b.pop()
 
-        return good_moves
+    return good_moves
 
 
 def number_of_solutions(mate_tree):
@@ -203,7 +216,9 @@ def number_of_pieces(board):
     return len(board.piece_map())
 
 
-def find_puzzles(games, nr):
+def find_puzzles(games, nr, sort_func=abs):
+    # sort_func sortiert die Puzzle. abs sortiert nach Anzahl Figuren und len
+    # sortiert nach Anzahl der Lösungen.
     puzzles = []
     for i, game in enumerate(games):
         ps = find_mate_in(game, nr)
@@ -214,83 +229,107 @@ def find_puzzles(games, nr):
         )
         puzzles.extend(ps)
 
-    puzzles = sorted(puzzles, key=len)
+    puzzles = sorted(puzzles, key=sort_func)
 
     return puzzles
 
 
-def print_puzzle(node, solution=False):
-    board = node.board()
+def tex_puzzle(puzzle, solution=False):
+    board = puzzle.board
     move_number = board.fullmove_number
     color = 'w' if board.turn else 'b'
-    from_sq = chess.SQUARE_NAMES[node.move.from_square]
-    to_sq = chess.SQUARE_NAMES[node.move.to_square]
-    last_move = f"{from_sq},{to_sq}"
+    last_move = board.move_stack[-1]
+    from_sq = chess.SQUARE_NAMES[last_move.from_square]
+    to_sq = chess.SQUARE_NAMES[last_move.to_square]
+    last_move_str = f"{from_sq},{to_sq}"
     inverse = 'false' if board.turn else 'true'
-
     solution_moves = []
+    solution_moves_str = ''
+
     if solution:
-        mate_moves = find_mate_moves(node)
-        for move in mate_moves:
-            mate_from_sq = chess.SQUARE_NAMES[move.from_square]
-            mate_to_sq = chess.SQUARE_NAMES[move.to_square]
-            solution_moves.append(f"{mate_from_sq}-{mate_to_sq}")
-    solution_moves_str = ','.join(solution_moves)
+        if puzzle.depth == 1:
+            for san_move in puzzle.solution:
+                move = puzzle.board.push_san(san_move)
+                mate_from_sq = chess.SQUARE_NAMES[move.from_square]
+                mate_to_sq = chess.SQUARE_NAMES[move.to_square]
+                solution_moves.append(f"{mate_from_sq}-{mate_to_sq}")
+                puzzle.board.pop()
+            solution_moves_str = ','.join(solution_moves)
 
-    puzzle_tex = "\\chesspuzzle{%s}{%s %s}{%s}{%s}{%s}" % (
-        board.fen(), move_number, color, inverse, last_move, solution_moves_str
+    puzzle_tex = "\\matepuzzle{%s}{%s %s}{%s}{%s}{%s}" % (
+        board.fen(), move_number, color, inverse,
+        last_move_str, solution_moves_str
     )
-    print(dedent(puzzle_tex))
+    return puzzle_tex
 
 
-def print_puzzles(puzzles, nr, solution=False):
+def tex_puzzles(puzzles, nr, solution=False):
     zeile = 0
     spalte = 0
     urls = []
+    nl = '\n'
+    br = r'\\'
 
-    for node in puzzles:
+    t = ''
+
+    heading = r'\subsection*{Matt in ' + str(nr)
+    if solution:
+        heading += ' – Lösung'
+    heading += '}' + nl
+
+    table_start = r'\begin{tabular}{ccc}' + nl
+    table_end = r'\end{tabular}' + nl
+    pagebreak = r'\pagebreak' + nl
+
+    for puzzle in puzzles:
         if zeile == 0 and spalte == 0:
-            print(r"\subsection*{Matt in " + str(nr), end="")
-            if solution:
-                print(" – Lösung", end="")
-            print("}")
-            print(r"\begin{tabular}{ccc}")
+            t += heading
+            t += table_start
 
-        print_puzzle(node, solution)
-        urls.append(node.url)
+        puzzle_str = tex_puzzle(puzzle, solution)
+        t += puzzle_str + nl
+
+        urls.append(puzzle.url)
 
         if spalte == 2:
-            print(r"\\" + "\n")
+            t += br + nl
 
-            print_urls(urls)
+            url_str = tex_urls(urls) + nl
+            t += url_str
+
             urls = []
 
             if zeile == 3:
-                print(r"\end{tabular}" + "\n")
-                print(r"\pagebreak" + "\n")
+                t += table_end
+                t += pagebreak + nl
 
             zeile = (zeile+1) % 4
         else:
-            print("&")
+            t += '& '
 
         spalte = (spalte+1) % 3
 
-    print(r"\\")
-    print_urls(urls)
-    print(r"\end{tabular}")
+    # Wenn wir bei der allerletzten Tabelle sind, müssen wir den Rest noch
+    # wegflushen:
+    t += br + nl
+    url_str = tex_urls(urls) + nl
+    t += url_str
+    t += table_end
+
+    return t
 
 
-def print_urls(urls):
+def tex_urls(urls):
+    t = ''
+
     for i, url in enumerate(urls):
-        print(r"\href{", end="")
-        print(url, end="")
-        print(r"}{\texttt{", end="")
-        print(url[8:], end="")
-        print("}}")
+        t += r'\href{' + url + r'}{\texttt{' + url[8:] + '}}\n'
         if i < len(urls)-1:
-            print("& ", end="")
+            t += '& '
         else:
-            print(r"\\")
+            t += r'\\'
+
+    return t
 
 
 b = chess.Board(fen='7K/8/8/5kq1/8/8/8/8 b - - 6 62')
