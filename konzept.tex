@@ -726,6 +726,91 @@ Siehe \url{https://lichess.org/study/Vnzt6p8p}
   ]
 \end{center}
 
+\section{Großartige Züge}%
+\label{sec:grossartige_zuge}
+
+\paragraph{Stepan Levitsky – Frank Marshall, Breslau 1912}%
+\label{par:stepan_levitsky_frank_marshall_breslau_1912}
+
+\begin{center}
+  \newchessgame[
+    setfen=5rk1/pp4pp/4p3/2R3Q1/3n4/2q4r/P1P2PPP/5RK1 b - - 0 1, % chktex 8
+    moveid=1b
+  ]
+  \chessboard[
+    style=standard,
+    inverse=true,
+  ]
+\end{center}
+
+Bester Zug: \mainline{1... Qg3!!} droht mit Matt auf h2.
+Wenn Weiß mit \variation{2. hxg3} antwortet, dann \variation{2... Ne2#}.
+Auch schlecht ist \variation{2. fxg3}, denn dann kommt der Springer mit \variation{2...
+Ne2+} und nach \variation{3. Kh1} kommt ein Backrankmate mit \variation{3... Rxf1#}.
+Am besten ist tatsächlich die Dame mit der eigenen Dame zu nehmen \variation{2. Qxg3} und
+dann kommt wieder der Springer mit \variation{2... Ne2+}.
+Nach \variation{3. Kh1} wird die Dame mittels \variation{3... Nxg3+} zurückgenommen.
+Auf \variation{4. fxg3} folgt wieder ein Backrankmate mit \variation{4... Rxf1#}.
+Also bleibt Weiß nur \variation{4. Kg1} und Schwarz kann am besten nochmal Schach geben
+mit \variation{4... Ne2+} um den Springer in Sicherheit zu bringen und Zeit zu gewinnen,
+um den Turm nach \variation{5. Kh1} nach c3 zu ziehen.
+Nach der ganzen Nummer hat Schwarz einen Springer mehr und eine deutlich bessere Position.
+
+\paragraph{Nicolas Rossolimo – Paul Reissmann, Puerto Rico 1967}%
+\label{par:nicolas_rossolimo_paul_reissmann_puerto_rico_1967}
+
+\begin{center}
+  \newchessgame[
+    setfen=b1r2r1k/p1q2ppp/Pp2nN2/3pN3/3P2Q1/R7/1P3PPP/4R1K1 w - - 0 1, % chktex 8
+    moveid=1w
+  ]
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
+Bester Zug: \mainline{1. Qg3!!}
+\begin{itemize}
+  \item \variation{1... hxg6 2. Rh3#}
+  \item \variation{1... fxg6 2. Nxg6+ hxg6 3. Rh3#}
+  \item \variation{1... gxf6 2. Qxf6#}
+    \begin{itemize}
+      \item \variation{2... Kg8 3. Rg3+}
+        \begin{itemize}
+          \item \variation{3... Ng5 4. Rxg5#}
+          \item \variation{3... Ng7 4. Rxg7#}
+        \end{itemize}
+      \item \variation{2... Ng7} bietet die besten Chancen.
+    \end{itemize}
+  \item \variation{1... Qc2} wurde gespielt und führt zu Matt in 8:
+    \variation{
+      2. Rh3 Ng5
+      3. Qxg5 gxf6
+      4. Qxf6+ Kg8
+      5. Ng4 \xskakcomment{(droht \variation[invar]{6. Nh6#})} h5
+      6. Rxh5 Qh7
+      7. Rxh7 Kxh7
+      8. Qh6+ Kg8
+      9. Nf6#}
+  \item am besten ist \variation{1... Ng5} um den Turm abzuhalten zu h3 zu gehen.
+
+\end{itemize}
+
+\paragraph{Alexander Aljechin – NN, Lissabon 1941}%
+\label{par:alexander_aljechin_nn}
+
+\begin{center}
+  \newchessgame[
+    setfen=rnbq1r1k/p2pNppp/1p1Q4/2p1PN2/2B5/P1R5/5PPP/5RK1 w - - 0 1, % chktex 8
+    moveid=1w
+  ]
+  \chessboard[
+    style=standard,
+    inverse=false,
+  ]
+\end{center}
+
 \section{Berühmte Partien}%
 \label{sec:beruhmte_partien}
 
@@ -961,6 +1046,14 @@ sollen.
   \item[12.12.2019] Matt in 1 Puzzles (Seite 7),
     Taktiktraining auf Lichess,
     in Paaren gemeinsam lösen und aufschreiben,
+    freies Spiel
+
+  \item[18.12.2019] Matt in 1 Puzzles (Seite 8) gegeneinander: alle legen gemeinsam los
+    und wer zuerst denkt fertig zu sein, sagt \emph{Stop}. Für jedes erste gefundene Matt
+    zu einem Puzzle gibt es 1 Punkt, für jedes weitere 2 Punkte, aber für jedes falsche
+    Matt gibt es $-2$ Punkte.
+    Kurzvortrag zum besten je gespielten Zug,
+    Vortrag zum Griechischen Geschenk,
     freies Spiel
 \end{description}
 
