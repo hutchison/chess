@@ -3,6 +3,11 @@ import chess.pgn
 import sys
 
 
+nl = '\n'
+br = r'\\'
+pagebreak = r'\pagebreak' + nl
+
+
 class Puzzle:
     def __init__(self, board, depth, white, black, url):
         self.board = board
@@ -129,7 +134,7 @@ def print_solution(solution, indent=0):
     for m in sorted(solution):
         print('  ' * indent + m)
         if isinstance(solution[m], dict):
-            print_mate_tree(solution[m], indent+1)
+            print_solution(solution[m], indent+1)
         else:
             print('  ' * (indent+1) + solution[m])
 
@@ -154,7 +159,7 @@ def pgn_variation(variation, turn):
         s = ''
         start = 0
     else:
-        s = '1. ..'
+        s = '1...'
         start = 1
 
     for h, move in enumerate(variation, start):
@@ -267,67 +272,98 @@ def tex_puzzles(puzzles, nr, solution=False):
     zeile = 0
     spalte = 0
     urls = []
-    nl = '\n'
-    br = r'\\'
 
     t = ''
+
+    """
+    Wenn wir ein #1 Rätsel haben, dann können wir die Lösung gleich in das
+    Puzzle reinmalen. Ansonsten müssen wir alle Variationen einzeln in SAN
+    aufschreiben.
+    """
 
     heading = r'\subsection*{Matt in ' + str(nr)
     if solution:
         heading += ' – Lösung'
     heading += '}' + nl
 
-    table_start = r'\begin{tabular}{ccc}' + nl
-    table_end = r'\end{tabular}' + nl
-    pagebreak = r'\pagebreak' + nl
+    if nr == 1:
+        table_start = r'\begin{tabular}{ccc}' + nl
+        table_end = r'\end{tabular}' + nl
 
-    for puzzle in puzzles:
-        if zeile == 0 and spalte == 0:
-            t += heading
-            t += table_start
+        for puzzle in puzzles:
+            if zeile == 0 and spalte == 0:
+                t += heading
+                t += table_start
 
-        puzzle_str = tex_puzzle(puzzle, solution)
-        t += puzzle_str + nl
+            puzzle_str = tex_puzzle(puzzle, solution)
+            t += puzzle_str + nl
 
-        urls.append(puzzle.url)
+            urls.append(puzzle.url)
 
-        if spalte == 2:
-            t += br + nl
+            if spalte == 2:
+                t += br + nl
 
-            url_str = tex_urls(urls) + nl
-            t += url_str
+                url_str = tex_urls(urls) + nl
+                t += url_str
 
-            urls = []
+                urls = []
 
-            if zeile == 3:
-                t += table_end
-                t += pagebreak + nl
+                if zeile == 3:
+                    t += table_end
+                    t += pagebreak + nl
 
-            zeile = (zeile+1) % 4
-        else:
-            t += '& '
+                zeile = (zeile+1) % 4
+            else:
+                t += '& '
 
-        spalte = (spalte+1) % 3
+            spalte = (spalte+1) % 3
 
-    # Wenn wir bei der allerletzten Tabelle sind, müssen wir den Rest noch
-    # wegflushen:
-    t += br + nl
-    url_str = tex_urls(urls) + nl
-    t += url_str
-    t += table_end
+        # Wenn wir bei der allerletzten Tabelle sind, müssen wir den Rest noch
+        # wegflushen:
+        t += br + nl
+        url_str = tex_urls(urls) + nl
+        t += url_str
+        t += table_end
+    else: # nr > 1
+        for n, puzzle in enumerate(puzzles):
+            if n % 4 == 0:
+                t += heading
+
+            t += r'\begin{tabular}{c}' + nl
+            t += tex_puzzle(puzzle) + br + nl
+            t += tex_url(puzzle.url) + nl
+            t += r'\end{tabular}' + nl
+
+            t += r'\begin{tabular}{lll}' + nl
+            for i, s in enumerate(serialize(puzzle.solution)):
+                var = pgn_variation(s, puzzle.board.turn)
+                t += r'\variation[invar]{' + var + '}'
+                if i % 3 == 2:
+                    t += br + nl
+                else:
+                    t += ' &' + nl
+
+            t += r'\end{tabular}' + br + nl
+
+            if n % 4 == 3:
+                t += pagebreak
 
     return t
+
+
+def tex_url(url):
+    return r'\href{' + url + r'}{\texttt{' + url[8:] + '}}'
 
 
 def tex_urls(urls):
     t = ''
 
     for i, url in enumerate(urls):
-        t += r'\href{' + url + r'}{\texttt{' + url[8:] + '}}\n'
+        t += tex_url(url) + nl
         if i < len(urls)-1:
             t += '& '
         else:
-            t += r'\\'
+            t += br
 
     return t
 

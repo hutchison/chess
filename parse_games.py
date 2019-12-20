@@ -11,7 +11,7 @@ from chess_stuff import (
 
 def main(input_file, nr, output_file, solutions=False):
     if solutions:
-        print("Computing solutions", file=sys.stderr)
+        print("Printing solutions", file=sys.stderr)
 
     games = read_games(input_file)
     puzzles = find_puzzles(games, nr)
