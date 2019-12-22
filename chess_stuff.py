@@ -72,36 +72,42 @@ def mate_in_n(b, n):
             elif b.is_stalemate() or b.is_insufficient_material():
                 # ist es ein draw?
                 # dann probier den nächsten aus
-                pass
-            else:
-                # Der Gegner versucht alle Züge zu finden,
-                # die _nicht_ zu Matt führen:
-                for opp_move in b.legal_moves:
-                    san_opp_move = b.san(opp_move)
-                    b.push(opp_move)
-                    if b.is_stalemate() or b.is_insufficient_material():
-                        # opp hat einen Remis-Zug gefunden
-                        # die letzten beiden Halbzüge führen zum Remis, also
-                        # ziehen wir sie zurück und der nächste Halbzug wird
-                        # probiert
-                        # der letzte Halbzug wird jetzt zurückgezogen und der
-                        # davor hinter der for-Schleife
+                b.pop()
+                continue
+
+            # Der Gegner versucht alle Züge zu finden,
+            # die _nicht_ zu Matt führen:
+            for opp_move in b.legal_moves:
+                san_opp_move = b.san(opp_move)
+                b.push(opp_move)
+                if b.is_stalemate() or b.is_insufficient_material():
+                    # opp hat einen Remis-Zug gefunden
+                    # die letzten beiden Halbzüge führen zum Remis, also
+                    # ziehen wir sie zurück und der nächste Halbzug wird
+                    # probiert
+                    # der letzte Halbzug wird jetzt zurückgezogen und der
+                    # davor hinter der for-Schleife
+                    b.pop()
+                    break
+                else:
+                    # kann auf opp_move ein mate in n-1 gefunden werden?
+                    continuation = mate_in_n(b, n-1)
+                    if continuation:
+                        # wenn ja, dann speichern wir das ab:
+                        if san_move in good_moves:
+                            good_moves[san_move].update(
+                                {san_opp_move: continuation}
+                            )
+                        else:
+                            good_moves[san_move] = {san_opp_move: continuation}
+                    else:
+                        # wenn nicht, dann ist anfängliche Zug nicht gut
+                        # und wir müssen alles löschen:
+                        if san_move in good_moves:
+                            del good_moves[san_move]
                         b.pop()
                         break
-                    else:
-                        # kann auf opp_move ein mate in n-1 gefunden werden?
-                        continuation = mate_in_n(b, n-1)
-                        if continuation:
-                            # wenn ja, dann speichern wir das ab:
-                            good_moves[san_move] = {san_opp_move: continuation}
-                        else:
-                            # wenn nicht, dann ist anfängliche Zug nicht gut
-                            # und wir müssen alles löschen:
-                            if san_move in good_moves:
-                                del good_moves[san_move]
-                            b.pop()
-                            break
-                        b.pop()
+                    b.pop()
 
             b.pop()
 
@@ -373,3 +379,4 @@ m1 = chess.Board(fen='8/7K/5k2/6q1/8/8/8/8 b - - 8 63')
 m21 = chess.Board(fen='8/8/8/8/8/5k1K/6p1/4q3 b - - 1 79')
 m22 = chess.Board('8/8/5N2/p7/6Q1/P3K3/8/5k2 w - - 5 78')
 morphy_puzzle = chess.Board('kbK5/pp6/1P6/8/8/8/8/R7 w - - 0 1')
+test_2 = chess.Board(fen='8/1K6/8/8/6k1/2q5/8/3q4 b - - 5 65')
