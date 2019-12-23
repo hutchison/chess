@@ -28,7 +28,9 @@
 \href{https://lichess.org/wAS5YFAe\#147}{\texttt{lichess.org/wAS5YFAe\#147}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Qf2+ 2. Kb1 Re1#} &
+\variation[invar]{1... Qf2+ 2. Kd1 Re1#} &
+\variation[invar]{1... Qf2+ 2. Kc1 Re1#} &
+\variation[invar]{1... Qf2+ 2. Kb1 Re1#}\\
 \end{tabular}\\
 \pagebreak
 \subsection*{Matt in 2 – Lösung}
@@ -59,6 +61,8 @@
 \end{tabular}
 \begin{tabular}{lll}
 \variation[invar]{1. Qb8 Ke7 2. Rg7#} &
+\variation[invar]{1. Qh7+ Ke8 2. Rg8#} &
+\variation[invar]{1. Qh7+ Kd8 2. Rg8#}\\
 \variation[invar]{1. Qh7+ Kc8 2. Rg8#} &
 \end{tabular}\\
 \pagebreak
@@ -76,18 +80,32 @@
 \href{https://lichess.org/T9uApcYH\#129}{\texttt{lichess.org/T9uApcYH\#129}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qdb3+ 2. Ka8 Qa5#} &
+\variation[invar]{1... Qdb3+ 2. Ka8 Qa1#} &
+\variation[invar]{1... Qdb3+ 2. Ka7 Qa5#}\\
+\variation[invar]{1... Qdb3+ 2. Ka7 Qa1#} &
 \variation[invar]{1... Qdb3+ 2. Ka6 Qa1#} &
-\variation[invar]{1... Qb1+ 2. Ka6 Qa3#} &
-\variation[invar]{1... Qb1+ 2. Ka6 Qca1#}\\
+\variation[invar]{1... Qb1+ 2. Ka8 Qa5#}\\
+\variation[invar]{1... Qb1+ 2. Ka8 Qa3#} &
+\variation[invar]{1... Qb1+ 2. Ka8 Qca1#} &
+\variation[invar]{1... Qb1+ 2. Ka7 Qa5#}\\
+\variation[invar]{1... Qb1+ 2. Ka7 Qa3#} &
+\variation[invar]{1... Qb1+ 2. Ka7 Qca1#} &
+\variation[invar]{1... Qb1+ 2. Ka6 Qa3#}\\
+\variation[invar]{1... Qb1+ 2. Ka6 Qca1#} &
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{8/8/8/4k1r1/8/8/5K2/7q b - - 1 63}{63 b}{true}{f3,f2}{}\\
 \href{https://lichess.org/YhB6pvUt\#125}{\texttt{lichess.org/YhB6pvUt\#125}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Rg2+ 2. Kf3 Qh3#} &
 \variation[invar]{1... Rg2+ 2. Ke3 Qh3#} &
-\variation[invar]{1... Ke4 2. Ke2 Rg2#} &
-\variation[invar]{1... Qh2+ 2. Ke1 Rg1#}\\
+\variation[invar]{1... Ke4 2. Ke2 Rg2#}\\
+\variation[invar]{1... Qh2+ 2. Kf3 Rg3#} &
+\variation[invar]{1... Qh2+ 2. Ke3 Rg3#} &
+\variation[invar]{1... Qh2+ 2. Kf1 Rg1#}\\
+\variation[invar]{1... Qh2+ 2. Ke1 Rg1#} &
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{5r2/2R3Pk/8/8/6K1/8/8/8 w - - 0 63}{63 w}{false}{h8,h7}{}\\
@@ -134,7 +152,12 @@
 \href{https://lichess.org/bzHDTKsx\#180}{\texttt{lichess.org/bzHDTKsx\#180}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1. Qg4+ Kf1 2. Qee2#} &
+\variation[invar]{1. Qg4+ Kh2 2. Qh8#} &
+\variation[invar]{1. Qg4+ Kh2 2. Qeh5#} &
+\variation[invar]{1. Qg4+ Kf2 2. Qee2#}\\
+\variation[invar]{1. Qg4+ Kh1 2. Qh8#} &
+\variation[invar]{1. Qg4+ Kh1 2. Qeh5#} &
+\variation[invar]{1. Qg4+ Kf1 2. Qee2#}\\
 \variation[invar]{1. Qh3 Kf2 2. Qee3#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -178,6 +201,7 @@
 \href{https://lichess.org/1JI0Qo4j\#156}{\texttt{lichess.org/1JI0Qo4j\#156}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Kf3 Kh1 2. Qg2#} &
 \variation[invar]{1. Kf3 a4 2. Qg2#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -185,7 +209,9 @@
 \href{https://lichess.org/Yy9Vr0JJ\#111}{\texttt{lichess.org/Yy9Vr0JJ\#111}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qc7+ 2. Ka8 Nb6#} &
 \variation[invar]{1... Qc7+ 2. Ka6 Qb6#} &
+\variation[invar]{1... Qb6+ 2. Kc8 Qc7#}\\
 \variation[invar]{1... Qb6+ 2. Ka8 Nc7#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -193,16 +219,24 @@
 \href{https://lichess.org/Yy9Vr0JJ\#115}{\texttt{lichess.org/Yy9Vr0JJ\#115}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qc7+ 2. Ka8 Nb6#} &
 \variation[invar]{1... Qc7+ 2. Ka6 Qb6#} &
+\variation[invar]{1... Qb6+ 2. Kc8 Qc7#}\\
 \variation[invar]{1... Qb6+ 2. Ka8 Nc7#} &
-\variation[invar]{1... b1=Q+ 2. Ka6 Nc7#}\\
-\variation[invar]{1... b1=Q+ 2. Ka6 Qcb6#} &
+\variation[invar]{1... b1=Q+ 2. Ka8 Nc7#} &
+\variation[invar]{1... b1=Q+ 2. Ka8 Qa5#}\\
+\variation[invar]{1... b1=Q+ 2. Ka8 Qa3#} &
+\variation[invar]{1... b1=Q+ 2. Ka6 Nc7#} &
+\variation[invar]{1... b1=Q+ 2. Ka6 Qcb6#}\\
 \variation[invar]{1... b1=Q+ 2. Ka6 Qa3#} &
-\variation[invar]{1... b1=Q+ 2. Ka6 Qbb6#}\\
-\variation[invar]{1... b1=Q+ 2. Ka6 Qbb5#} &
+\variation[invar]{1... b1=Q+ 2. Ka6 Qbb6#} &
+\variation[invar]{1... b1=Q+ 2. Ka6 Qbb5#}\\
+\variation[invar]{1... b1=R+ 2. Ka8 Nc7#} &
+\variation[invar]{1... b1=R+ 2. Ka8 Qa5#} &
+\variation[invar]{1... b1=R+ 2. Ka8 Qa3#}\\
 \variation[invar]{1... b1=R+ 2. Ka6 Nc7#} &
-\variation[invar]{1... b1=R+ 2. Ka6 Qb6#}\\
-\variation[invar]{1... b1=R+ 2. Ka6 Qa3#} &
+\variation[invar]{1... b1=R+ 2. Ka6 Qb6#} &
+\variation[invar]{1... b1=R+ 2. Ka6 Qa3#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{8/k3P3/3Q4/1p1K4/1P6/8/8/8 w - - 1 74}{74 w}{false}{b7,a7}{}\\
@@ -218,6 +252,7 @@
 \href{https://lichess.org/qpQk3Uau\#129}{\texttt{lichess.org/qpQk3Uau\#129}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qe2+ 2. Kc1 Rd1#} &
 \variation[invar]{1... Qe2+ 2. Kb1 Rd1#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -225,13 +260,18 @@
 \href{https://lichess.org/fYo2vLQo\#127}{\texttt{lichess.org/fYo2vLQo\#127}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Rf2+ 2. Kb1 Qg1#} &
+\variation[invar]{1... Rf2+ 2. Kd1 Qg1#} &
+\variation[invar]{1... Rf2+ 2. Kc1 Qg1#} &
+\variation[invar]{1... Rf2+ 2. Kb1 Qg1#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{8/1p6/8/8/4kq1P/1P5K/P7/8 b - - 5 53}{53 b}{true}{g3,h3}{}\\
 \href{https://lichess.org/1xgJA0tv\#105}{\texttt{lichess.org/1xgJA0tv\#105}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Kf3 2. h5 Qg3#} &
+\variation[invar]{1... Kf3 2. b4 Qg3#} &
+\variation[invar]{1... Kf3 2. a3 Qg3#}\\
 \variation[invar]{1... Kf3 2. a4 Qg3#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -249,9 +289,15 @@
 \href{https://lichess.org/MV5a5dOF\#119}{\texttt{lichess.org/MV5a5dOF\#119}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qe6+ 2. Kh5 Qf5#} &
+\variation[invar]{1... Qe6+ 2. Kh5 Qch6#} &
+\variation[invar]{1... Qe6+ 2. Kh5 Qc5#}\\
 \variation[invar]{1... Qe6+ 2. Kf3 Qf1#} &
-\variation[invar]{1... Qe4+ 2. Kh3 Qch1#} &
-\variation[invar]{1... Qcc4+ 2. Kh3 Qh1#}\\
+\variation[invar]{1... Qe4+ 2. Kh5 Qf5#} &
+\variation[invar]{1... Qe4+ 2. Kh3 Qch1#}\\
+\variation[invar]{1... Qcc4+ 2. Kh3 Qh1#} &
+\variation[invar]{1... Qcd1+ 2. Kf4 Q1d4#} &
+\variation[invar]{1... Qcd1+ 2. Kf4 Q1f3#}\\
 \variation[invar]{1... Qcd1+ 2. Kh3 Q5h1#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -259,9 +305,22 @@
 \href{https://lichess.org/MV5a5dOF\#125}{\texttt{lichess.org/MV5a5dOF\#125}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Qee2 2. g5 Qcg4#} &
-\variation[invar]{1... Qce2 2. g5 Q6g4#} &
-\variation[invar]{1... Qce2 2. g5 Q6e3#}\\
+\variation[invar]{1... Qee2 2. Kh3 Qcxg4#} &
+\variation[invar]{1... Qee2 2. Kh3 Qcd3#} &
+\variation[invar]{1... Qee2 2. Kh3 Qc3#}\\
+\variation[invar]{1... Qee2 2. Kh3 Qb3#} &
+\variation[invar]{1... Qee2 2. h5 Qcxg4#} &
+\variation[invar]{1... Qee2 2. g5 Qcg4#}\\
+\variation[invar]{1... Qce2 2. Kf4 Q6e5#} &
+\variation[invar]{1... Qce2 2. Kf4 Q6xg4#} &
+\variation[invar]{1... Qce2 2. Kf4 Q2xg4#}\\
+\variation[invar]{1... Qce2 2. Kf4 Q2e3#} &
+\variation[invar]{1... Qce2 2. Kh3 Q6xg4#} &
+\variation[invar]{1... Qce2 2. Kh3 Q6e3#}\\
+\variation[invar]{1... Qce2 2. Kh3 Qb3#} &
+\variation[invar]{1... Qce2 2. h5 Q6xg4#} &
+\variation[invar]{1... Qce2 2. g5 Q6g4#}\\
+\variation[invar]{1... Qce2 2. g5 Q6e3#} &
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{8/8/4P3/5K2/BPR5/2Q5/8/1k6 w - - 1 73}{73 w}{false}{a2,b1}{}\\
@@ -277,6 +336,7 @@
 \href{https://lichess.org/X4g5pW8W\#109}{\texttt{lichess.org/X4g5pW8W\#109}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Be5 2. Kh1 Qf1#} &
 \variation[invar]{1... Be5 2. Kg1 Qf1#} &
 \end{tabular}\\
 \pagebreak
@@ -295,8 +355,14 @@
 \variation[invar]{1... Qg5 2. Kh3 Qeh4#} &
 \variation[invar]{1... Qg5 2. Kh3 Qeg3#} &
 \variation[invar]{1... Qg5 2. Kh3 Qh1#}\\
-\variation[invar]{1... Qfe5+ 2. Kg2 Q5g3#} &
+\variation[invar]{1... Qfe5+ 2. Kh3 Q5g3#} &
+\variation[invar]{1... Qfe5+ 2. Kh3 Q1g3#} &
+\variation[invar]{1... Qfe5+ 2. Kg2 Q5g3#}\\
 \variation[invar]{1... Qd5 2. Kh3 Qh4#} &
+\variation[invar]{1... Qf4+ 2. Kh3 Qfg3#} &
+\variation[invar]{1... Qf4+ 2. Kh3 Qeg3#}\\
+\variation[invar]{1... Qf4+ 2. Kh3 Qh1#} &
+\variation[invar]{1... Qf4+ 2. Kh3 Qef1#} &
 \variation[invar]{1... Qf4+ 2. Kg2 Qfg3#}\\
 \variation[invar]{1... Qf4+ 2. Kg2 Qef1#} &
 \variation[invar]{1... Qfe4 2. Kh3 Q1h4#} &
@@ -304,21 +370,31 @@
 \variation[invar]{1... Qff2+ 2. Kh3 Qg3#} &
 \variation[invar]{1... Qff2+ 2. Kh3 Qe6#} &
 \variation[invar]{1... Qc2+ 2. Kh3 Qh4#}\\
+\variation[invar]{1... Qh4+ 2. Kg2 Qff2#} &
 \variation[invar]{1... Qh4+ 2. Kg1 Qff2#} &
+\variation[invar]{1... Qe3 2. Kg2 Qfh3#}\\
 \variation[invar]{1... Qe3 2. Kh1 Qfh3#} &
-\variation[invar]{1... Qef2+ 2. Kh1 Qh5#}\\
-\variation[invar]{1... Qef2+ 2. Kh1 Qd5#} &
+\variation[invar]{1... Qef2+ 2. Kh1 Qh5#} &
+\variation[invar]{1... Qef2+ 2. Kh1 Qd5#}\\
 \variation[invar]{1... Qef2+ 2. Kh1 Qe4#} &
-\variation[invar]{1... Qef2+ 2. Kh1 Qh3#}\\
-\variation[invar]{1... Qef2+ 2. Kh1 Q5f3#} &
+\variation[invar]{1... Qef2+ 2. Kh1 Qh3#} &
+\variation[invar]{1... Qef2+ 2. Kh1 Q5f3#}\\
 \variation[invar]{1... Qef2+ 2. Kh1 Qb1#} &
-\variation[invar]{1... Qe2+ 2. Kg1 Qff1#}\\
+\variation[invar]{1... Qe2+ 2. Kg3 Qfg4#} &
+\variation[invar]{1... Qe2+ 2. Kg3 Qff3#}\\
+\variation[invar]{1... Qe2+ 2. Kg3 Qef2#} &
+\variation[invar]{1... Qe2+ 2. Kh1 Qff1#} &
+\variation[invar]{1... Qe2+ 2. Kh1 Qb1#}\\
+\variation[invar]{1... Qe2+ 2. Kg1 Qff1#} &
 \variation[invar]{1... Qe2+ 2. Kg1 Qb1#} &
-\variation[invar]{1... Qd2+ 2. Kg1 Qb1#} &
-\variation[invar]{1... Qef1 2. Kg3 Q5f4#}\\
+\variation[invar]{1... Qd2+ 2. Kg3 Qdf2#}\\
+\variation[invar]{1... Qd2+ 2. Kh1 Qf1#} &
+\variation[invar]{1... Qd2+ 2. Kh1 Qb1#} &
+\variation[invar]{1... Qd2+ 2. Kg1 Qb1#}\\
+\variation[invar]{1... Qef1 2. Kg3 Q5f4#} &
 \variation[invar]{1... Qef1 2. Kg3 Q5h3#} &
-\variation[invar]{1... Qef1 2. Kg3 Q1h3#} &
-\variation[invar]{1... Qef1 2. Kg3 Q1f2#}\\
+\variation[invar]{1... Qef1 2. Kg3 Q1h3#}\\
+\variation[invar]{1... Qef1 2. Kg3 Q1f2#} &
 \variation[invar]{1... Qef1 2. Kg3 Qg1#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -326,8 +402,9 @@
 \href{https://lichess.org/tYQVj4V0\#138}{\texttt{lichess.org/tYQVj4V0\#138}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Rd2+ Kc1 2. Qe1#} &
 \variation[invar]{1. Rd2+ Kb1 2. Qg1#} &
-\variation[invar]{1. Rd2+ Kb1 2. Qe1#} &
+\variation[invar]{1. Rd2+ Kb1 2. Qe1#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{8/R7/6pk/3p4/4r1PP/3n1K2/8/8 w - - 4 47}{47 w}{false}{f4,d3}{}\\
@@ -341,7 +418,13 @@
 \href{https://lichess.org/zzE8Bn29\#93}{\texttt{lichess.org/zzE8Bn29\#93}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Rf7+ 2. Kb6 Qa7#} &
+\variation[invar]{1... Rf7+ 2. Kd8 Qh8#} &
+\variation[invar]{1... Rf7+ 2. Kd8 Qa8#} &
+\variation[invar]{1... Rf7+ 2. Kc8 Qh8#}\\
+\variation[invar]{1... Rf7+ 2. Kc8 Qa8#} &
+\variation[invar]{1... Rf7+ 2. Kb8 Qh8#} &
+\variation[invar]{1... Rf7+ 2. Kb6 Qa7#}\\
+\variation[invar]{1... Qa7+ 2. Kd8 Rf8#} &
 \variation[invar]{1... Qa7+ 2. Kc8 Rf8#} &
 \end{tabular}\\
 \pagebreak
@@ -370,6 +453,9 @@
 \variation[invar]{1... Qg3+ 2. Kh6 Qh4#} &
 \variation[invar]{1... Qg3+ 2. Kh6 Qf4#} &
 \variation[invar]{1... Qg3+ 2. Kh6 Qe3#}\\
+\variation[invar]{1... exf5 2. Kh6 Qh5#} &
+\variation[invar]{1... exf5 2. Kh6 Qf4#} &
+\variation[invar]{1... exf5 2. Kh6 Qe3#}\\
 \variation[invar]{1... exf5 2. Kh4 Qg4#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -377,14 +463,18 @@
 \href{https://lichess.org/bsjii1kF\#100}{\texttt{lichess.org/bsjii1kF\#100}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1. Qh7 f5 2. Qbg7#} &
+\variation[invar]{1. Qh7 f6 2. Qd2#} &
+\variation[invar]{1. Qh7 f6 2. Qc1#} &
+\variation[invar]{1. Qh7 f5 2. Qbg7#}\\
 \variation[invar]{1. Qg7+ Kh5 2. Qeh7#} &
-\variation[invar]{1. Qg7+ Kh5 2. Qf5#}\\
-\variation[invar]{1. Qg7+ Kh5 2. Qexg4#} &
+\variation[invar]{1. Qg7+ Kh5 2. Qf5#} &
+\variation[invar]{1. Qg7+ Kh5 2. Qexg4#}\\
+\variation[invar]{1. Qd2+ Kf6 2. Qh6#} &
 \variation[invar]{1. Qd2+ Kh5 2. Qh7#} &
 \variation[invar]{1. Qd2+ Kh5 2. Qf5#}\\
+\variation[invar]{1. Qc1+ Kf6 2. Qh6#} &
 \variation[invar]{1. Qc1+ Kh5 2. Qh7#} &
-\variation[invar]{1. Qc1+ Kh5 2. Qf5#} &
+\variation[invar]{1. Qc1+ Kh5 2. Qf5#}\\
 \end{tabular}\\
 \pagebreak
 \subsection*{Matt in 2 – Lösung}
@@ -393,8 +483,11 @@
 \href{https://lichess.org/bsjii1kF\#102}{\texttt{lichess.org/bsjii1kF\#102}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Qff6+ Kh7 2. Qg7#} &
 \variation[invar]{1. Qff6+ Kh5 2. Qbe5#} &
-\variation[invar]{1. Qff6+ Kh5 2. Qb5#} &
+\variation[invar]{1. Qff6+ Kh5 2. Qb5#}\\
+\variation[invar]{1. Qxg4+ Kh7 2. Qgg7#} &
+\variation[invar]{1. Qxg4+ Kh7 2. Qbg7#} &
 \variation[invar]{1. Qxg4+ Kh6 2. Qh8#}\\
 \variation[invar]{1. Qxg4+ Kh6 2. Qbg7#} &
 \end{tabular}\\
@@ -412,10 +505,13 @@
 \href{https://lichess.org/nPt298iw\#91}{\texttt{lichess.org/nPt298iw\#91}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Qd2 2. a4 Rc3#} &
+\variation[invar]{1... Qd2 2. Ka4 Qc2#} &
+\variation[invar]{1... Qd2 2. Ka4 Qd1#} &
+\variation[invar]{1... Qd2 2. a4 Rc3#}\\
 \variation[invar]{1... Qb1+ 2. Ka4 Qb5#} &
-\variation[invar]{1... Qb1+ 2. Ka4 Qc2#}\\
-\variation[invar]{1... Qb1+ 2. Ka4 Qd1#} &
+\variation[invar]{1... Qb1+ 2. Ka4 Qc2#} &
+\variation[invar]{1... Qb1+ 2. Ka4 Qd1#}\\
+\variation[invar]{1... Qa1 2. Ka4 Qd1#} &
 \variation[invar]{1... Qa1 2. a4 Rc3#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -423,7 +519,9 @@
 \href{https://lichess.org/nPt298iw\#93}{\texttt{lichess.org/nPt298iw\#93}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Qd2+ 2. Ka1 Rc1#} &
+\variation[invar]{1... Qd2+ 2. Kb3 Qc2#} &
+\variation[invar]{1... Qd2+ 2. Kb1 Rc1#} &
+\variation[invar]{1... Qd2+ 2. Ka1 Rc1#}\\
 \variation[invar]{1... a4 2. Ka2 Rc2#} &
 \end{tabular}\\
 \pagebreak
@@ -435,10 +533,16 @@
 \begin{tabular}{lll}
 \variation[invar]{1... Qa6+ 2. Kb4 Qea5#} &
 \variation[invar]{1... Qa6+ 2. Kb4 Qd4#} &
-\variation[invar]{1... Qcb5 2. b4 Qc3#}\\
+\variation[invar]{1... Qcb5 2. g5 Qa5#}\\
+\variation[invar]{1... Qcb5 2. b4 Qc3#} &
+\variation[invar]{1... Qcc3 2. Ka4 Qea5#} &
+\variation[invar]{1... Qcc3 2. Ka4 Qca5#}\\
 \variation[invar]{1... Qcc3 2. g5 Qea5#} &
 \variation[invar]{1... Qcc3 2. g5 Qca5#} &
-\variation[invar]{1... Qec5+ 2. b4 Qc3#}\\
+\variation[invar]{1... Qec5+ 2. Kb2 Qc1#}\\
+\variation[invar]{1... Qec5+ 2. b4 Qc3#} &
+\variation[invar]{1... Qd4 2. g5 Qa6#} &
+\variation[invar]{1... Qd4 2. g5 Qc1#}\\
 \variation[invar]{1... Qd4 2. b4 Qdc3#} &
 \variation[invar]{1... Qec3 2. g5 Qa6#} &
 \end{tabular}\\
@@ -454,10 +558,28 @@
 \href{https://lichess.org/DLgDvSHv\#100}{\texttt{lichess.org/DLgDvSHv\#100}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Rgf6 a6 2. Rf4#} &
+\variation[invar]{1. Rgf6 a6 2. Rce6#} &
+\variation[invar]{1. Rgf6 b4 2. Rf4#}\\
+\variation[invar]{1. Rgf6 b4 2. Rce6#} &
+\variation[invar]{1. Rgf6 h2 2. Rf4#} &
+\variation[invar]{1. Rgf6 h2 2. Rce6#}\\
 \variation[invar]{1. Rgf6 a5 2. Rf4#} &
 \variation[invar]{1. Rgf6 a5 2. Rce6#} &
+\variation[invar]{1. Rg5 a6 2. Re6#}\\
+\variation[invar]{1. Rg5 a6 2. Re5#} &
+\variation[invar]{1. Rg5 b4 2. Re6#} &
+\variation[invar]{1. Rg5 b4 2. Re5#}\\
+\variation[invar]{1. Rg5 h2 2. Re6#} &
+\variation[invar]{1. Rg5 h2 2. Re5#} &
 \variation[invar]{1. Rg5 a5 2. Re6#}\\
 \variation[invar]{1. Rg5 a5 2. Re5#} &
+\variation[invar]{1. Rcf6 a6 2. Rg4#} &
+\variation[invar]{1. Rcf6 a6 2. Rf4#}\\
+\variation[invar]{1. Rcf6 b4 2. Rg4#} &
+\variation[invar]{1. Rcf6 b4 2. Rf4#} &
+\variation[invar]{1. Rcf6 h2 2. Rg4#}\\
+\variation[invar]{1. Rcf6 h2 2. Rf4#} &
 \variation[invar]{1. Rcf6 a5 2. Rg4#} &
 \variation[invar]{1. Rcf6 a5 2. Rf4#}\\
 \end{tabular}\\
@@ -468,7 +590,13 @@
 \begin{tabular}{lll}
 \variation[invar]{1. Ref6+ Ke4 2. Rg4#} &
 \variation[invar]{1. Ref6+ Ke4 2. Rf4#} &
+\variation[invar]{1. Kf3 a6 2. Ref6#}\\
+\variation[invar]{1. Kf3 b4 2. Ref6#} &
+\variation[invar]{1. Kf3 h2 2. Ref6#} &
 \variation[invar]{1. Kf3 a5 2. Ref6#}\\
+\variation[invar]{1. Kd3 a6 2. Ref6#} &
+\variation[invar]{1. Kd3 b4 2. Ref6#} &
+\variation[invar]{1. Kd3 h2 2. Ref6#}\\
 \variation[invar]{1. Kd3 a5 2. Ref6#} &
 \end{tabular}\\
 \pagebreak
@@ -478,6 +606,7 @@
 \href{https://lichess.org/s3ZYpF7g\#81}{\texttt{lichess.org/s3ZYpF7g\#81}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qb3 2. Ka1 Qa2#} &
 \variation[invar]{1... Qb3 2. a4 Qa2#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -493,6 +622,15 @@
 \end{tabular}
 \begin{tabular}{lll}
 \variation[invar]{1... Qh3+ 2. Bh2 Qg2#} &
+\variation[invar]{1... Be5 2. Bxe5 Qg2#} &
+\variation[invar]{1... Be5 2. Bxe5 Qg1#}\\
+\variation[invar]{1... Be5 2. Bh4 Qxh4#} &
+\variation[invar]{1... Be5 2. Bh4 Qh3#} &
+\variation[invar]{1... Be5 2. Bh4 Qg2#}\\
+\variation[invar]{1... Be5 2. Bh4 Qg1#} &
+\variation[invar]{1... Be5 2. Bf4 Qg2#} &
+\variation[invar]{1... Be5 2. Bf4 Qg1#}\\
+\variation[invar]{1... Be5 2. Bh2 Qg2#} &
 \variation[invar]{1... Be5 2. Kh2 Qh5#} &
 \variation[invar]{1... Be5 2. Kh2 Qh4#}\\
 \end{tabular}\\
@@ -501,6 +639,7 @@
 \href{https://lichess.org/4ciaCnSV\#112}{\texttt{lichess.org/4ciaCnSV\#112}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Qb2+ Ke1 2. Rc1#} &
 \variation[invar]{1. Qb2+ Kd1 2. Rc1#} &
 \end{tabular}\\
 \pagebreak
@@ -525,16 +664,30 @@
 \href{https://lichess.org/0PzYeWer\#79}{\texttt{lichess.org/0PzYeWer\#79}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Qb7+ 2. Kd6 Qd4#} &
+\variation[invar]{1... Qb7+ 2. Ke8 Qaa8#} &
+\variation[invar]{1... Qb7+ 2. Kd8 Qaa8#} &
+\variation[invar]{1... Qb7+ 2. Kd6 Qd4#}\\
+\variation[invar]{1... Qaa8 2. Kf6 Qad8#} &
 \variation[invar]{1... Qaa8 2. h4 Qad8#} &
 \variation[invar]{1... Qaa8 2. h4 Qdd8#}\\
+\variation[invar]{1... Qa7+ 2. Ke8 Qad7#} &
+\variation[invar]{1... Qa7+ 2. Ke8 Qda8#} &
+\variation[invar]{1... Qa7+ 2. Ke8 Qdd7#}\\
 \variation[invar]{1... Qa7+ 2. Kf6 Qf5#} &
 \variation[invar]{1... Qa7+ 2. Kf6 Qdd4#} &
-\variation[invar]{1... Qaa5 2. h4 Qdd8#}\\
-\variation[invar]{1... Qaa5 2. h4 Qad8#} &
-\variation[invar]{1... Qad4 2. h4 Qd8#} &
-\variation[invar]{1... Qad4 2. h4 Qd7#}\\
-\variation[invar]{1... Qa3+ 2. Kf6 Qf5#} &
+\variation[invar]{1... Qaa5 2. Ke8 Qdd8#}\\
+\variation[invar]{1... Qaa5 2. Ke8 Qad8#} &
+\variation[invar]{1... Qaa5 2. Kf6 Qdd8#} &
+\variation[invar]{1... Qaa5 2. Kf6 Qxg5#}\\
+\variation[invar]{1... Qaa5 2. Kf6 Qad8#} &
+\variation[invar]{1... Qaa5 2. h4 Qdd8#} &
+\variation[invar]{1... Qaa5 2. h4 Qad8#}\\
+\variation[invar]{1... Qad4 2. Ke8 Qd8#} &
+\variation[invar]{1... Qad4 2. Ke8 Qd7#} &
+\variation[invar]{1... Qad4 2. h4 Qd8#}\\
+\variation[invar]{1... Qad4 2. h4 Qd7#} &
+\variation[invar]{1... Qa3+ 2. Ke8 Qf8#} &
+\variation[invar]{1... Qa3+ 2. Kf6 Qf5#}\\
 \variation[invar]{1... Qa3+ 2. Kf6 Qd4#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -563,20 +716,38 @@
 \variation[invar]{1. Nb8+ Ka7 2. Qc7#}\\
 \variation[invar]{1. Nb8+ Ka7 2. Rd7#} &
 \variation[invar]{1. Nb8+ Ka7 2. Ra2#} &
-\variation[invar]{1. Na7+ Ka6 2. Ra2#}\\
-\variation[invar]{1. Nd4+ Ka6 2. Ra2#} &
+\variation[invar]{1. Na7+ Kxa7 2. Ra2#}\\
+\variation[invar]{1. Na7+ Ka6 2. Ra2#} &
+\variation[invar]{1. Nd4+ Ka7 2. Ra2#} &
+\variation[invar]{1. Nd4+ Ka6 2. Ra2#}\\
 \variation[invar]{1. Nb4+ Ka7 2. Qc7#} &
-\variation[invar]{1. Nb4+ Ka7 2. Rd7#}\\
-\variation[invar]{1. Nb4+ Ka7 2. Ra2#} &
+\variation[invar]{1. Nb4+ Ka7 2. Rd7#} &
+\variation[invar]{1. Nb4+ Ka7 2. Ra2#}\\
 \variation[invar]{1. Rd7+ Ka6 2. Qa5#} &
-\variation[invar]{1. Rd7+ Ka6 2. Bf1#}\\
-\variation[invar]{1. Rb2+ Ka6 2. Qc8#} &
+\variation[invar]{1. Rd7+ Ka6 2. Bf1#} &
+\variation[invar]{1. Rb2+ Ka6 2. Qc8#}\\
 \variation[invar]{1. Rb2+ Ka6 2. Qa8#} &
-\variation[invar]{1. Rb2+ Ka6 2. Qb6#}\\
-\variation[invar]{1. Rb2+ Ka6 2. Qa5#} &
+\variation[invar]{1. Rb2+ Ka6 2. Qb6#} &
+\variation[invar]{1. Rb2+ Ka6 2. Qa5#}\\
 \variation[invar]{1. Rb2+ Ka6 2. Qd3#} &
-\variation[invar]{1. Rb2+ Ka6 2. Bf1#}\\
-\variation[invar]{1. Rb2+ Ka6 2. Rb6#} &
+\variation[invar]{1. Rb2+ Ka6 2. Bf1#} &
+\variation[invar]{1. Rb2+ Ka6 2. Rb6#}\\
+\variation[invar]{1. Ra2 h6 2. Qb8#} &
+\variation[invar]{1. Ra2 h6 2. Nb8#} &
+\variation[invar]{1. Ra2 h6 2. Ne7#}\\
+\variation[invar]{1. Ra2 h6 2. Na7#} &
+\variation[invar]{1. Ra2 h6 2. Ne5#} &
+\variation[invar]{1. Ra2 h6 2. Nd4#}\\
+\variation[invar]{1. Ra2 h6 2. Nb4#} &
+\variation[invar]{1. Ra2 h6 2. Ra7#} &
+\variation[invar]{1. Ra2 g5 2. Qb8#}\\
+\variation[invar]{1. Ra2 g5 2. Nb8#} &
+\variation[invar]{1. Ra2 g5 2. Ne7#} &
+\variation[invar]{1. Ra2 g5 2. Na7#}\\
+\variation[invar]{1. Ra2 g5 2. Ne5#} &
+\variation[invar]{1. Ra2 g5 2. Nd4#} &
+\variation[invar]{1. Ra2 g5 2. Nb4#}\\
+\variation[invar]{1. Ra2 g5 2. Ra7#} &
 \variation[invar]{1. Ra2 h5 2. Qb8#} &
 \variation[invar]{1. Ra2 h5 2. Nb8#}\\
 \variation[invar]{1. Ra2 h5 2. Ne7#} &
@@ -602,7 +773,9 @@
 \variation[invar]{1. g8=Q Kh5 2. Qh8#} &
 \variation[invar]{1. g8=Q Kh5 2. Qh7#} &
 \variation[invar]{1. g8=Q Kh5 2. Qg5#}\\
+\variation[invar]{1. c8=Q Kh7 2. Qh8#} &
 \variation[invar]{1. c8=Q Kh5 2. Qh8#} &
+\variation[invar]{1. c8=R Kh7 2. Rh8#}\\
 \variation[invar]{1. c8=R Kh5 2. Rh8#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -619,6 +792,7 @@
 \href{https://lichess.org/l4ytNiEq\#72}{\texttt{lichess.org/l4ytNiEq\#72}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Rxf7+ Kg5 2. Qh4#} &
 \variation[invar]{1. Rxf7+ Ke5 2. Qe4#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -641,7 +815,12 @@
 \href{https://lichess.org/C4K9eDe3\#90}{\texttt{lichess.org/C4K9eDe3\#90}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1. Qxf5 a5 2. Qxh7#} &
+\variation[invar]{1. Qxf5 Kh6 2. Qxh7#} &
+\variation[invar]{1. Qxf5 Kh4 2. Qxh7#} &
+\variation[invar]{1. Qxf5 Kh4 2. Qg4#}\\
+\variation[invar]{1. Qxf5 h6 2. Qg4#} &
+\variation[invar]{1. Qxf5 a6 2. Qxh7#} &
+\variation[invar]{1. Qxf5 a5 2. Qxh7#}\\
 \end{tabular}\\
 \pagebreak
 \subsection*{Matt in 2 – Lösung}
@@ -658,16 +837,36 @@
 \href{https://lichess.org/znVoKLX4\#85}{\texttt{lichess.org/znVoKLX4\#85}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Rfxf2+ 2. Kh3 Qh4#} &
+\variation[invar]{1... Rfxf2+ 2. Kh3 Rf3#} &
+\variation[invar]{1... Rfxf2+ 2. Kh3 Rd3#}\\
+\variation[invar]{1... Rfxf2+ 2. Kg3 Qh4#} &
+\variation[invar]{1... Rfxf2+ 2. Kg3 Rd3#} &
+\variation[invar]{1... Rfxf2+ 2. Kh1 Qa1#}\\
+\variation[invar]{1... Rfxf2+ 2. Kh1 Rh2#} &
+\variation[invar]{1... Rfxf2+ 2. Kh1 Rf1#} &
+\variation[invar]{1... Rfxf2+ 2. Kh1 Rd1#}\\
 \variation[invar]{1... Rfxf2+ 2. Kg1 Qa1#} &
 \variation[invar]{1... Rfxf2+ 2. Kg1 Rd1#} &
-\variation[invar]{1... Qg4+ 2. Kf1 Rd1#}\\
-\variation[invar]{1... Qxf2+ 2. Kh1 Rh8#} &
+\variation[invar]{1... Qg4+ 2. Kh2 Rh8#}\\
+\variation[invar]{1... Qg4+ 2. Kh1 Rh8#} &
+\variation[invar]{1... Qg4+ 2. Kf1 Rd1#} &
+\variation[invar]{1... Qxf2+ 2. Kh3 Qh4#}\\
+\variation[invar]{1... Qxf2+ 2. Kh3 Qf3#} &
+\variation[invar]{1... Qxf2+ 2. Kh3 Qg2#} &
+\variation[invar]{1... Qxf2+ 2. Kh1 Rh8#}\\
 \variation[invar]{1... Qxf2+ 2. Kh1 Qh2#} &
-\variation[invar]{1... Qxf2+ 2. Kh1 Qg2#}\\
-\variation[invar]{1... Qxf2+ 2. Kh1 Qf1#} &
+\variation[invar]{1... Qxf2+ 2. Kh1 Qg2#} &
+\variation[invar]{1... Qxf2+ 2. Kh1 Qf1#}\\
 \variation[invar]{1... Qxf2+ 2. Kh1 Qe1#} &
-\variation[invar]{1... Qxf2+ 2. Kh1 Rd1#}\\
-\variation[invar]{1... Rdxf2+ 2. Kg1 Qd1#} &
+\variation[invar]{1... Qxf2+ 2. Kh1 Rd1#} &
+\variation[invar]{1... Rdxf2+ 2. Kh3 R8f3#}\\
+\variation[invar]{1... Rdxf2+ 2. Kh3 Qh4#} &
+\variation[invar]{1... Rdxf2+ 2. Kg3 R8f3#} &
+\variation[invar]{1... Rdxf2+ 2. Kg3 Qh4#}\\
+\variation[invar]{1... Rdxf2+ 2. Kh1 Qd1#} &
+\variation[invar]{1... Rdxf2+ 2. Kh1 Qa1#} &
+\variation[invar]{1... Rdxf2+ 2. Kg1 Qd1#}\\
 \variation[invar]{1... Rdxf2+ 2. Kg1 Qa1#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -677,13 +876,18 @@
 \begin{tabular}{lll}
 \variation[invar]{1. Qe6+ Kf8 2. Qe8#} &
 \variation[invar]{1. Qe6+ Kf8 2. Bc5#} &
-\variation[invar]{1. Re7+ Kf8 2. Qd8#}\\
+\variation[invar]{1. Re7+ Kg8 2. Qd8#}\\
+\variation[invar]{1. Re7+ Kg8 2. Qb8#} &
+\variation[invar]{1. Re7+ Kf8 2. Qd8#} &
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{5rk1/4p2p/6p1/p3pq2/P7/5r1P/5QK1/8 b - - 1 42}{42 b}{true}{g3,f2}{}\\
 \href{https://lichess.org/2X2CgMop\#83}{\texttt{lichess.org/2X2CgMop\#83}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Rxf2+ 2. Kg3 Qg5#} &
+\variation[invar]{1... Rxf2+ 2. Kg3 Qf4#} &
+\variation[invar]{1... Rxf2+ 2. Kh1 Qb1#}\\
 \variation[invar]{1... Rxf2+ 2. Kg1 Qb1#} &
 \end{tabular}\\
 \pagebreak
@@ -693,6 +897,13 @@
 \href{https://lichess.org/432wFeCZ\#94}{\texttt{lichess.org/432wFeCZ\#94}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Qg7 Kf4 2. Rf1#} &
+\variation[invar]{1. Qg7 Kf2 2. Qg3#} &
+\variation[invar]{1. Qg7 Kf2 2. Rf1#}\\
+\variation[invar]{1. Qg7 h5 2. Qg3#} &
+\variation[invar]{1. Qg7 h5 2. Rf1#} &
+\variation[invar]{1. Qg7 b5 2. Qg3#}\\
+\variation[invar]{1. Qg7 b5 2. Rf1#} &
 \variation[invar]{1. Qg7 e2 2. Qg3#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -700,6 +911,15 @@
 \href{https://lichess.org/znVoKLX4\#81}{\texttt{lichess.org/znVoKLX4\#81}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Ne5 2. Kxd1 Qxd2#} &
+\variation[invar]{1... Ne5 2. Bxg5 Qd3#} &
+\variation[invar]{1... Ne5 2. Bf4 Qd3#}\\
+\variation[invar]{1... Ne5 2. Bxb4 Qd3#} &
+\variation[invar]{1... Ne5 2. Be3 Qd3#} &
+\variation[invar]{1... Ne5 2. Bc3 Qd3#}\\
+\variation[invar]{1... Ne5 2. Be1 Qd3#} &
+\variation[invar]{1... Ne5 2. Bc1 Qd3#} &
+\variation[invar]{1... Ne5 2. f3 Qxd2#}\\
 \variation[invar]{1... Ne5 2. f4 Qxd2#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -720,10 +940,12 @@
 \variation[invar]{1. Qg8+ Kh6 2. Qf6#} &
 \variation[invar]{1. Qg8+ Kh6 2. Qee6#} &
 \variation[invar]{1. Qg8+ Kh6 2. Qd6#}\\
+\variation[invar]{1. Qde8+ Kh7 2. Q5h8#} &
 \variation[invar]{1. Qde8+ Kh6 2. Q8xh5#} &
-\variation[invar]{1. Qdf6+ Kh7 2. Qg7#} &
-\variation[invar]{1. Qef6+ Kh7 2. Qdh8#}\\
-\variation[invar]{1. Qe6+ Kg7 2. Qdg8#} &
+\variation[invar]{1. Qdf6+ Kh7 2. Qg7#}\\
+\variation[invar]{1. Qef6+ Kh7 2. Qdh8#} &
+\variation[invar]{1. Qe6+ Kh7 2. Qdg8#} &
+\variation[invar]{1. Qe6+ Kg7 2. Qdg8#}\\
 \end{tabular}\\
 \pagebreak
 \subsection*{Matt in 2 – Lösung}
@@ -732,15 +954,21 @@
 \href{https://lichess.org/Jaeu1CHT\#76}{\texttt{lichess.org/Jaeu1CHT\#76}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1. Rb4 h5 2. Rd8#} &
+\variation[invar]{1. Rb4 h6 2. Rd8#} &
+\variation[invar]{1. Rb4 g5 2. Rd8#} &
+\variation[invar]{1. Rb4 h5 2. Rd8#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{8/1k5p/p2R4/B5p1/1PR5/5P2/P5PP/6K1 w - - 0 41}{41 w}{false}{g6,g5}{}\\
 \href{https://lichess.org/Jaeu1CHT\#80}{\texttt{lichess.org/Jaeu1CHT\#80}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Rd8 Ka7 2. Rc7#} &
+\variation[invar]{1. Rd8 h6 2. Rc7#} &
+\variation[invar]{1. Rd8 g4 2. Rc7#}\\
 \variation[invar]{1. Rd8 h5 2. Rc7#} &
-\variation[invar]{1. Rc7+ Ka8 2. Rd8#} &
+\variation[invar]{1. Rc7+ Kb8 2. Rd8#} &
+\variation[invar]{1. Rc7+ Ka8 2. Rd8#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{8/4Q3/1p4kp/2p2p2/2P2P2/1P3NKP/P7/8 w - - 3 69}{69 w}{false}{g7,g6}{}\\
@@ -768,6 +996,7 @@
 \href{https://lichess.org/Z0BNvDpX\#66}{\texttt{lichess.org/Z0BNvDpX\#66}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Rg5+ Kh4 2. Rh2#} &
 \variation[invar]{1. Rg5+ Kh3 2. Rh2#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -775,7 +1004,9 @@
 \href{https://lichess.org/KIuvMkfw\#65}{\texttt{lichess.org/KIuvMkfw\#65}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Rc2+ 2. Ke1 Qc1#} &
+\variation[invar]{1... Rc2+ 2. Kg1 Qxg2#} &
+\variation[invar]{1... Rc2+ 2. Kf1 Qc1#} &
+\variation[invar]{1... Rc2+ 2. Ke1 Qc1#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{8/5pkp/5pp1/1p4b1/3R4/p7/Pr5r/3R2K1 b - - 1 39}{39 b}{true}{h1,g1}{}\\
@@ -807,6 +1038,12 @@
 \href{https://lichess.org/Jaeu1CHT\#64}{\texttt{lichess.org/Jaeu1CHT\#64}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Re5 h6 2. Rd4#} &
+\variation[invar]{1. Re5 g6 2. Rd4#} &
+\variation[invar]{1. Re5 a6 2. Rd4#}\\
+\variation[invar]{1. Re5 f4 2. Rd4#} &
+\variation[invar]{1. Re5 h5 2. Rd4#} &
+\variation[invar]{1. Re5 g5 2. Rd4#}\\
 \variation[invar]{1. Re5 a5 2. Rd4#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -831,7 +1068,9 @@
 \href{https://lichess.org/wNjSW4wJ\#50}{\texttt{lichess.org/wNjSW4wJ\#50}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1. Qd6+ Kc8 2. Qc7#} &
+\variation[invar]{1. Qd6+ Ke8 2. Qe7#} &
+\variation[invar]{1. Qd6+ Ke8 2. Qd7#} &
+\variation[invar]{1. Qd6+ Kc8 2. Qc7#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{6k1/5p1p/3P2P1/1p6/1B1b4/3p4/1P4PP/2q1QK2 b - - 4 35}{35 b}{true}{g1,f1}{}\\
@@ -875,6 +1114,7 @@
 \href{https://lichess.org/s3ZYpF7g\#52}{\texttt{lichess.org/s3ZYpF7g\#52}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Rh7+ Rf7 2. Qxf7#} &
 \variation[invar]{1. Rh7+ Nxh7 2. Qxe6#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -898,9 +1138,18 @@
 \href{https://lichess.org/TZ9QgeYY\#87}{\texttt{lichess.org/TZ9QgeYY\#87}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Bxh4+ 2. Kd1 Qc1#} &
+\variation[invar]{1... Bxh4+ 2. Qxh4 Qc1#} &
+\variation[invar]{1... Bxh4+ 2. Rg3 Qd2#}\\
 \variation[invar]{1... Bxh4+ 2. Rf2 Qd2#} &
-\variation[invar]{1... Bc3+ 2. Rd2 Qxd2#} &
-\variation[invar]{1... Qb4+ 2. Rd2 Qxd2#}\\
+\variation[invar]{1... Bc3+ 2. Kd1 Qc1#} &
+\variation[invar]{1... Bc3+ 2. Rd2 Qxd2#}\\
+\variation[invar]{1... Qb4+ 2. Kd1 Qb1#} &
+\variation[invar]{1... Qb4+ 2. Rd2 Qxd2#} &
+\variation[invar]{1... Qe3+ 2. Kd1 Qc1#}\\
+\variation[invar]{1... Qe3+ 2. Kd1 Rc1#} &
+\variation[invar]{1... Qe3+ 2. Qe2 Rc1#} &
+\variation[invar]{1... Qe3+ 2. Re2 Rc1#}\\
 \variation[invar]{1... Qe3+ 2. Be2 Rc1#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -916,7 +1165,21 @@
 \href{https://lichess.org/TtZCDjB2\#68}{\texttt{lichess.org/TtZCDjB2\#68}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1. Qxe5 a5 2. Qg7#} &
+\variation[invar]{1. Qxe5 Re8 2. Qg7#} &
+\variation[invar]{1. Qxe5 Rd8 2. Qg7#} &
+\variation[invar]{1. Qxe5 Rc8 2. Qg7#}\\
+\variation[invar]{1. Qxe5 Rb8 2. Qg7#} &
+\variation[invar]{1. Qxe5 Ra8 2. Qg7#} &
+\variation[invar]{1. Qxe5 Be8 2. Qg7#}\\
+\variation[invar]{1. Qxe5 Be6 2. Qg7#} &
+\variation[invar]{1. Qxe5 Bd5 2. Qg7#} &
+\variation[invar]{1. Qxe5 Bxc4 2. Qg7#}\\
+\variation[invar]{1. Qxe5 b6 2. Qg7#} &
+\variation[invar]{1. Qxe5 a6 2. Qg7#} &
+\variation[invar]{1. Qxe5 g5 2. Qg7#}\\
+\variation[invar]{1. Qxe5 f4 2. Qg7#} &
+\variation[invar]{1. Qxe5 b5 2. Qg7#} &
+\variation[invar]{1. Qxe5 a5 2. Qg7#}\\
 \end{tabular}\\
 \pagebreak
 \subsection*{Matt in 2 – Lösung}
@@ -956,6 +1219,10 @@
 \href{https://lichess.org/cNdY10CB\#49}{\texttt{lichess.org/cNdY10CB\#49}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Rxc1 2. f4 Rc3#} &
+\variation[invar]{1... Rxc1 2. h3 Rc3#} &
+\variation[invar]{1... Rxc1 2. g3 Rc3#}\\
+\variation[invar]{1... Rxc1 2. h4 Rc3#} &
 \variation[invar]{1... Rxc1 2. g4 Rc3#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -963,7 +1230,9 @@
 \href{https://lichess.org/hVYtRrRh\#75}{\texttt{lichess.org/hVYtRrRh\#75}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1... Qb3+ 2. Rb2 Qd1#} &
+\variation[invar]{1... Qb3+ 2. Kc1 Qxc2#} &
+\variation[invar]{1... Qb3+ 2. Ka1 Nxc2#} &
+\variation[invar]{1... Qb3+ 2. Rb2 Qd1#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{5qbk/R6p/1p1r1r2/8/5p1Q/3B4/P1P3PP/4R2K w - - 0 31}{31 w}{false}{f5,f4}{}\\
@@ -988,7 +1257,8 @@
 \begin{tabular}{lll}
 \variation[invar]{1... Qd1+ 2. Be1 Qxe1#} &
 \variation[invar]{1... Qb1+ 2. Be1 Qxe1#} &
-\variation[invar]{1... Re1+ 2. Bxe1 Qf1#}\\
+\variation[invar]{1... Re1+ 2. Kg2 Qf1#}\\
+\variation[invar]{1... Re1+ 2. Bxe1 Qf1#} &
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{3kr3/1pp3p1/1bq5/pN6/P2P2pP/1p4P1/4Q2K/8 b - - 2 34}{34 b}{true}{f2,e2}{}\\
@@ -1003,7 +1273,21 @@
 \href{https://lichess.org/aeyzWeu5\#74}{\texttt{lichess.org/aeyzWeu5\#74}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Qxd7 Kg8 2. Qxg7#} &
+\variation[invar]{1. Qxd7 Kh7 2. Qxg7#} &
+\variation[invar]{1. Qxd7 Bf8 2. Qh7#}\\
+\variation[invar]{1. Qxd7 Bh6 2. Qh7#} &
+\variation[invar]{1. Qxd7 g5 2. Qxg7#} &
+\variation[invar]{1. Qxd7 f5 2. Qxg7#}\\
+\variation[invar]{1. Qxd7 h4 2. Qxg7#} &
 \variation[invar]{1. Qxd7 b2 2. Qxg7#} &
+\variation[invar]{1. Rxd7 Kh7 2. Qxg7#}\\
+\variation[invar]{1. Rxd7 Bf8 2. Qxf8#} &
+\variation[invar]{1. Rxd7 Bf8 2. Qh7#} &
+\variation[invar]{1. Rxd7 Bh6 2. Qh7#}\\
+\variation[invar]{1. Rxd7 g5 2. Qxg7#} &
+\variation[invar]{1. Rxd7 f5 2. Qxg7#} &
+\variation[invar]{1. Rxd7 h4 2. Qxg7#}\\
 \variation[invar]{1. Rxd7 b2 2. Qxg7#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -1011,6 +1295,7 @@
 \href{https://lichess.org/K6LpHQwU\#75}{\texttt{lichess.org/K6LpHQwU\#75}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qxf2+ 2. Kh2 Qxg2#} &
 \variation[invar]{1... Qxf2+ 2. Kh1 Qxg2#} &
 \end{tabular}\\
 \pagebreak
@@ -1020,8 +1305,9 @@
 \href{https://lichess.org/J7pATemN\#54}{\texttt{lichess.org/J7pATemN\#54}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Rh3+ Kg6 2. Qh5#} &
 \variation[invar]{1. Rh3+ Qh6 2. Rxh6#} &
-\variation[invar]{1. Qh5+ Qh6 2. Qxh6#} &
+\variation[invar]{1. Qh5+ Qh6 2. Qxh6#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{2kr4/p4pp1/4p3/4P3/2p3Q1/Pq1p4/1Pr3R1/KRb5 b - - 3 28}{28 b}{true}{a2,a1}{}\\
@@ -1051,13 +1337,16 @@
 \href{https://lichess.org/Dt3pjrlo\#48}{\texttt{lichess.org/Dt3pjrlo\#48}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1. Rdg1+ Bg7 2. Qh8#} &
+\variation[invar]{1. Rdg1+ Bg6 2. Qh7#} &
+\variation[invar]{1. Rdg1+ Bg2 2. Qh7#} &
+\variation[invar]{1. Rdg1+ Bg7 2. Qh8#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{5k2/pp2pp1p/1q2b1p1/3p2N1/7P/1P6/P1r2PP1/3R2K1 b - - 5 24}{24 b}{true}{e4,g5}{}\\
 \href{https://lichess.org/DGT342Ue\#47}{\texttt{lichess.org/DGT342Ue\#47}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qxf2+ 2. Kh2 Qxg2#} &
 \variation[invar]{1... Qxf2+ 2. Kh1 Qxg2#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -1103,8 +1392,9 @@
 \href{https://lichess.org/y7RSehy8\#64}{\texttt{lichess.org/y7RSehy8\#64}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. Rc8+ Ne8 2. Rxe8#} &
 \variation[invar]{1. Rc8+ Nxc8 2. e8=Q#} &
-\variation[invar]{1. Rc8+ Nxc8 2. e8=R#} &
+\variation[invar]{1. Rc8+ Nxc8 2. e8=R#}\\
 \end{tabular}\\
 \pagebreak
 \subsection*{Matt in 2 – Lösung}
@@ -1120,8 +1410,36 @@
 \href{https://lichess.org/EXPnxIub\#44}{\texttt{lichess.org/EXPnxIub\#44}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. h4 N8e7 2. Qxh7#} &
+\variation[invar]{1. h4 Nd6 2. Qxh7#} &
+\variation[invar]{1. h4 Rb8 2. Qf8#}\\
+\variation[invar]{1. h4 Rb8 2. Qxh7#} &
+\variation[invar]{1. h4 Nd8 2. Qf8#} &
+\variation[invar]{1. h4 Nd8 2. Qxh7#}\\
+\variation[invar]{1. h4 Nb8 2. Qf8#} &
+\variation[invar]{1. h4 Nb8 2. Qxh7#} &
+\variation[invar]{1. h4 N6e7 2. Qf8#}\\
+\variation[invar]{1. h4 N6e7 2. Qxh7#} &
+\variation[invar]{1. h4 Ne5 2. Qf8#} &
+\variation[invar]{1. h4 Ne5 2. Qxh7#}\\
+\variation[invar]{1. h4 Na5 2. Qf8#} &
+\variation[invar]{1. h4 Na5 2. Qxh7#} &
+\variation[invar]{1. h4 Nxd4 2. Qf8#}\\
+\variation[invar]{1. h4 Nxd4 2. Qxh7#} &
+\variation[invar]{1. h4 Nb4 2. Qf8#} &
+\variation[invar]{1. h4 Nb4 2. Qxh7#}\\
+\variation[invar]{1. h4 d6 2. Qf8#} &
+\variation[invar]{1. h4 d6 2. Qxh7#} &
+\variation[invar]{1. h4 a6 2. Qf8#}\\
+\variation[invar]{1. h4 a6 2. Qxh7#} &
+\variation[invar]{1. h4 e5 2. Qf8#} &
+\variation[invar]{1. h4 e5 2. Qxh7#}\\
+\variation[invar]{1. h4 b5 2. Qf8#} &
+\variation[invar]{1. h4 b5 2. Qxh7#} &
+\variation[invar]{1. h4 d5 2. Qf8#}\\
+\variation[invar]{1. h4 d5 2. Qxh7#} &
 \variation[invar]{1. h4 a5 2. Qf8#} &
-\variation[invar]{1. h4 a5 2. Qxh7#} &
+\variation[invar]{1. h4 a5 2. Qxh7#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{4r1k1/1Q3p1p/p2p2p1/2pP2N1/8/q1bbB3/5PPP/2R3K1 b - - 5 23}{23 b}{true}{f3,g5}{}\\
@@ -1160,6 +1478,7 @@
 \href{https://lichess.org/znVoKLX4\#59}{\texttt{lichess.org/znVoKLX4\#59}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1... Qxb3+ 2. Ke2 Qxd1#} &
 \variation[invar]{1... Qxb3+ 2. Kd2 Qxd1#} &
 \end{tabular}\\
 \begin{tabular}{c}
@@ -1167,6 +1486,28 @@
 \href{https://lichess.org/3Zo4C9oN\#62}{\texttt{lichess.org/3Zo4C9oN\#62}}
 \end{tabular}
 \begin{tabular}{lll}
+\variation[invar]{1. hxg4 Rf8 2. Qh8#} &
+\variation[invar]{1. hxg4 Rf8 2. Qh7#} &
+\variation[invar]{1. hxg4 Re7 2. Qh8#}\\
+\variation[invar]{1. hxg4 Re6 2. Qh8#} &
+\variation[invar]{1. hxg4 Rc8 2. Qh8#} &
+\variation[invar]{1. hxg4 Rb8 2. Qh8#}\\
+\variation[invar]{1. hxg4 Ra8 2. Qh8#} &
+\variation[invar]{1. hxg4 Rd7 2. Qh8#} &
+\variation[invar]{1. hxg4 Rd6 2. Qh8#}\\
+\variation[invar]{1. hxg4 Rd5 2. Qh8#} &
+\variation[invar]{1. hxg4 Rd4 2. Qh8#} &
+\variation[invar]{1. hxg4 Rxd3 2. Qh8#}\\
+\variation[invar]{1. hxg4 Bd4 2. Qh8#} &
+\variation[invar]{1. hxg4 Bc3 2. Qh8#} &
+\variation[invar]{1. hxg4 Ba3 2. Qh8#}\\
+\variation[invar]{1. hxg4 Bc1 2. Qh8#} &
+\variation[invar]{1. hxg4 Ba1 2. Qh8#} &
+\variation[invar]{1. hxg4 b6 2. Qh8#}\\
+\variation[invar]{1. hxg4 a6 2. Qh8#} &
+\variation[invar]{1. hxg4 f5 2. Qh8#} &
+\variation[invar]{1. hxg4 c5 2. Qh8#}\\
+\variation[invar]{1. hxg4 b5 2. Qh8#} &
 \variation[invar]{1. hxg4 a5 2. Qh8#} &
 \end{tabular}\\
 \pagebreak
@@ -1177,6 +1518,36 @@
 \end{tabular}
 \begin{tabular}{lll}
 \variation[invar]{1. Qxf7+ Kh8 2. Qg7#} &
+\variation[invar]{1. Nxf7 Nd7 2. Qh8#} &
+\variation[invar]{1. Nxf7 Nd7 2. Qg7#}\\
+\variation[invar]{1. Nxf7 Re7 2. Qh8#} &
+\variation[invar]{1. Nxf7 Re7 2. Qg7#} &
+\variation[invar]{1. Nxf7 Rc8 2. Qh8#}\\
+\variation[invar]{1. Nxf7 Rc8 2. Qg7#} &
+\variation[invar]{1. Nxf7 Rb8 2. Qh8#} &
+\variation[invar]{1. Nxf7 Rb8 2. Qg7#}\\
+\variation[invar]{1. Nxf7 Ra8 2. Qh8#} &
+\variation[invar]{1. Nxf7 Ra8 2. Qg7#} &
+\variation[invar]{1. Nxf7 Rd7 2. Qh8#}\\
+\variation[invar]{1. Nxf7 Rd7 2. Qg7#} &
+\variation[invar]{1. Nxf7 Rd6 2. Qh8#} &
+\variation[invar]{1. Nxf7 Rd6 2. Qg7#}\\
+\variation[invar]{1. Nxf7 Rd5 2. Qh8#} &
+\variation[invar]{1. Nxf7 Rd5 2. Qg7#} &
+\variation[invar]{1. Nxf7 Rxd4 2. Qh8#}\\
+\variation[invar]{1. Nxf7 Rxd4 2. Qg7#} &
+\variation[invar]{1. Nxf7 b6 2. Qh8#} &
+\variation[invar]{1. Nxf7 b6 2. Qg7#}\\
+\variation[invar]{1. Nxf7 a6 2. Qh8#} &
+\variation[invar]{1. Nxf7 a6 2. Qg7#} &
+\variation[invar]{1. Nxf7 g5 2. Qh8#}\\
+\variation[invar]{1. Nxf7 g5 2. Qg7#} &
+\variation[invar]{1. Nxf7 e5 2. Qh8#} &
+\variation[invar]{1. Nxf7 e5 2. Qg7#}\\
+\variation[invar]{1. Nxf7 c5 2. Qh8#} &
+\variation[invar]{1. Nxf7 c5 2. Qg7#} &
+\variation[invar]{1. Nxf7 b5 2. Qh8#}\\
+\variation[invar]{1. Nxf7 b5 2. Qg7#} &
 \variation[invar]{1. Nxf7 a5 2. Qh8#} &
 \variation[invar]{1. Nxf7 a5 2. Qg7#}\\
 \end{tabular}\\
@@ -1216,7 +1587,9 @@
 \href{https://lichess.org/FxLg6LpW\#30}{\texttt{lichess.org/FxLg6LpW\#30}}
 \end{tabular}
 \begin{tabular}{lll}
-\variation[invar]{1. Nf6+ gxf6 2. Qh7#} &
+\variation[invar]{1. Nf6+ Kh8 2. Qh7#} &
+\variation[invar]{1. Nf6+ Bxf6 2. Qh7#} &
+\variation[invar]{1. Nf6+ gxf6 2. Qh7#}\\
 \end{tabular}\\
 \begin{tabular}{c}
 \matepuzzle{rrb3k1/4pp1p/1qpp1bp1/p1p3N1/5P1Q/1P1PP3/P1PN2PP/R4RK1 w - - 0 15}{15 w}{false}{g7,f6}{}\\

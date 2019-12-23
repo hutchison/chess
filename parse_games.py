@@ -7,6 +7,7 @@ from chess_stuff import (
     read_games,
     find_puzzles,
     tex_puzzles,
+    tex_solutions,
 )
 
 def main(input_file, nr, output_file, solutions=False):
@@ -15,7 +16,10 @@ def main(input_file, nr, output_file, solutions=False):
 
     games = read_games(input_file)
     puzzles = find_puzzles(games, nr)
-    t = tex_puzzles(puzzles, nr, solution=solutions)
+    if solutions:
+        t = tex_solutions(puzzles, nr)
+    else:
+        t = tex_puzzles(puzzles, nr)
 
     with open(output_file, 'w') as f:
         f.write(t)

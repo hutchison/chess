@@ -1,565 +1,420 @@
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{7K/8/8/5kq1/8/8/8/8 b - - 6 62}{62 b}{true}{h7,h8}{}
-&
-\matepuzzle{8/8/8/8/8/5k2/4p1pK/8 b - - 1 78}{78 b}{true}{g1,h2}{}
-&
-\matepuzzle{8/8/8/8/3k1p2/4r3/8/3K4 b - - 3 70}{70 b}{true}{d2,d1}{}
+& \matepuzzle{8/8/8/8/8/5k2/4p1pK/8 b - - 1 78}{78 b}{true}{g1,h2}{}
+& \matepuzzle{8/8/8/8/3k1p2/4r3/8/3K4 b - - 3 70}{70 b}{true}{d2,d1}{}
 \\
-
-\href{https://lichess.org/MpmHZ8zl}{\texttt{lichess.org/MpmHZ8zl}}
-& \href{https://lichess.org/hsDAaFrc}{\texttt{lichess.org/hsDAaFrc}}
-& \href{https://lichess.org/wAS5YFAe}{\texttt{lichess.org/wAS5YFAe}}
+\href{https://lichess.org/MpmHZ8zl\#123}{\texttt{lichess.org/MpmHZ8zl\#123}}
+& \href{https://lichess.org/hsDAaFrc\#155}{\texttt{lichess.org/hsDAaFrc\#155}}
+& \href{https://lichess.org/wAS5YFAe\#139}{\texttt{lichess.org/wAS5YFAe\#139}}
 \\
 \matepuzzle{8/8/8/8/4k3/4r3/2K5/5q2 b - - 1 74}{74 b}{true}{d2,c2}{}
-&
-\matepuzzle{5k2/8/8/4K3/6RP/8/8/8 w - - 1 69}{69 w}{false}{f7,f8}{}
-&
-\matepuzzle{5k2/8/6R1/4K2P/8/8/8/8 w - - 3 71}{71 w}{false}{f7,f8}{}
+& \matepuzzle{5k2/8/8/4K3/6RP/8/8/8 w - - 1 69}{69 w}{false}{f7,f8}{}
+& \matepuzzle{5k2/8/6R1/4K2P/8/8/8/8 w - - 3 71}{71 w}{false}{f7,f8}{}
 \\
-
-\href{https://lichess.org/wAS5YFAe}{\texttt{lichess.org/wAS5YFAe}}
-& \href{https://lichess.org/xQzsQlGT}{\texttt{lichess.org/xQzsQlGT}}
-& \href{https://lichess.org/xQzsQlGT}{\texttt{lichess.org/xQzsQlGT}}
+\href{https://lichess.org/wAS5YFAe\#147}{\texttt{lichess.org/wAS5YFAe\#147}}
+& \href{https://lichess.org/xQzsQlGT\#136}{\texttt{lichess.org/xQzsQlGT\#136}}
+& \href{https://lichess.org/xQzsQlGT\#140}{\texttt{lichess.org/xQzsQlGT\#140}}
 \\
 \matepuzzle{5k2/8/6RP/5K2/8/8/8/8 w - - 1 73}{73 w}{false}{f7,f8}{}
-&
-\matepuzzle{7Q/3k4/6R1/5K2/8/8/8/8 w - - 1 75}{75 w}{false}{e7,d7}{}
-&
-\matepuzzle{1K6/1P2k3/8/8/q7/8/8/8 b - - 8 57}{57 b}{true}{a7,b8}{}
+& \matepuzzle{7Q/3k4/6R1/5K2/8/8/8/8 w - - 1 75}{75 w}{false}{e7,d7}{}
+& \matepuzzle{1K6/1P2k3/8/8/q7/8/8/8 b - - 8 57}{57 b}{true}{a7,b8}{}
 \\
-
-\href{https://lichess.org/xQzsQlGT}{\texttt{lichess.org/xQzsQlGT}}
-& \href{https://lichess.org/xQzsQlGT}{\texttt{lichess.org/xQzsQlGT}}
-& \href{https://lichess.org/BFYUWcCx}{\texttt{lichess.org/BFYUWcCx}}
+\href{https://lichess.org/xQzsQlGT\#144}{\texttt{lichess.org/xQzsQlGT\#144}}
+& \href{https://lichess.org/xQzsQlGT\#148}{\texttt{lichess.org/xQzsQlGT\#148}}
+& \href{https://lichess.org/BFYUWcCx\#113}{\texttt{lichess.org/BFYUWcCx\#113}}
 \\
 \matepuzzle{8/1K6/8/8/6k1/2q5/8/3q4 b - - 5 65}{65 b}{true}{c7,b7}{}
-&
-\matepuzzle{8/8/8/4k1r1/8/8/5K2/7q b - - 1 63}{63 b}{true}{f3,f2}{}
-&
-\matepuzzle{5r2/2R3Pk/8/8/6K1/8/8/8 w - - 0 63}{63 w}{false}{h8,h7}{}
+& \matepuzzle{8/8/8/4k1r1/8/8/5K2/7q b - - 1 63}{63 b}{true}{f3,f2}{}
+& \matepuzzle{5r2/2R3Pk/8/8/6K1/8/8/8 w - - 0 63}{63 w}{false}{h8,h7}{}
 \\
-
-\href{https://lichess.org/T9uApcYH}{\texttt{lichess.org/T9uApcYH}}
-& \href{https://lichess.org/YhB6pvUt}{\texttt{lichess.org/YhB6pvUt}}
-& \href{https://lichess.org/oAYlFhRQ}{\texttt{lichess.org/oAYlFhRQ}}
+\href{https://lichess.org/T9uApcYH\#129}{\texttt{lichess.org/T9uApcYH\#129}}
+& \href{https://lichess.org/YhB6pvUt\#125}{\texttt{lichess.org/YhB6pvUt\#125}}
+& \href{https://lichess.org/oAYlFhRQ\#124}{\texttt{lichess.org/oAYlFhRQ\#124}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{8/5K1k/8/6B1/8/5B1P/8/8 w - - 5 58}{58 w}{false}{h8,h7}{}
-&
-\matepuzzle{8/8/8/8/3k1p2/4rP2/8/3K4 b - - 8 68}{68 b}{true}{d2,d1}{}
-&
-\matepuzzle{8/8/8/8/8/4NKRp/7k/8 w - - 4 60}{60 w}{false}{h1,h2}{}
+& \matepuzzle{8/8/8/8/3k1p2/4rP2/8/3K4 b - - 8 68}{68 b}{true}{d2,d1}{}
+& \matepuzzle{8/8/8/8/8/4NKRp/7k/8 w - - 4 60}{60 w}{false}{h1,h2}{}
 \\
-
-\href{https://lichess.org/TGzRO2Ug}{\texttt{lichess.org/TGzRO2Ug}}
-& \href{https://lichess.org/wAS5YFAe}{\texttt{lichess.org/wAS5YFAe}}
-& \href{https://lichess.org/MISEDYdC}{\texttt{lichess.org/MISEDYdC}}
+\href{https://lichess.org/TGzRO2Ug\#114}{\texttt{lichess.org/TGzRO2Ug\#114}}
+& \href{https://lichess.org/wAS5YFAe\#135}{\texttt{lichess.org/wAS5YFAe\#135}}
+& \href{https://lichess.org/MISEDYdC\#118}{\texttt{lichess.org/MISEDYdC\#118}}
 \\
 \matepuzzle{4Q3/3K4/3Q4/8/8/8/1P6/5k2 w - - 3 90}{90 w}{false}{f2,f1}{}
-&
-\matepuzzle{4Q3/3K4/4Q3/8/8/8/1P6/6k1 w - - 5 91}{91 w}{false}{f1,g1}{}
-&
-\matepuzzle{8/3K1Q2/4Q3/8/8/8/1P6/7k w - - 7 92}{92 w}{false}{g1,h1}{}
+& \matepuzzle{4Q3/3K4/4Q3/8/8/8/1P6/6k1 w - - 5 91}{91 w}{false}{f1,g1}{}
+& \matepuzzle{8/3K1Q2/4Q3/8/8/8/1P6/7k w - - 7 92}{92 w}{false}{g1,h1}{}
 \\
-
-\href{https://lichess.org/bzHDTKsx}{\texttt{lichess.org/bzHDTKsx}}
-& \href{https://lichess.org/bzHDTKsx}{\texttt{lichess.org/bzHDTKsx}}
-& \href{https://lichess.org/bzHDTKsx}{\texttt{lichess.org/bzHDTKsx}}
+\href{https://lichess.org/bzHDTKsx\#178}{\texttt{lichess.org/bzHDTKsx\#178}}
+& \href{https://lichess.org/bzHDTKsx\#180}{\texttt{lichess.org/bzHDTKsx\#180}}
+& \href{https://lichess.org/bzHDTKsx\#182}{\texttt{lichess.org/bzHDTKsx\#182}}
 \\
 \matepuzzle{8/8/4p3/6k1/6rp/8/4p2K/8 b - - 1 67}{67 b}{true}{h1,h2}{}
-&
-\matepuzzle{8/8/5N2/p7/6Q1/P3K3/8/5k2 w - - 5 78}{78 w}{false}{e1,f1}{}
-&
-\matepuzzle{8/8/5N2/p7/8/P3K3/4Q3/6k1 w - - 7 79}{79 w}{false}{f1,g1}{}
+& \matepuzzle{8/8/5N2/p7/6Q1/P3K3/8/5k2 w - - 5 78}{78 w}{false}{e1,f1}{}
+& \matepuzzle{8/8/5N2/p7/8/P3K3/4Q3/6k1 w - - 7 79}{79 w}{false}{f1,g1}{}
 \\
-
-\href{https://lichess.org/VM6dubNS}{\texttt{lichess.org/VM6dubNS}}
-& \href{https://lichess.org/1JI0Qo4j}{\texttt{lichess.org/1JI0Qo4j}}
-& \href{https://lichess.org/1JI0Qo4j}{\texttt{lichess.org/1JI0Qo4j}}
+\href{https://lichess.org/VM6dubNS\#133}{\texttt{lichess.org/VM6dubNS\#133}}
+& \href{https://lichess.org/1JI0Qo4j\#154}{\texttt{lichess.org/1JI0Qo4j\#154}}
+& \href{https://lichess.org/1JI0Qo4j\#156}{\texttt{lichess.org/1JI0Qo4j\#156}}
 \\
 \matepuzzle{8/1K6/8/2qn3k/1p5P/8/8/8 b - - 1 56}{56 b}{true}{a6,b7}{}
-&
-\matepuzzle{8/1K6/8/2qn3k/7P/8/1p6/8 b - - 1 58}{58 b}{true}{a6,b7}{}
-&
-\matepuzzle{8/k3P3/3Q4/1p1K4/1P6/8/8/8 w - - 1 74}{74 w}{false}{b7,a7}{}
+& \matepuzzle{8/1K6/8/2qn3k/7P/8/1p6/8 b - - 1 58}{58 b}{true}{a6,b7}{}
+& \matepuzzle{8/k3P3/3Q4/1p1K4/1P6/8/8/8 w - - 1 74}{74 w}{false}{b7,a7}{}
 \\
-
-\href{https://lichess.org/Yy9Vr0JJ}{\texttt{lichess.org/Yy9Vr0JJ}}
-& \href{https://lichess.org/Yy9Vr0JJ}{\texttt{lichess.org/Yy9Vr0JJ}}
-& \href{https://lichess.org/T43l4h7j}{\texttt{lichess.org/T43l4h7j}}
+\href{https://lichess.org/Yy9Vr0JJ\#111}{\texttt{lichess.org/Yy9Vr0JJ\#111}}
+& \href{https://lichess.org/Yy9Vr0JJ\#115}{\texttt{lichess.org/Yy9Vr0JJ\#115}}
+& \href{https://lichess.org/T43l4h7j\#146}{\texttt{lichess.org/T43l4h7j\#146}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{8/8/1k6/1b6/1P6/3r4/2K5/5q2 b - - 1 65}{65 b}{true}{c1,c2}{}
-&
-\matepuzzle{7k/6p1/7p/8/5r2/6q1/2K5/8 b - - 9 64}{64 b}{true}{b3,c2}{}
-&
-\matepuzzle{8/1p6/8/8/4kq1P/1P5K/P7/8 b - - 5 53}{53 b}{true}{g3,h3}{}
+& \matepuzzle{7k/6p1/7p/8/5r2/6q1/2K5/8 b - - 9 64}{64 b}{true}{b3,c2}{}
+& \matepuzzle{8/1p6/8/8/4kq1P/1P5K/P7/8 b - - 5 53}{53 b}{true}{g3,h3}{}
 \\
-
-\href{https://lichess.org/qpQk3Uau}{\texttt{lichess.org/qpQk3Uau}}
-& \href{https://lichess.org/fYo2vLQo}{\texttt{lichess.org/fYo2vLQo}}
-& \href{https://lichess.org/1xgJA0tv}{\texttt{lichess.org/1xgJA0tv}}
+\href{https://lichess.org/qpQk3Uau\#129}{\texttt{lichess.org/qpQk3Uau\#129}}
+& \href{https://lichess.org/fYo2vLQo\#127}{\texttt{lichess.org/fYo2vLQo\#127}}
+& \href{https://lichess.org/1xgJA0tv\#105}{\texttt{lichess.org/1xgJA0tv\#105}}
 \\
 \matepuzzle{8/8/8/5p2/4nk2/5pp1/4n3/5K2 b - - 3 60}{60 b}{true}{g1,f1}{}
-&
-\matepuzzle{1k6/1p6/8/3q4/6KP/6P1/8/2q5 b - - 0 60}{60 b}{true}{h3,h4}{}
-&
-\matepuzzle{1k6/1p6/4q3/8/2q3PP/6K1/8/8 b - - 2 63}{63 b}{true}{h3,g3}{}
+& \matepuzzle{1k6/1p6/8/3q4/6KP/6P1/8/2q5 b - - 0 60}{60 b}{true}{h3,h4}{}
+& \matepuzzle{1k6/1p6/4q3/8/2q3PP/6K1/8/8 b - - 2 63}{63 b}{true}{h3,g3}{}
 \\
-
-\href{https://lichess.org/nPW7ohbd}{\texttt{lichess.org/nPW7ohbd}}
-& \href{https://lichess.org/MV5a5dOF}{\texttt{lichess.org/MV5a5dOF}}
-& \href{https://lichess.org/MV5a5dOF}{\texttt{lichess.org/MV5a5dOF}}
+\href{https://lichess.org/nPW7ohbd\#119}{\texttt{lichess.org/nPW7ohbd\#119}}
+& \href{https://lichess.org/MV5a5dOF\#119}{\texttt{lichess.org/MV5a5dOF\#119}}
+& \href{https://lichess.org/MV5a5dOF\#125}{\texttt{lichess.org/MV5a5dOF\#125}}
 \\
 \matepuzzle{8/8/4P3/5K2/BPR5/2Q5/8/1k6 w - - 1 73}{73 w}{false}{a2,b1}{}
-&
-\matepuzzle{8/5pk1/5bp1/5q2/8/8/4p1K1/8 b - - 1 55}{55 b}{true}{h2,g2}{}
-&
-\matepuzzle{8/5pk1/5bp1/5q2/8/8/7K/4q3 b - - 1 56}{56 b}{true}{g2,h2}{}
+& \matepuzzle{8/5pk1/5bp1/5q2/8/8/4p1K1/8 b - - 1 55}{55 b}{true}{h2,g2}{}
+& \matepuzzle{8/5pk1/5bp1/5q2/8/8/7K/4q3 b - - 1 56}{56 b}{true}{g2,h2}{}
 \\
-
-\href{https://lichess.org/a8QmqPen}{\texttt{lichess.org/a8QmqPen}}
-& \href{https://lichess.org/X4g5pW8W}{\texttt{lichess.org/X4g5pW8W}}
-& \href{https://lichess.org/X4g5pW8W}{\texttt{lichess.org/X4g5pW8W}}
+\href{https://lichess.org/a8QmqPen\#144}{\texttt{lichess.org/a8QmqPen\#144}}
+& \href{https://lichess.org/X4g5pW8W\#109}{\texttt{lichess.org/X4g5pW8W\#109}}
+& \href{https://lichess.org/X4g5pW8W\#111}{\texttt{lichess.org/X4g5pW8W\#111}}
 \\
 \matepuzzle{8/8/5K1p/5P2/3R4/4Q2P/2k5/8 w - - 9 70}{70 w}{false}{c3,c2}{}
-&
-\matepuzzle{8/R7/6pk/3p4/4r1PP/3n1K2/8/8 w - - 4 47}{47 w}{false}{f4,d3}{}
-&
-\matepuzzle{8/2K5/2p4p/1p1k3p/1P6/5r2/8/q7 b - - 3 47}{47 b}{true}{b6,c7}{}
+& \matepuzzle{8/R7/6pk/3p4/4r1PP/3n1K2/8/8 w - - 4 47}{47 w}{false}{f4,d3}{}
+& \matepuzzle{8/2K5/2p4p/1p1k3p/1P6/5r2/8/q7 b - - 3 47}{47 b}{true}{b6,c7}{}
 \\
-
-\href{https://lichess.org/tYQVj4V0}{\texttt{lichess.org/tYQVj4V0}}
-& \href{https://lichess.org/iPpfC64P}{\texttt{lichess.org/iPpfC64P}}
-& \href{https://lichess.org/zzE8Bn29}{\texttt{lichess.org/zzE8Bn29}}
+\href{https://lichess.org/tYQVj4V0\#138}{\texttt{lichess.org/tYQVj4V0\#138}}
+& \href{https://lichess.org/iPpfC64P\#92}{\texttt{lichess.org/iPpfC64P\#92}}
+& \href{https://lichess.org/zzE8Bn29\#93}{\texttt{lichess.org/zzE8Bn29\#93}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{8/8/5p1p/6p1/3k2P1/3p2P1/p7/2K5 b - - 1 64}{64 b}{true}{d1,c1}{}
-&
-\matepuzzle{8/8/5p1p/6p1/3k2P1/2qp2P1/8/3K4 b - - 3 66}{66 b}{true}{d2,d1}{}
-&
-\matepuzzle{6k1/5p2/4pPp1/5PK1/8/1p3q2/8/8 b - - 0 59}{59 b}{true}{f4,f5}{}
+& \matepuzzle{8/8/5p1p/6p1/3k2P1/2qp2P1/8/3K4 b - - 3 66}{66 b}{true}{d2,d1}{}
+& \matepuzzle{6k1/5p2/4pPp1/5PK1/8/1p3q2/8/8 b - - 0 59}{59 b}{true}{f4,f5}{}
 \\
-
-\href{https://lichess.org/IIeCLbeH}{\texttt{lichess.org/IIeCLbeH}}
-& \href{https://lichess.org/IIeCLbeH}{\texttt{lichess.org/IIeCLbeH}}
-& \href{https://lichess.org/gdeF6mf9}{\texttt{lichess.org/gdeF6mf9}}
+\href{https://lichess.org/IIeCLbeH\#127}{\texttt{lichess.org/IIeCLbeH\#127}}
+& \href{https://lichess.org/IIeCLbeH\#131}{\texttt{lichess.org/IIeCLbeH\#131}}
+& \href{https://lichess.org/gdeF6mf9\#117}{\texttt{lichess.org/gdeF6mf9\#117}}
 \\
 \matepuzzle{8/5p2/8/6k1/4Q1p1/6P1/1Q3PBK/8 w - - 1 51}{51 w}{false}{g6,g5}{}
-&
-\matepuzzle{8/5p2/6k1/8/5Qp1/6P1/1Q3PBK/8 w - - 3 52}{52 w}{false}{g5,g6}{}
-&
-\matepuzzle{8/5p2/3Q4/7k/6p1/6P1/1Q3PBK/8 w - - 5 53}{53 w}{false}{g6,h5}{}
+& \matepuzzle{8/5p2/6k1/8/5Qp1/6P1/1Q3PBK/8 w - - 3 52}{52 w}{false}{g5,g6}{}
+& \matepuzzle{8/5p2/3Q4/7k/6p1/6P1/1Q3PBK/8 w - - 5 53}{53 w}{false}{g6,h5}{}
 \\
-
-\href{https://lichess.org/bsjii1kF}{\texttt{lichess.org/bsjii1kF}}
-& \href{https://lichess.org/bsjii1kF}{\texttt{lichess.org/bsjii1kF}}
-& \href{https://lichess.org/bsjii1kF}{\texttt{lichess.org/bsjii1kF}}
+\href{https://lichess.org/bsjii1kF\#100}{\texttt{lichess.org/bsjii1kF\#100}}
+& \href{https://lichess.org/bsjii1kF\#102}{\texttt{lichess.org/bsjii1kF\#102}}
+& \href{https://lichess.org/bsjii1kF\#104}{\texttt{lichess.org/bsjii1kF\#104}}
 \\
 \matepuzzle{8/7p/2k5/p1r2p2/5P2/PK6/8/4q3 b - - 1 46}{46 b}{true}{a4,b3}{}
-&
-\matepuzzle{8/7p/2k5/p1r2p2/5P2/P7/1K6/3q4 b - - 3 47}{47 b}{true}{b3,b2}{}
-&
-\matepuzzle{8/p4pk1/2q5/4q3/6P1/KP6/P7/8 b - - 3 52}{52 b}{true}{a4,a3}{}
+& \matepuzzle{8/7p/2k5/p1r2p2/5P2/P7/1K6/3q4 b - - 3 47}{47 b}{true}{b3,b2}{}
+& \matepuzzle{8/p4pk1/2q5/4q3/6P1/KP6/P7/8 b - - 3 52}{52 b}{true}{a4,a3}{}
 \\
-
-\href{https://lichess.org/nPt298iw}{\texttt{lichess.org/nPt298iw}}
-& \href{https://lichess.org/nPt298iw}{\texttt{lichess.org/nPt298iw}}
-& \href{https://lichess.org/GRi3Jncm}{\texttt{lichess.org/GRi3Jncm}}
+\href{https://lichess.org/nPt298iw\#91}{\texttt{lichess.org/nPt298iw\#91}}
+& \href{https://lichess.org/nPt298iw\#93}{\texttt{lichess.org/nPt298iw\#93}}
+& \href{https://lichess.org/GRi3Jncm\#103}{\texttt{lichess.org/GRi3Jncm\#103}}
 \\
 \matepuzzle{8/8/8/1pp5/p1r5/K5pk/PR6/7q b - - 1 66}{66 b}{true}{d2,b2}{}
-&
-\matepuzzle{8/p7/2R3R1/1p1p4/3Pk3/4P2p/4K3/8 w - - 0 51}{51 w}{false}{h4,h3}{}
-&
-\matepuzzle{8/p7/4R1R1/1p1p1k2/3P4/4P2p/4K3/8 w - - 2 52}{52 w}{false}{e4,f5}{}
+& \matepuzzle{8/p7/2R3R1/1p1p4/3Pk3/4P2p/4K3/8 w - - 0 51}{51 w}{false}{h4,h3}{}
+& \matepuzzle{8/p7/4R1R1/1p1p1k2/3P4/4P2p/4K3/8 w - - 2 52}{52 w}{false}{e4,f5}{}
 \\
-
-\href{https://lichess.org/EulYPhUh}{\texttt{lichess.org/EulYPhUh}}
-& \href{https://lichess.org/DLgDvSHv}{\texttt{lichess.org/DLgDvSHv}}
-& \href{https://lichess.org/DLgDvSHv}{\texttt{lichess.org/DLgDvSHv}}
+\href{https://lichess.org/EulYPhUh\#131}{\texttt{lichess.org/EulYPhUh\#131}}
+& \href{https://lichess.org/DLgDvSHv\#100}{\texttt{lichess.org/DLgDvSHv\#100}}
+& \href{https://lichess.org/DLgDvSHv\#102}{\texttt{lichess.org/DLgDvSHv\#102}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{1k6/pp6/1qrp4/8/8/P7/1P6/1Kn5 b - - 1 41}{41 b}{true}{a2,b1}{}
-&
-\matepuzzle{8/8/6p1/6P1/2k3q1/2b2pB1/4nP1K/8 b - - 7 49}{49 b}{true}{d6,g3}{}
-&
-\matepuzzle{8/8/6p1/6P1/6q1/2bk1pB1/4nP2/7K b - - 9 50}{50 b}{true}{h2,h1}{}
+& \matepuzzle{8/8/6p1/6P1/2k3q1/2b2pB1/4nP1K/8 b - - 7 49}{49 b}{true}{d6,g3}{}
+& \matepuzzle{8/8/6p1/6P1/6q1/2bk1pB1/4nP2/7K b - - 9 50}{50 b}{true}{h2,h1}{}
 \\
-
-\href{https://lichess.org/s3ZYpF7g}{\texttt{lichess.org/s3ZYpF7g}}
-& \href{https://lichess.org/klMnPH56}{\texttt{lichess.org/klMnPH56}}
-& \href{https://lichess.org/klMnPH56}{\texttt{lichess.org/klMnPH56}}
+\href{https://lichess.org/s3ZYpF7g\#81}{\texttt{lichess.org/s3ZYpF7g\#81}}
+& \href{https://lichess.org/klMnPH56\#97}{\texttt{lichess.org/klMnPH56\#97}}
+& \href{https://lichess.org/klMnPH56\#99}{\texttt{lichess.org/klMnPH56\#99}}
 \\
 \matepuzzle{8/8/8/5p1p/1Q5P/P1R3p1/4kP2/6K1 w - - 4 57}{57 w}{false}{f3,e2}{}
-&
-\matepuzzle{6k1/5p1p/4pKp1/3q2P1/8/7P/p7/8 b - - 0 39}{39 b}{true}{g4,g5}{}
-&
-\matepuzzle{6k1/4Kp1p/4p1p1/3q2P1/8/7P/8/q7 b - - 1 40}{40 b}{true}{f6,e7}{}
+& \matepuzzle{6k1/5p1p/4pKp1/3q2P1/8/7P/p7/8 b - - 0 39}{39 b}{true}{g4,g5}{}
+& \matepuzzle{6k1/4Kp1p/4p1p1/3q2P1/8/7P/8/q7 b - - 1 40}{40 b}{true}{f6,e7}{}
 \\
-
-\href{https://lichess.org/4ciaCnSV}{\texttt{lichess.org/4ciaCnSV}}
-& \href{https://lichess.org/0PzYeWer}{\texttt{lichess.org/0PzYeWer}}
-& \href{https://lichess.org/0PzYeWer}{\texttt{lichess.org/0PzYeWer}}
+\href{https://lichess.org/4ciaCnSV\#112}{\texttt{lichess.org/4ciaCnSV\#112}}
+& \href{https://lichess.org/0PzYeWer\#77}{\texttt{lichess.org/0PzYeWer\#77}}
+& \href{https://lichess.org/0PzYeWer\#79}{\texttt{lichess.org/0PzYeWer\#79}}
 \\
 \matepuzzle{1k6/pp6/1qrp4/8/8/Pn6/KP6/2R5 b - - 8 40}{40 b}{true}{a1,a2}{}
-&
-\matepuzzle{5R2/3p2k1/4p1p1/7p/7P/5R2/4qbK1/8 w - - 0 38}{38 w}{false}{d4,f2}{}
-&
-\matepuzzle{3Q4/1k5p/2N3p1/8/8/6PP/3R1PB1/6K1 w - - 1 48}{48 w}{false}{c7,b7}{}
+& \matepuzzle{5R2/3p2k1/4p1p1/7p/7P/5R2/4qbK1/8 w - - 0 38}{38 w}{false}{d4,f2}{}
+& \matepuzzle{3Q4/1k5p/2N3p1/8/8/6PP/3R1PB1/6K1 w - - 1 48}{48 w}{false}{c7,b7}{}
 \\
-
-\href{https://lichess.org/s3ZYpF7g}{\texttt{lichess.org/s3ZYpF7g}}
-& \href{https://lichess.org/LpUSzoFJ}{\texttt{lichess.org/LpUSzoFJ}}
-& \href{https://lichess.org/O402dYkk}{\texttt{lichess.org/O402dYkk}}
+\href{https://lichess.org/s3ZYpF7g\#79}{\texttt{lichess.org/s3ZYpF7g\#79}}
+& \href{https://lichess.org/LpUSzoFJ\#74}{\texttt{lichess.org/LpUSzoFJ\#74}}
+& \href{https://lichess.org/O402dYkk\#94}{\texttt{lichess.org/O402dYkk\#94}}
 \\
 \matepuzzle{6k1/8/2PpN1P1/3PpK2/4P3/p7/P7/8 w - - 1 52}{52 w}{false}{f7,g8}{}
-&
-\matepuzzle{8/2P3P1/3pN2k/3PpK2/4P3/p7/P7/8 w - - 1 54}{54 w}{false}{h7,h6}{}
-&
-\matepuzzle{8/1p6/k1pb4/p5R1/P7/1KP5/1P3Q2/8 w - - 2 56}{56 w}{false}{b6,a6}{}
+& \matepuzzle{8/2P3P1/3pN2k/3PpK2/4P3/p7/P7/8 w - - 1 54}{54 w}{false}{h7,h6}{}
+& \matepuzzle{8/1p6/k1pb4/p5R1/P7/1KP5/1P3Q2/8 w - - 2 56}{56 w}{false}{b6,a6}{}
 \\
-
-\href{https://lichess.org/3r4rtM6n}{\texttt{lichess.org/3r4rtM6n}}
-& \href{https://lichess.org/3r4rtM6n}{\texttt{lichess.org/3r4rtM6n}}
-& \href{https://lichess.org/U91LaSr4}{\texttt{lichess.org/U91LaSr4}}
+\href{https://lichess.org/3r4rtM6n\#102}{\texttt{lichess.org/3r4rtM6n\#102}}
+& \href{https://lichess.org/3r4rtM6n\#106}{\texttt{lichess.org/3r4rtM6n\#106}}
+& \href{https://lichess.org/U91LaSr4\#110}{\texttt{lichess.org/U91LaSr4\#110}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{8/R4p2/3q1kp1/8/2Q5/4PBP1/4KP2/1r6 w - - 10 37}{37 w}{false}{e6,f6}{}
-&
-\matepuzzle{8/p4r1p/6p1/1P2Q3/6k1/P3R3/3K3P/5q2 w - - 6 40}{40 w}{false}{f4,g4}{}
-&
-\matepuzzle{8/1p3b1p/p1p2k1K/P1P2P1P/6r1/8/8/8 b - - 0 52}{52 b}{true}{h4,h5}{}
+& \matepuzzle{8/p4r1p/6p1/1P2Q3/6k1/P3R3/3K3P/5q2 w - - 6 40}{40 w}{false}{f4,g4}{}
+& \matepuzzle{8/1p3b1p/p1p2k1K/P1P2P1P/6r1/8/8/8 b - - 0 52}{52 b}{true}{h4,h5}{}
 \\
-
-\href{https://lichess.org/l4ytNiEq}{\texttt{lichess.org/l4ytNiEq}}
-& \href{https://lichess.org/QZrjHqEh}{\texttt{lichess.org/QZrjHqEh}}
-& \href{https://lichess.org/mUBXFKWI}{\texttt{lichess.org/mUBXFKWI}}
+\href{https://lichess.org/l4ytNiEq\#72}{\texttt{lichess.org/l4ytNiEq\#72}}
+& \href{https://lichess.org/QZrjHqEh\#78}{\texttt{lichess.org/QZrjHqEh\#78}}
+& \href{https://lichess.org/mUBXFKWI\#103}{\texttt{lichess.org/mUBXFKWI\#103}}
 \\
 \matepuzzle{8/p6p/8/4Qnpk/1P2B3/7P/P4P1K/8 w - - 4 46}{46 w}{false}{g6,h5}{}
-&
-\matepuzzle{r7/2pkp3/2np4/6b1/1p1q4/5K2/3r1P2/8 b - - 1 42}{42 b}{true}{e2,f3}{}
-&
-\matepuzzle{5r2/2pkp3/2np4/6b1/1p1q4/8/3r1PK1/8 b - - 3 43}{43 b}{true}{f3,g2}{}
+& \matepuzzle{r7/2pkp3/2np4/6b1/1p1q4/5K2/3r1P2/8 b - - 1 42}{42 b}{true}{e2,f3}{}
+& \matepuzzle{5r2/2pkp3/2np4/6b1/1p1q4/8/3r1PK1/8 b - - 3 43}{43 b}{true}{f3,g2}{}
 \\
-
-\href{https://lichess.org/C4K9eDe3}{\texttt{lichess.org/C4K9eDe3}}
-& \href{https://lichess.org/znVoKLX4}{\texttt{lichess.org/znVoKLX4}}
-& \href{https://lichess.org/znVoKLX4}{\texttt{lichess.org/znVoKLX4}}
+\href{https://lichess.org/C4K9eDe3\#90}{\texttt{lichess.org/C4K9eDe3\#90}}
+& \href{https://lichess.org/znVoKLX4\#83}{\texttt{lichess.org/znVoKLX4\#83}}
+& \href{https://lichess.org/znVoKLX4\#85}{\texttt{lichess.org/znVoKLX4\#85}}
 \\
 \matepuzzle{8/5kpp/1PPQ4/3p4/p2B2n1/5P2/6K1/4R3 w - - 0 44}{44 w}{false}{f6,g4}{}
-&
-\matepuzzle{5rk1/4p2p/6p1/p3pq2/P7/5r1P/5QK1/8 b - - 1 42}{42 b}{true}{g3,f2}{}
-&
-\matepuzzle{2K5/8/1pP4p/p7/P1BQp3/4pk2/7P/3R4 w - - 3 48}{48 w}{false}{f4,f3}{}
+& \matepuzzle{5rk1/4p2p/6p1/p3pq2/P7/5r1P/5QK1/8 b - - 1 42}{42 b}{true}{g3,f2}{}
+& \matepuzzle{2K5/8/1pP4p/p7/P1BQp3/4pk2/7P/3R4 w - - 3 48}{48 w}{false}{f4,f3}{}
 \\
-
-\href{https://lichess.org/QuCzSfxw}{\texttt{lichess.org/QuCzSfxw}}
-& \href{https://lichess.org/2X2CgMop}{\texttt{lichess.org/2X2CgMop}}
-& \href{https://lichess.org/432wFeCZ}{\texttt{lichess.org/432wFeCZ}}
+\href{https://lichess.org/QuCzSfxw\#86}{\texttt{lichess.org/QuCzSfxw\#86}}
+& \href{https://lichess.org/2X2CgMop\#83}{\texttt{lichess.org/2X2CgMop\#83}}
+& \href{https://lichess.org/432wFeCZ\#94}{\texttt{lichess.org/432wFeCZ\#94}}
 \\
 \matepuzzle{r7/2pkp3/2np4/6b1/1p1q4/8/3BKP2/3r4 b - - 1 41}{41 b}{true}{d3,e2}{}
-&
-\matepuzzle{2kr4/ppp1pp2/4b3/8/4P3/P1R5/1K6/3q4 b - - 6 34}{34 b}{true}{c2,b2}{}
-&
-\matepuzzle{3Q4/pp6/6k1/4Q2r/8/1P2P1P1/P4P2/R5K1 w - - 1 34}{34 w}{false}{h6,h5}{}
+& \matepuzzle{2kr4/ppp1pp2/4b3/8/4P3/P1R5/1K6/3q4 b - - 6 34}{34 b}{true}{c2,b2}{}
+& \matepuzzle{3Q4/pp6/6k1/4Q2r/8/1P2P1P1/P4P2/R5K1 w - - 1 34}{34 w}{false}{h6,h5}{}
 \\
-
-\href{https://lichess.org/znVoKLX4}{\texttt{lichess.org/znVoKLX4}}
-& \href{https://lichess.org/8Ogf1U7H}{\texttt{lichess.org/8Ogf1U7H}}
-& \href{https://lichess.org/24yKJoYS}{\texttt{lichess.org/24yKJoYS}}
+\href{https://lichess.org/znVoKLX4\#81}{\texttt{lichess.org/znVoKLX4\#81}}
+& \href{https://lichess.org/8Ogf1U7H\#67}{\texttt{lichess.org/8Ogf1U7H\#67}}
+& \href{https://lichess.org/24yKJoYS\#66}{\texttt{lichess.org/24yKJoYS\#66}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{2k5/7p/p2R2p1/B7/3R4/5P2/PP4PP/6K1 w - - 2 39}{39 w}{false}{c7,c8}{}
-&
-\matepuzzle{8/1k5p/p2R4/B5p1/1PR5/5P2/P5PP/6K1 w - - 0 41}{41 w}{false}{g6,g5}{}
-&
-\matepuzzle{8/4Q3/1p4kp/2p2p2/2P2P2/1P3NKP/P7/8 w - - 3 69}{69 w}{false}{g7,g6}{}
+& \matepuzzle{8/1k5p/p2R4/B5p1/1PR5/5P2/P5PP/6K1 w - - 0 41}{41 w}{false}{g6,g5}{}
+& \matepuzzle{8/4Q3/1p4kp/2p2p2/2P2P2/1P3NKP/P7/8 w - - 3 69}{69 w}{false}{g7,g6}{}
 \\
-
-\href{https://lichess.org/Jaeu1CHT}{\texttt{lichess.org/Jaeu1CHT}}
-& \href{https://lichess.org/Jaeu1CHT}{\texttt{lichess.org/Jaeu1CHT}}
-& \href{https://lichess.org/KdKcfOpr}{\texttt{lichess.org/KdKcfOpr}}
+\href{https://lichess.org/Jaeu1CHT\#76}{\texttt{lichess.org/Jaeu1CHT\#76}}
+& \href{https://lichess.org/Jaeu1CHT\#80}{\texttt{lichess.org/Jaeu1CHT\#80}}
+& \href{https://lichess.org/KdKcfOpr\#136}{\texttt{lichess.org/KdKcfOpr\#136}}
 \\
 \matepuzzle{r4q1k/5p1p/5p1Q/P7/5P2/4P1RP/6PK/8 w - - 7 41}{41 w}{false}{e7,f8}{}
-&
-\matepuzzle{2rr4/pp6/4p3/3pR3/5P2/P3P1k1/1P3R2/6K1 w - - 0 34}{34 w}{false}{f3,g3}{}
-&
-\matepuzzle{2r5/p5pk/1p2p2p/3b2q1/8/5P2/PP3KP1/8 b - - 1 33}{33 b}{true}{g1,f2}{}
+& \matepuzzle{2rr4/pp6/4p3/3pR3/5P2/P3P1k1/1P3R2/6K1 w - - 0 34}{34 w}{false}{f3,g3}{}
+& \matepuzzle{2r5/p5pk/1p2p2p/3b2q1/8/5P2/PP3KP1/8 b - - 1 33}{33 b}{true}{g1,f2}{}
 \\
-
-\href{https://lichess.org/Ba9RtIB4}{\texttt{lichess.org/Ba9RtIB4}}
-& \href{https://lichess.org/Z0BNvDpX}{\texttt{lichess.org/Z0BNvDpX}}
-& \href{https://lichess.org/KIuvMkfw}{\texttt{lichess.org/KIuvMkfw}}
+\href{https://lichess.org/Ba9RtIB4\#80}{\texttt{lichess.org/Ba9RtIB4\#80}}
+& \href{https://lichess.org/Z0BNvDpX\#66}{\texttt{lichess.org/Z0BNvDpX\#66}}
+& \href{https://lichess.org/KIuvMkfw\#65}{\texttt{lichess.org/KIuvMkfw\#65}}
 \\
 \matepuzzle{8/5pkp/5pp1/1p4b1/3R4/p7/Pr5r/3R2K1 b - - 1 39}{39 b}{true}{h1,g1}{}
-&
-\matepuzzle{4Q3/5pbk/6p1/7p/4B3/2q1B1Q1/4nPKP/8 w - - 2 39}{39 w}{false}{d4,e2}{}
-&
-\matepuzzle{3b4/5R1p/4R1p1/8/rp1P2kP/6P1/P4PK1/8 w - - 3 34}{34 w}{false}{c7,d8}{}
+& \matepuzzle{4Q3/5pbk/6p1/7p/4B3/2q1B1Q1/4nPKP/8 w - - 2 39}{39 w}{false}{d4,e2}{}
+& \matepuzzle{3b4/5R1p/4R1p1/8/rp1P2kP/6P1/P4PK1/8 w - - 3 34}{34 w}{false}{c7,d8}{}
 \\
-
-\href{https://lichess.org/dtMdb6rY}{\texttt{lichess.org/dtMdb6rY}}
-& \href{https://lichess.org/SchqsDwB}{\texttt{lichess.org/SchqsDwB}}
-& \href{https://lichess.org/czCWloX7}{\texttt{lichess.org/czCWloX7}}
+\href{https://lichess.org/dtMdb6rY\#77}{\texttt{lichess.org/dtMdb6rY\#77}}
+& \href{https://lichess.org/SchqsDwB\#76}{\texttt{lichess.org/SchqsDwB\#76}}
+& \href{https://lichess.org/czCWloX7\#66}{\texttt{lichess.org/czCWloX7\#66}}
 \\
 \matepuzzle{8/p5pp/8/5p2/2k5/2B2P2/PP4PP/3RR1K1 w - - 4 33}{33 w}{false}{d3,c4}{}
-&
-\matepuzzle{6k1/5p2/3p2pp/3P1P2/2PpP1K1/5BP1/1r5q/8 b - - 0 41}{41 b}{true}{f4,f5}{}
-&
-\matepuzzle{4rk2/6bp/6p1/5p2/2B1p3/4P1P1/3B1PKP/3R4 w - - 4 31}{31 w}{false}{g8,f8}{}
+& \matepuzzle{6k1/5p2/3p2pp/3P1P2/2PpP1K1/5BP1/1r5q/8 b - - 0 41}{41 b}{true}{f4,f5}{}
+& \matepuzzle{4rk2/6bp/6p1/5p2/2B1p3/4P1P1/3B1PKP/3R4 w - - 4 31}{31 w}{false}{g8,f8}{}
 \\
-
-\href{https://lichess.org/Jaeu1CHT}{\texttt{lichess.org/Jaeu1CHT}}
-& \href{https://lichess.org/Gv9h5Wdn}{\texttt{lichess.org/Gv9h5Wdn}}
-& \href{https://lichess.org/3Of7Z5wl}{\texttt{lichess.org/3Of7Z5wl}}
+\href{https://lichess.org/Jaeu1CHT\#64}{\texttt{lichess.org/Jaeu1CHT\#64}}
+& \href{https://lichess.org/Gv9h5Wdn\#81}{\texttt{lichess.org/Gv9h5Wdn\#81}}
+& \href{https://lichess.org/3Of7Z5wl\#60}{\texttt{lichess.org/3Of7Z5wl\#60}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{q2k3r/p4Rp1/6Qp/3Pp3/8/8/PP4PP/6K1 w - - 4 26}{26 w}{false}{e7,d8}{}
-&
-\matepuzzle{6k1/5p1p/3P2P1/1p6/1B1b4/3p4/1P4PP/2q1QK2 b - - 4 35}{35 b}{true}{g1,f1}{}
-&
-\matepuzzle{1k5N/2R3p1/3P4/2p5/2N3b1/Bp1P2P1/P7/4R1K1 w - - 0 35}{35 w}{false}{a4,b3}{}
+& \matepuzzle{6k1/5p1p/3P2P1/1p6/1B1b4/3p4/1P4PP/2q1QK2 b - - 4 35}{35 b}{true}{g1,f1}{}
+& \matepuzzle{1k5N/2R3p1/3P4/2p5/2N3b1/Bp1P2P1/P7/4R1K1 w - - 0 35}{35 w}{false}{a4,b3}{}
 \\
-
-\href{https://lichess.org/wNjSW4wJ}{\texttt{lichess.org/wNjSW4wJ}}
-& \href{https://lichess.org/xsD9isU5}{\texttt{lichess.org/xsD9isU5}}
-& \href{https://lichess.org/45Uxvh8o}{\texttt{lichess.org/45Uxvh8o}}
+\href{https://lichess.org/wNjSW4wJ\#50}{\texttt{lichess.org/wNjSW4wJ\#50}}
+& \href{https://lichess.org/xsD9isU5\#69}{\texttt{lichess.org/xsD9isU5\#69}}
+& \href{https://lichess.org/45Uxvh8o\#68}{\texttt{lichess.org/45Uxvh8o\#68}}
 \\
 \matepuzzle{5Q2/1k5p/8/BP1nP1p1/P1pq4/1b4PP/7R/2K5 b - - 0 39}{39 b}{true}{a3,f8}{}
-&
-\matepuzzle{5r1k/p1R5/1p4p1/6q1/1P1Pp1n1/PN4n1/6Q1/6K1 b - - 1 37}{37 b}{true}{e2,g2}{}
-&
-\matepuzzle{3r4/pb2R3/1p1k1B2/2np4/2PN4/1P6/P5PP/6K1 w - - 2 35}{35 w}{false}{c6,d6}{}
+& \matepuzzle{5r1k/p1R5/1p4p1/6q1/1P1Pp1n1/PN4n1/6Q1/6K1 b - - 1 37}{37 b}{true}{e2,g2}{}
+& \matepuzzle{3r4/pb2R3/1p1k1B2/2np4/2PN4/1P6/P5PP/6K1 w - - 2 35}{35 w}{false}{c6,d6}{}
 \\
-
-\href{https://lichess.org/HjQ6wuxl}{\texttt{lichess.org/HjQ6wuxl}}
-& \href{https://lichess.org/pHFcgfLP}{\texttt{lichess.org/pHFcgfLP}}
-& \href{https://lichess.org/9ApFEulN}{\texttt{lichess.org/9ApFEulN}}
+\href{https://lichess.org/HjQ6wuxl\#77}{\texttt{lichess.org/HjQ6wuxl\#77}}
+& \href{https://lichess.org/pHFcgfLP\#73}{\texttt{lichess.org/pHFcgfLP\#73}}
+& \href{https://lichess.org/9ApFEulN\#68}{\texttt{lichess.org/9ApFEulN\#68}}
 \\
 \matepuzzle{2rq1r2/pp2k3/3ppnQ1/5B2/8/2N5/PP6/2K4R w - - 3 27}{27 w}{false}{f7,e7}{}
-&
-\matepuzzle{8/Q5pk/P1p2pbp/2P1n3/3N4/r3P2P/1K4P1/8 b - - 2 34}{34 b}{true}{c3,b2}{}
-&
-\matepuzzle{8/6k1/3p1p1p/2PPq3/3n2p1/3QN1P1/5rPK/4R3 b - - 0 36}{36 b}{true}{b4,c5}{}
+& \matepuzzle{8/Q5pk/P1p2pbp/2P1n3/3N4/r3P2P/1K4P1/8 b - - 2 34}{34 b}{true}{c3,b2}{}
+& \matepuzzle{8/6k1/3p1p1p/2PPq3/3n2p1/3QN1P1/5rPK/4R3 b - - 0 36}{36 b}{true}{b4,c5}{}
 \\
-
-\href{https://lichess.org/s3ZYpF7g}{\texttt{lichess.org/s3ZYpF7g}}
-& \href{https://lichess.org/Z3g84lle}{\texttt{lichess.org/Z3g84lle}}
-& \href{https://lichess.org/zwK1QAh4}{\texttt{lichess.org/zwK1QAh4}}
+\href{https://lichess.org/s3ZYpF7g\#52}{\texttt{lichess.org/s3ZYpF7g\#52}}
+& \href{https://lichess.org/Z3g84lle\#67}{\texttt{lichess.org/Z3g84lle\#67}}
+& \href{https://lichess.org/zwK1QAh4\#71}{\texttt{lichess.org/zwK1QAh4\#71}}
 \\
 \matepuzzle{3r2k1/p5P1/4pb2/2p4Q/5q1P/3P4/P1r3R1/4KB2 b - - 5 44}{44 b}{true}{e2,e1}{}
-&
-\matepuzzle{8/p4pk1/4r2p/4b1p1/4B1P1/2P2Q1P/PP6/2K2R2 w - - 9 35}{35 w}{false}{f6,e5}{}
-&
-\matepuzzle{5rk1/pp3b1p/6pP/4pp2/2P5/3B4/1Q3PP1/6K1 w - - 0 35}{35 w}{false}{d6,e5}{}
+& \matepuzzle{8/p4pk1/4r2p/4b1p1/4B1P1/2P2Q1P/PP6/2K2R2 w - - 9 35}{35 w}{false}{f6,e5}{}
+& \matepuzzle{5rk1/pp3b1p/6pP/4pp2/2P5/3B4/1Q3PP1/6K1 w - - 0 35}{35 w}{false}{d6,e5}{}
 \\
-
-\href{https://lichess.org/TZ9QgeYY}{\texttt{lichess.org/TZ9QgeYY}}
-& \href{https://lichess.org/Jk8ornSK}{\texttt{lichess.org/Jk8ornSK}}
-& \href{https://lichess.org/TtZCDjB2}{\texttt{lichess.org/TtZCDjB2}}
+\href{https://lichess.org/TZ9QgeYY\#87}{\texttt{lichess.org/TZ9QgeYY\#87}}
+& \href{https://lichess.org/Jk8ornSK\#68}{\texttt{lichess.org/Jk8ornSK\#68}}
+& \href{https://lichess.org/TtZCDjB2\#68}{\texttt{lichess.org/TtZCDjB2\#68}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{8/ppk3Pq/2p1B3/2PpP1Q1/1P3P2/6K1/P3p2P/8 w - - 1 44}{44 w}{false}{d7,c7}{}
-&
-\matepuzzle{8/ppb4Q/2p5/P1Pp2k1/3P1pN1/KPq1nP2/8/8 w - - 4 49}{49 w}{false}{f6,g5}{}
-&
-\matepuzzle{1r4k1/1r3ppp/8/p1R5/4p3/p3P2P/4NPP1/2R3K1 w - - 0 31}{31 w}{false}{a4,a3}{}
+& \matepuzzle{8/ppb4Q/2p5/P1Pp2k1/3P1pN1/KPq1nP2/8/8 w - - 4 49}{49 w}{false}{f6,g5}{}
+& \matepuzzle{1r4k1/1r3ppp/8/p1R5/4p3/p3P2P/4NPP1/2R3K1 w - - 0 31}{31 w}{false}{a4,a3}{}
 \\
-
-\href{https://lichess.org/gBsWu8eR}{\texttt{lichess.org/gBsWu8eR}}
-& \href{https://lichess.org/OhNLM4Dy}{\texttt{lichess.org/OhNLM4Dy}}
-& \href{https://lichess.org/ga98Xql7}{\texttt{lichess.org/ga98Xql7}}
+\href{https://lichess.org/gBsWu8eR\#86}{\texttt{lichess.org/gBsWu8eR\#86}}
+& \href{https://lichess.org/OhNLM4Dy\#96}{\texttt{lichess.org/OhNLM4Dy\#96}}
+& \href{https://lichess.org/ga98Xql7\#60}{\texttt{lichess.org/ga98Xql7\#60}}
 \\
 \matepuzzle{2rq1r2/pp4k1/3ppnB1/5bQ1/8/2N5/PP6/2K4R w - - 4 25}{25 w}{false}{h8,g7}{}
-&
-\matepuzzle{2r3k1/p2ppp1p/bp4p1/1q6/8/K4P2/P5PP/2R5 b - - 7 25}{25 b}{true}{b3,a3}{}
-&
-\matepuzzle{k1r1R3/1p5p/6p1/pQp3P1/Pn5P/q2P4/2R5/1K6 b - - 0 38}{38 b}{true}{d2,c2}{}
+& \matepuzzle{2r3k1/p2ppp1p/bp4p1/1q6/8/K4P2/P5PP/2R5 b - - 7 25}{25 b}{true}{b3,a3}{}
+& \matepuzzle{k1r1R3/1p5p/6p1/pQp3P1/Pn5P/q2P4/2R5/1K6 b - - 0 38}{38 b}{true}{d2,c2}{}
 \\
-
-\href{https://lichess.org/s3ZYpF7g}{\texttt{lichess.org/s3ZYpF7g}}
-& \href{https://lichess.org/cNdY10CB}{\texttt{lichess.org/cNdY10CB}}
-& \href{https://lichess.org/hVYtRrRh}{\texttt{lichess.org/hVYtRrRh}}
+\href{https://lichess.org/s3ZYpF7g\#48}{\texttt{lichess.org/s3ZYpF7g\#48}}
+& \href{https://lichess.org/cNdY10CB\#49}{\texttt{lichess.org/cNdY10CB\#49}}
+& \href{https://lichess.org/hVYtRrRh\#75}{\texttt{lichess.org/hVYtRrRh\#75}}
 \\
 \matepuzzle{5qbk/R6p/1p1r1r2/8/5p1Q/3B4/P1P3PP/4R2K w - - 0 31}{31 w}{false}{f5,f4}{}
-&
-\matepuzzle{5r2/pp4k1/7p/4q1p1/2B1P1b1/PP1PR3/3R1P2/4K3 b - - 6 33}{33 b}{true}{a2,d2}{}
-&
-\matepuzzle{Q1B4k/2p1n1pp/8/4P3/2Pp1P2/1P1q2B1/4r2P/7K b - - 0 30}{30 b}{true}{b7,c8}{}
+& \matepuzzle{5r2/pp4k1/7p/4q1p1/2B1P1b1/PP1PR3/3R1P2/4K3 b - - 6 33}{33 b}{true}{a2,d2}{}
+& \matepuzzle{Q1B4k/2p1n1pp/8/4P3/2Pp1P2/1P1q2B1/4r2P/7K b - - 0 30}{30 b}{true}{b7,c8}{}
 \\
-
-\href{https://lichess.org/XA60QKSa}{\texttt{lichess.org/XA60QKSa}}
-& \href{https://lichess.org/cLrA28oi}{\texttt{lichess.org/cLrA28oi}}
-& \href{https://lichess.org/8ZhuX6rl}{\texttt{lichess.org/8ZhuX6rl}}
+\href{https://lichess.org/XA60QKSa\#60}{\texttt{lichess.org/XA60QKSa\#60}}
+& \href{https://lichess.org/cLrA28oi\#65}{\texttt{lichess.org/cLrA28oi\#65}}
+& \href{https://lichess.org/8ZhuX6rl\#59}{\texttt{lichess.org/8ZhuX6rl\#59}}
 \\
 \matepuzzle{3kr3/1pp3p1/1bq5/pN6/P2P2pP/1p4P1/4Q2K/8 b - - 2 34}{34 b}{true}{f2,e2}{}
-&
-\matepuzzle{7k/1R1r1Qb1/1B3pp1/4p2p/4P3/1p3P2/6PP/5RK1 w - - 0 38}{38 w}{false}{d8,d7}{}
-&
-\matepuzzle{6k1/5p1p/3p2p1/2q5/p1p5/2Qb1N1P/4rPP1/3R2K1 b - - 4 38}{38 b}{true}{d2,f3}{}
+& \matepuzzle{7k/1R1r1Qb1/1B3pp1/4p2p/4P3/1p3P2/6PP/5RK1 w - - 0 38}{38 w}{false}{d8,d7}{}
+& \matepuzzle{6k1/5p1p/3p2p1/2q5/p1p5/2Qb1N1P/4rPP1/3R2K1 b - - 4 38}{38 b}{true}{d2,f3}{}
 \\
-
-\href{https://lichess.org/IYbPr0aq}{\texttt{lichess.org/IYbPr0aq}}
-& \href{https://lichess.org/aeyzWeu5}{\texttt{lichess.org/aeyzWeu5}}
-& \href{https://lichess.org/K6LpHQwU}{\texttt{lichess.org/K6LpHQwU}}
+\href{https://lichess.org/IYbPr0aq\#67}{\texttt{lichess.org/IYbPr0aq\#67}}
+& \href{https://lichess.org/aeyzWeu5\#74}{\texttt{lichess.org/aeyzWeu5\#74}}
+& \href{https://lichess.org/K6LpHQwU\#75}{\texttt{lichess.org/K6LpHQwU\#75}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{3r2r1/pp5k/4q3/3pPN2/2nP4/6R1/PP4PP/3Q2K1 w - - 0 28}{28 w}{false}{h8,h7}{}
-&
-\matepuzzle{2kr4/p4pp1/4p3/4P3/2p3Q1/Pq1p4/1Pr3R1/KRb5 b - - 3 28}{28 b}{true}{a2,a1}{}
-&
-\matepuzzle{6k1/pp3p1p/6p1/5b2/P1Pb4/1P3KP1/3rrP1P/5R2 b - - 4 27}{27 b}{true}{g2,f3}{}
+& \matepuzzle{2kr4/p4pp1/4p3/4P3/2p3Q1/Pq1p4/1Pr3R1/KRb5 b - - 3 28}{28 b}{true}{a2,a1}{}
+& \matepuzzle{6k1/pp3p1p/6p1/5b2/P1Pb4/1P3KP1/3rrP1P/5R2 b - - 4 27}{27 b}{true}{g2,f3}{}
 \\
-
-\href{https://lichess.org/J7pATemN}{\texttt{lichess.org/J7pATemN}}
-& \href{https://lichess.org/FoYXevfT}{\texttt{lichess.org/FoYXevfT}}
-& \href{https://lichess.org/OWOeXMEV}{\texttt{lichess.org/OWOeXMEV}}
+\href{https://lichess.org/J7pATemN\#54}{\texttt{lichess.org/J7pATemN\#54}}
+& \href{https://lichess.org/FoYXevfT\#55}{\texttt{lichess.org/FoYXevfT\#55}}
+& \href{https://lichess.org/OWOeXMEV\#53}{\texttt{lichess.org/OWOeXMEV\#53}}
 \\
 \matepuzzle{4R3/1p4p1/4Bpkp/1qP3b1/3B2P1/r1P2P2/2K3P1/4R3 w - - 6 38}{38 w}{false}{h7,g6}{}
-&
-\matepuzzle{r2q1rk1/p3pp2/2p5/8/2P1b3/1p1B3Q/Pb6/1K1R3R w - - 0 25}{25 w}{false}{b4,b3}{}
-&
-\matepuzzle{5k2/pp2pp1p/1q2b1p1/3p2N1/7P/1P6/P1r2PP1/3R2K1 b - - 5 24}{24 b}{true}{e4,g5}{}
+& \matepuzzle{r2q1rk1/p3pp2/2p5/8/2P1b3/1p1B3Q/Pb6/1K1R3R w - - 0 25}{25 w}{false}{b4,b3}{}
+& \matepuzzle{5k2/pp2pp1p/1q2b1p1/3p2N1/7P/1P6/P1r2PP1/3R2K1 b - - 5 24}{24 b}{true}{e4,g5}{}
 \\
-
-\href{https://lichess.org/L4BaPtoD}{\texttt{lichess.org/L4BaPtoD}}
-& \href{https://lichess.org/Dt3pjrlo}{\texttt{lichess.org/Dt3pjrlo}}
-& \href{https://lichess.org/DGT342Ue}{\texttt{lichess.org/DGT342Ue}}
+\href{https://lichess.org/L4BaPtoD\#74}{\texttt{lichess.org/L4BaPtoD\#74}}
+& \href{https://lichess.org/Dt3pjrlo\#48}{\texttt{lichess.org/Dt3pjrlo\#48}}
+& \href{https://lichess.org/DGT342Ue\#47}{\texttt{lichess.org/DGT342Ue\#47}}
 \\
 \matepuzzle{6rk/1N1Q1p1p/p4p2/3p1P1K/1pp4P/4bB2/P5P1/7q b - - 7 37}{37 b}{true}{g4,h5}{}
-&
-\matepuzzle{4r2k/pp1q1Pb1/4r1Q1/3pPR2/3p2PP/2N5/PP6/6K1 w - - 1 36}{36 w}{false}{g8,h8}{}
-&
-\matepuzzle{2kr3r/p3RR2/p1p3p1/2Qp3p/6b1/2N5/PP4PP/6K1 w - - 0 21}{21 w}{false}{b7,a6}{}
+& \matepuzzle{4r2k/pp1q1Pb1/4r1Q1/3pPR2/3p2PP/2N5/PP6/6K1 w - - 1 36}{36 w}{false}{g8,h8}{}
+& \matepuzzle{2kr3r/p3RR2/p1p3p1/2Qp3p/6b1/2N5/PP4PP/6K1 w - - 0 21}{21 w}{false}{b7,a6}{}
 \\
-
-\href{https://lichess.org/O6CIs3HC}{\texttt{lichess.org/O6CIs3HC}}
-& \href{https://lichess.org/kXPhtBkf}{\texttt{lichess.org/kXPhtBkf}}
-& \href{https://lichess.org/JWJX7Yn4}{\texttt{lichess.org/JWJX7Yn4}}
+\href{https://lichess.org/O6CIs3HC\#73}{\texttt{lichess.org/O6CIs3HC\#73}}
+& \href{https://lichess.org/kXPhtBkf\#70}{\texttt{lichess.org/kXPhtBkf\#70}}
+& \href{https://lichess.org/JWJX7Yn4\#40}{\texttt{lichess.org/JWJX7Yn4\#40}}
 \\
 \matepuzzle{5r1k/p6p/2p3p1/1p6/3P4/1BP1n1BP/PP2q1P1/2Q3K1 w - - 1 36}{36 w}{false}{g4,e3}{}
-&
-\matepuzzle{4r2k/p4p1p/1p3q2/6pn/3N4/2P1p2P/PPQ1P1K1/4R3 b - - 5 33}{33 b}{true}{g3,g2}{}
-&
-\matepuzzle{6k1/pr2Pnpp/1pRnB3/3p4/3P3P/1P2P1P1/P7/6K1 w - - 0 33}{33 w}{false}{e8,d6}{}
+& \matepuzzle{4r2k/p4p1p/1p3q2/6pn/3N4/2P1p2P/PPQ1P1K1/4R3 b - - 5 33}{33 b}{true}{g3,g2}{}
+& \matepuzzle{6k1/pr2Pnpp/1pRnB3/3p4/3P3P/1P2P1P1/P7/6K1 w - - 0 33}{33 w}{false}{e8,d6}{}
 \\
-
-\href{https://lichess.org/IUI5FIvE}{\texttt{lichess.org/IUI5FIvE}}
-& \href{https://lichess.org/p2mWwce7}{\texttt{lichess.org/p2mWwce7}}
-& \href{https://lichess.org/y7RSehy8}{\texttt{lichess.org/y7RSehy8}}
+\href{https://lichess.org/IUI5FIvE\#70}{\texttt{lichess.org/IUI5FIvE\#70}}
+& \href{https://lichess.org/p2mWwce7\#65}{\texttt{lichess.org/p2mWwce7\#65}}
+& \href{https://lichess.org/y7RSehy8\#64}{\texttt{lichess.org/y7RSehy8\#64}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{4k3/pp1n4/2pb4/3pqP2/7Q/2NP1r1p/PPP4P/4R2K b - - 8 33}{33 b}{true}{g1,e1}{}
-&
-\matepuzzle{r1n5/p1pp1Q1p/1pn1p1pk/6N1/2PP2P1/2P5/P6P/6K1 w - - 4 23}{23 w}{false}{g7,h6}{}
-&
-\matepuzzle{4r1k1/1Q3p1p/p2p2p1/2pP2N1/8/q1bbB3/5PPP/2R3K1 b - - 5 23}{23 b}{true}{f3,g5}{}
+& \matepuzzle{r1n5/p1pp1Q1p/1pn1p1pk/6N1/2PP2P1/2P5/P6P/6K1 w - - 4 23}{23 w}{false}{g7,h6}{}
+& \matepuzzle{4r1k1/1Q3p1p/p2p2p1/2pP2N1/8/q1bbB3/5PPP/2R3K1 b - - 5 23}{23 b}{true}{f3,g5}{}
 \\
-
-\href{https://lichess.org/cTJNdngC}{\texttt{lichess.org/cTJNdngC}}
-& \href{https://lichess.org/EXPnxIub}{\texttt{lichess.org/EXPnxIub}}
-& \href{https://lichess.org/K6LpHQwU}{\texttt{lichess.org/K6LpHQwU}}
+\href{https://lichess.org/cTJNdngC\#65}{\texttt{lichess.org/cTJNdngC\#65}}
+& \href{https://lichess.org/EXPnxIub\#44}{\texttt{lichess.org/EXPnxIub\#44}}
+& \href{https://lichess.org/K6LpHQwU\#45}{\texttt{lichess.org/K6LpHQwU\#45}}
 \\
 \matepuzzle{r7/pp2qBbk/2p1b2p/4B2Q/3Pp3/4P2P/PP4P1/5RK1 w - - 8 29}{29 w}{false}{h8,h7}{}
-&
-\matepuzzle{1r4k1/p1q1bp2/5p1Q/2rpP3/bp1N4/3B4/PP4PP/1K2R2R w - - 2 28}{28 w}{false}{f8,g8}{}
-&
-\matepuzzle{r4k2/pp2b1qp/2nNQ3/2p1P3/3p4/4n3/PPP2KPP/R1B5 b - - 0 19}{19 b}{true}{g1,f2}{}
+& \matepuzzle{1r4k1/p1q1bp2/5p1Q/2rpP3/bp1N4/3B4/PP4PP/1K2R2R w - - 2 28}{28 w}{false}{f8,g8}{}
+& \matepuzzle{r4k2/pp2b1qp/2nNQ3/2p1P3/3p4/4n3/PPP2KPP/R1B5 b - - 0 19}{19 b}{true}{g1,f2}{}
 \\
-
-\href{https://lichess.org/Sy7TADfY}{\texttt{lichess.org/Sy7TADfY}}
-& \href{https://lichess.org/CLlVoE9Y}{\texttt{lichess.org/CLlVoE9Y}}
-& \href{https://lichess.org/JSa03bLn}{\texttt{lichess.org/JSa03bLn}}
+\href{https://lichess.org/Sy7TADfY\#56}{\texttt{lichess.org/Sy7TADfY\#56}}
+& \href{https://lichess.org/CLlVoE9Y\#54}{\texttt{lichess.org/CLlVoE9Y\#54}}
+& \href{https://lichess.org/JSa03bLn\#37}{\texttt{lichess.org/JSa03bLn\#37}}
 \\
 \matepuzzle{r7/2pkp1b1/2np2p1/5p2/1pPP3P/1P1KBN1B/q4P2/r2R4 b - - 3 30}{30 b}{true}{c2,d3}{}
-&
-\matepuzzle{3rr1k1/ppp5/2p2pPQ/4p3/4P1qR/1P1P3P/PbP1KP2/8 w - - 1 32}{32 w}{false}{e6,g4}{}
-&
-\matepuzzle{3rrnk1/pp3q1p/2p1pQpP/4N3/2PP4/2P2RP1/P4PK1/4R3 w - - 7 28}{28 w}{false}{e7,f7}{}
+& \matepuzzle{3rr1k1/ppp5/2p2pPQ/4p3/4P1qR/1P1P3P/PbP1KP2/8 w - - 1 32}{32 w}{false}{e6,g4}{}
+& \matepuzzle{3rrnk1/pp3q1p/2p1pQpP/4N3/2PP4/2P2RP1/P4PK1/4R3 w - - 7 28}{28 w}{false}{e7,f7}{}
 \\
-
-\href{https://lichess.org/znVoKLX4}{\texttt{lichess.org/znVoKLX4}}
-& \href{https://lichess.org/3Zo4C9oN}{\texttt{lichess.org/3Zo4C9oN}}
-& \href{https://lichess.org/YojpuYwU}{\texttt{lichess.org/YojpuYwU}}
+\href{https://lichess.org/znVoKLX4\#59}{\texttt{lichess.org/znVoKLX4\#59}}
+& \href{https://lichess.org/3Zo4C9oN\#62}{\texttt{lichess.org/3Zo4C9oN\#62}}
+& \href{https://lichess.org/YojpuYwU\#54}{\texttt{lichess.org/YojpuYwU\#54}}
 \\
 \matepuzzle{r2qr1k1/pp3ppp/2p5/4b3/4Qn2/2PB1P2/PP3P1P/R4RK1 b - - 3 17}{17 b}{true}{e2,e4}{}
-&
-\matepuzzle{r6r/4pk2/bqp2npQ/p2n4/1p3N2/5N2/PPP2PPP/R4RK1 w - - 0 18}{18 w}{false}{h7,g6}{}
-&
-\matepuzzle{r5kr/4p3/bqp2npQ/p2nN3/1p3N2/8/PPP2PPP/R4RK1 w - - 2 19}{19 w}{false}{f7,g8}{}
+& \matepuzzle{r6r/4pk2/bqp2npQ/p2n4/1p3N2/5N2/PPP2PPP/R4RK1 w - - 0 18}{18 w}{false}{h7,g6}{}
+& \matepuzzle{r5kr/4p3/bqp2npQ/p2nN3/1p3N2/8/PPP2PPP/R4RK1 w - - 2 19}{19 w}{false}{f7,g8}{}
 \\
-
-\href{https://lichess.org/TnmJ4i2l}{\texttt{lichess.org/TnmJ4i2l}}
-& \href{https://lichess.org/uEjtJVJz}{\texttt{lichess.org/uEjtJVJz}}
-& \href{https://lichess.org/uEjtJVJz}{\texttt{lichess.org/uEjtJVJz}}
+\href{https://lichess.org/TnmJ4i2l\#33}{\texttt{lichess.org/TnmJ4i2l\#33}}
+& \href{https://lichess.org/uEjtJVJz\#34}{\texttt{lichess.org/uEjtJVJz\#34}}
+& \href{https://lichess.org/uEjtJVJz\#36}{\texttt{lichess.org/uEjtJVJz\#36}}
 \\
 \end{tabular}
-
 \pagebreak
 
 \subsection*{Matt in 2}
 \begin{tabular}{ccc}
 \matepuzzle{r3kr2/pp2b1qp/2n1Q3/2p1P3/3pN3/4n3/PPP2RPP/R1B3K1 b q - 5 17}{17 b}{true}{d2,e4}{}
-&
-\matepuzzle{r2q1rk1/pb2bpp1/1pn1p2p/4P3/1n2N2P/3Q1N2/PP3PP1/RBB1R1K1 w - - 1 16}{16 w}{false}{d5,b4}{}
-&
-\matepuzzle{rrb3k1/4pp1p/1qpp1bp1/p1p3N1/5P1Q/1P1PP3/P1PN2PP/R4RK1 w - - 0 15}{15 w}{false}{g7,f6}{}
+& \matepuzzle{r2q1rk1/pb2bpp1/1pn1p2p/4P3/1n2N2P/3Q1N2/PP3PP1/RBB1R1K1 w - - 1 16}{16 w}{false}{d5,b4}{}
+& \matepuzzle{rrb3k1/4pp1p/1qpp1bp1/p1p3N1/5P1Q/1P1PP3/P1PN2PP/R4RK1 w - - 0 15}{15 w}{false}{g7,f6}{}
+\\
+\href{https://lichess.org/JSa03bLn\#33}{\texttt{lichess.org/JSa03bLn\#33}}
+& \href{https://lichess.org/FxLg6LpW\#30}{\texttt{lichess.org/FxLg6LpW\#30}}
+& \href{https://lichess.org/mDljdwyg\#28}{\texttt{lichess.org/mDljdwyg\#28}}
+\\
 \\
 
-\href{https://lichess.org/JSa03bLn}{\texttt{lichess.org/JSa03bLn}}
-& \href{https://lichess.org/FxLg6LpW}{\texttt{lichess.org/FxLg6LpW}}
-& \href{https://lichess.org/mDljdwyg}{\texttt{lichess.org/mDljdwyg}}
-\\
-\\
 \end{tabular}

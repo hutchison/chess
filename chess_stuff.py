@@ -274,66 +274,73 @@ def tex_puzzle(puzzle, solution=False):
     return puzzle_tex
 
 
-def tex_puzzles(puzzles, nr, solution=False):
+def heading(nr, solution=False):
+    h = r'\subsection*{Matt in ' + str(nr)
+    if solution:
+        h += ' – Lösung'
+    h += '}' + nl
+    return h
+
+
+def table_tex_puzzles(puzzles, nr, solution=False):
     zeile = 0
     spalte = 0
     urls = []
 
     t = ''
 
-    """
-    Wenn wir ein #1 Rätsel haben, dann können wir die Lösung gleich in das
-    Puzzle reinmalen. Ansonsten müssen wir alle Variationen einzeln in SAN
-    aufschreiben.
-    """
+    table_start = r'\begin{tabular}{ccc}' + nl
+    table_end = r'\end{tabular}' + nl
 
-    heading = r'\subsection*{Matt in ' + str(nr)
-    if solution:
-        heading += ' – Lösung'
-    heading += '}' + nl
+    for puzzle in puzzles:
+        if zeile == 0 and spalte == 0:
+            t += heading(nr, solution)
+            t += table_start
 
+        t += tex_puzzle(puzzle, solution) + nl
+
+        urls.append(puzzle.url)
+
+        if spalte == 2:
+            t += br + nl
+
+            url_str = tex_urls(urls) + nl
+            t += url_str
+
+            urls = []
+
+            if zeile == 3:
+                t += table_end
+                t += pagebreak + nl
+
+            zeile = (zeile+1) % 4
+        else:
+            t += '& '
+
+        spalte = (spalte+1) % 3
+
+    # Wenn wir bei der allerletzten Tabelle sind, müssen wir den Rest noch
+    # wegflushen:
+    t += br + nl
+    url_str = tex_urls(urls) + nl
+    t += url_str
+    t += table_end
+
+    return t
+
+
+def tex_puzzles(puzzles, nr):
+    return table_tex_puzzles(puzzles, nr)
+
+
+def tex_solutions(puzzles, nr):
     if nr == 1:
-        table_start = r'\begin{tabular}{ccc}' + nl
-        table_end = r'\end{tabular}' + nl
-
-        for puzzle in puzzles:
-            if zeile == 0 and spalte == 0:
-                t += heading
-                t += table_start
-
-            puzzle_str = tex_puzzle(puzzle, solution)
-            t += puzzle_str + nl
-
-            urls.append(puzzle.url)
-
-            if spalte == 2:
-                t += br + nl
-
-                url_str = tex_urls(urls) + nl
-                t += url_str
-
-                urls = []
-
-                if zeile == 3:
-                    t += table_end
-                    t += pagebreak + nl
-
-                zeile = (zeile+1) % 4
-            else:
-                t += '& '
-
-            spalte = (spalte+1) % 3
-
-        # Wenn wir bei der allerletzten Tabelle sind, müssen wir den Rest noch
-        # wegflushen:
-        t += br + nl
-        url_str = tex_urls(urls) + nl
-        t += url_str
-        t += table_end
+        return table_tex_puzzles(puzzles, nr, solution=True)
     else: # nr > 1
+        t = ''
         for n, puzzle in enumerate(puzzles):
             if n % 4 == 0:
-                t += heading
+                t += heading(nr, solution=True)
 
             t += r'\begin{tabular}{c}' + nl
             t += tex_puzzle(puzzle) + br + nl
@@ -354,7 +361,7 @@ def tex_puzzles(puzzles, nr, solution=False):
             if n % 4 == 3:
                 t += pagebreak
 
-    return t
+        return t
 
 
 def tex_url(url):
