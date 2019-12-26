@@ -87,7 +87,7 @@
 % mehrseitige Tabellen:
 %\usepackage{longtable}
 % Tabellen mit gedehnten Spalten:
-%\usepackage{tabularx}
+\usepackage{tabularx}
 % Pimpt enumerate auf (optionales Argument liefert Nummerierung):
 \usepackage{enumerate}
 % Kann descriptions auf die selbe Höhe bringen:
