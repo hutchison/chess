@@ -35,8 +35,8 @@
     \setmathrm{Minion Pro}
   }{}
   % Die Schriftart für serifenlose Texte (z.B. Überschriften):
-  \IfFontExistsTF{MyriadPro}{
-    \setallsansfonts[BoldFont={MyriadPro-Regular}]{MyriadPro}
+  \IfFontExistsTF{Myriad Pro}{
+    \setallsansfonts[BoldFont={MyriadPro-Regular}]{Myriad Pro}
   }{
     \IfFontExistsTF{Ubuntu}{
       \setallsansfonts[]{Ubuntu}
