@@ -1,0 +1,108 @@
+\documentclass[
+%% alle weiteren Papierformat einstellbar:
+a4paper, %apaper,
+%% keine Seitenzahlen:
+empty,
+%% Schriftgröße (12pt, 11pt (Standard)):
+11pt,
+%% kleinere Überschriften:
+%smallheadings,
+]
+{scrartcl}
+
+% chktex-file 8 Wrong length of dash may have been used.
+% chktex-file 11 You should use \ldots to achieve an ellipsis.
+% chktex-file 24 Delete this space to maintain correct pagereferences.
+
+\input{packages.latex}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \node at (0,-0.75) [anchor=north west] {\includegraphics[width=2cm]{Springer}};
+
+  \coordinate (name_w_l) at (3, -1);
+  \coordinate (name_s_r) at (\textwidth, -1);
+
+  \newdimen\lname
+  \newdimen\lveranstaltung
+  \tikzmath{
+    \lname = 0.5*(\textwidth - 4cm);
+    \lveranstaltung = 0.75*(\textwidth - 4cm);
+  }
+  \coordinate (name_w_r) at ($ (name_w_l) + (\lname, 0) $);
+  \coordinate (name_s_l) at ($ (name_w_l) + (\lname, 0) + (1, 0) $);
+
+  \draw (name_w_l) -- (name_w_r);
+  \node at (name_w_l) [anchor=north west] {\footnotesize{Weiß}};
+
+  \draw (name_s_l) -- (name_s_r);
+  \node at (name_s_l) [anchor=north west] {\footnotesize{Schwarz}};
+
+  \coordinate (veranstaltung_start) at ($ (name_w_l) - (0, 1.5) $);
+  \coordinate (veranstaltung_ende) at ($ (veranstaltung_start) + (\lveranstaltung, 0) $);
+
+  \draw (veranstaltung_start) -- (veranstaltung_ende);
+  \node at (veranstaltung_start) [anchor=north west] {\footnotesize{Veranstaltung}};
+
+  \coordinate (datum_start) at ($ (veranstaltung_ende) + (1, 0) $);
+  \coordinate (datum_ende) at (\textwidth, -2.5);
+  \draw (datum_start) -- (datum_ende);
+  \node at (datum_start) [anchor=north west] {\footnotesize{Datum}};
+
+\end{tikzpicture}
+
+\vspace{1cm}
+
+\begin{tabularx}{\textwidth}{XcX|XcX|XcX}
+  \toprule
+  & 1  &  &  & 31 &  &  & 61 & \\\midrule
+  & 2  &  &  & 32 &  &  & 62 & \\\midrule
+  & 3  &  &  & 33 &  &  & 63 & \\\midrule
+  & 4  &  &  & 34 &  &  & 64 & \\\midrule
+  & 5  &  &  & 35 &  &  & 65 & \\\midrule
+  & 6  &  &  & 36 &  &  & 66 & \\\midrule
+  & 7  &  &  & 37 &  &  & 67 & \\\midrule
+  & 8  &  &  & 38 &  &  & 68 & \\\midrule
+  & 9  &  &  & 39 &  &  & 69 & \\\midrule
+  & 10 &  &  & 40 &  &  & 70 & \\\midrule
+  & 11 &  &  & 41 &  &  & 71 & \\\midrule
+  & 12 &  &  & 42 &  &  & 72 & \\\midrule
+  & 13 &  &  & 43 &  &  & 73 & \\\midrule
+  & 14 &  &  & 44 &  &  & 74 & \\\midrule
+  & 15 &  &  & 45 &  &  & 75 & \\\midrule
+  & 16 &  &  & 46 &  &  & 76 & \\\midrule
+  & 17 &  &  & 47 &  &  & 77 & \\\midrule
+  & 18 &  &  & 48 &  &  & 78 & \\\midrule
+  & 19 &  &  & 49 &  &  & 79 & \\\midrule
+  & 20 &  &  & 50 &  &  & 80 & \\\midrule
+  & 21 &  &  & 51 &  &  & 81 & \\\midrule
+  & 22 &  &  & 52 &  &  & 82 & \\\midrule
+  & 23 &  &  & 53 &  &  & 83 & \\\midrule
+  & 24 &  &  & 54 &  &  & 84 & \\\midrule
+  & 25 &  &  & 55 &  &  & 85 & \\\midrule
+  & 26 &  &  & 56 &  &  & 86 & \\\midrule
+  & 27 &  &  & 57 &  &  & 87 & \\\midrule
+  & 28 &  &  & 58 &  &  & 88 & \\\midrule
+  & 29 &  &  & 59 &  &  & 89 & \\\midrule
+  & 30 &  &  & 60 &  &  & 90 & \\\bottomrule
+\end{tabularx}
+
+\vfill
+
+\begin{tikzpicture}
+  \coordinate (mitte) at ($ 0.5*(\textwidth, 0) $);
+  \coordinate (ergebnis_start) at ($ (mitte) - (2,0) $);
+  \coordinate (ergebnis_ende) at ($ (mitte) + (2,0) $);
+  \draw (ergebnis_start) -- (ergebnis_ende);
+  \node at (mitte) [anchor=north] {Ergebnis};
+
+  \draw (0,-1) -- (6, -1);
+  \node at (0,-1) [anchor=north west] {Unterschrift Weiß};
+
+  \draw ($ (\textwidth,-1) - (6,0) $) -- (\textwidth, -1);
+  \node at (\textwidth,-1) [anchor=north east] {Unterschrift Schwarz};
+\end{tikzpicture}
+
+
+\end{document}

@@ -176,6 +176,7 @@
   %fit,
   calc,
   arrows,
+  math,
   %automata,
   %trees,
   %decorations.pathreplacing,
