@@ -102,6 +102,7 @@
 %\usepackage{cleveref}
 % Farben (wie bei TikZ):
 \usepackage[dvipsnames]{xcolor}
+%\definecolor{mygray}{gray}{0.8}
 %\usepackage[]{pifont}
 % Ändert den Zeilenabstand:
 %\usepackage[
