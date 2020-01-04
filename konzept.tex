@@ -1140,6 +1140,99 @@ kontrollieren und nicht ungenutzt und versteckt in der eigenen Hälfte rumstehen
   \item Falsch platzierte Figuren sind anfällig für Taktiken.
 \end{itemize}
 
+\subsection{Zeit}%
+\label{sub:zeit}
+
+Jede Partie ist ein Rennen um die Zeit. Wenn ein Spieler am Zug ist, dann hat er genau
+einen Zug zur Verfügung. Diese Zeiteinheit wird im Schach \emph{Tempo} (Pl. \emph{Tempi})
+genannt. Zu Beginn jeder Partie sind beide Truppen noch in den Baracken und müssen
+mobilisiert werden. Das Rennen um die Zeit besteht darin die eigenen Truppen am
+schnellsten auf die besten Plätze zu bringen. Während das Materialverhältnis schnell
+ermittelt werden kann, müssen die Spieler selbst bestimmen, ob die Zeit gut genutzt oder
+verschwendet wurde.
+
+Ein guter Ansatz für die Entwicklung der Figuren ist folgende Stellung:
+\begin{center}
+  \chessboard[
+    setfen=rnbqkbnr/pppppppp/8/8/2BPPB2/2N2N2/PPPQ1PPP/R4RK1 w kq - 0 1,
+    showmover=false,
+  ]
+\end{center}
+Jede Leichtfigur wurde entwickelt, aber nicht zu weit in die gegnerische Hälfte, der König
+wurde rochiert und die Türme sind verbunden. Für die vollständige Entwicklung sollten die
+Türme noch zentralisiert werden. In dieser Position ist Weiß 8 Tempi voraus (angenommen
+Schwarz hätte nur den einen Springer vor und zurück springen lassen).
+
+Um ein besseres Verständnis der Zeit zu erhalten, bietet es sich an die einzelnen Züge als
+\emph{entwickelnd/nicht-entwickelnd} bzw. \emph{produktiv/unproduktiv} zu kategorisieren.
+
+Schauen wir uns folgendes Beispiel an:
+\newchessgame
+\mainline{1. d4} entwickelt den Bauern und öffnet Raum für den schwarzen Läufer.
+\mainline{1... c5} öffnet keinen Raum, aber greift das Zentrum an.
+\mainline{2. Nf3} entwickelt den Springer, \mainline{2... cxd4} beseitigt den
+Zentrumsbauern.
+\mainline{3. Nxd4 Nc6} entwickelt den Springer.
+\mainline{4. e4} entwickelt den Bauer und macht Raum für den weißen Läufer.
+\mainline{4... e5} entwickelt den Bauer und macht Raum für den schwarzen Läufer.
+\mainline{5. Nf3} reagiert auf den Angriff des Bauern.
+\mainline{5... d6} macht Raum für den weißen Läufer.
+Und jetzt \mainline{6. b3??}.
+\begin{marginfigure}[-7\baselineskip]
+  \begin{center}
+    \chessboard[
+      smallboard,
+    ]
+  \end{center}
+\end{marginfigure}
+Anscheinend soll dieser Zug mehr Raum für den dunklen Läufer machen. Aber der dunkle
+Läufer hat doch schon Raum zum Entwickeln! Bessere Züge sind \variation{6. Nc3} oder
+\variation{6. Bc4} und dann kurz rochieren. Der dunkle Läufer kann doch später nach e3
+oder g5 ziehen. Der Zug \variation{6. b3} ist Zeitverschwendung.
+
+Nächstes Beispiel:
+\newchessgame
+\mainline{1. e4 e6 2. Nf3 Bc5??} entwickelt zwar den dunklen Läufer, aber was wird Weiß
+als nächstes tun? \mainline{3. d4} macht Platz für den dunklen Läufer und greift den
+dunklen Läufer auf c5 an. Dieser Läufer muss jetzt reagieren, weil der Bauer auf d4
+gedeckt ist. Angenommen \mainline{3... Bb4+ 4. Bd2 Bxd2 5. Qxd2}.
+\begin{marginfigure}[-5\baselineskip]
+  \begin{center}
+    \chessboard[
+      smallboard,
+    ]
+  \end{center}
+\end{marginfigure}
+Kurze Bestandsaufnahme: wie sieht das Zeitrennen aus? Weiß braucht 3 Züge um die Türme zu
+verbinden (Springer, Läufer, Rochade). Schwarz hingegen muss die Springer und die Dame
+bewegen (3 Tempi), eine Tür für den Läufer öffnen und diesen bewegen (2 Tempi) und
+rochieren (1 Tempo) – macht insgesamt 6 Tempi. Weiß liegt vorne im Zeitrennen.
+
+Schauen wir wie es weitergeht, wenn wir wissen, dass Weiß im Zeitrennen im Vorteil ist:
+\mainline{5... Ne7 6. Nc3 O-O 7. O-O-O b6 8. Bc4 Bb7}.
+\begin{marginfigure}[-5\baselineskip]
+  \begin{center}
+    \chessboard[
+      smallboard,
+    ]
+  \end{center}
+\end{marginfigure}
+Was soll Weiß tun, wenn er im Zeitvorteil ist? Ein gutes Prinzip lautet: wenn du einen
+Zeitvorteil hast, dann versuche Bauern abzutauschen. Warum? Weil dadurch Linien und
+Diagonalen geöffnet werden und offene Linien bringen die Türme und Dame ins Spiel.
+Schauen wir, was passiert:
+\mainline{9. d5 exd5 10. Nxd5 Nxd5 11. Bxd5 Bxd5 12. Qxd5} und die Dame auf einem
+zentralen Feld mit den Ideen \wmove{Qxd7} oder \wmove{Qxa8}.
+\begin{marginfigure}
+  \begin{center}
+    \chessboard[
+      smallboard,
+    ]
+  \end{center}
+\end{marginfigure}
+Andererseits: wenn man in Zeitverzug ist, dann sollte man Bauerntausche vermeiden und die
+Stellung schließen. Eine geschlossene Stellung verschafft Zeit für Manöver.
+
 \subsection{Bauernstruktur}%
 \label{sub:bauernstruktur}
 
