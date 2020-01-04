@@ -897,13 +897,237 @@ wunderschönen Damenopfer: \mainline{16. Qb8+!! Nxb8 17. Rd8#}.
 \section{Die Schachelemente}%
 \label{sec:die_schachelemente}
 
+In dem Werk \emph{Die Kunst des Krieges} schreibt Sunzi:
+\begin{quotation}
+  Die Kunst des Krieges ist für den Staat von entscheidender Bedeutung. Sie ist eine
+  Angelegenheit von Leben und Tod, eine Straße, die zur Sicherheit oder in den Untergang
+  führt. Deshalb darf sie unter keinen Umständen vernachlässigt werden.
+
+  Die Kunst des Krieges wird von fünf konstanten Faktoren bestimmt, die alle
+  berücksichtigt werden müssen. Es sind dies: das Gesetz der Moral; Himmel; Erde; der
+  Befehlshaber; Methode und Disziplin.
+
+  \emph{Das Gesetz der Moral} veranlasst die Menschen, mit ihrem Herrscher völlig
+  übereinzustimmen, sodass sie ihm ohne Rücksicht auf ihr Leben folgen und sich durch
+  keine Gefahr erschrecken lassen.
+
+  \emph{Himmel} bedeutet Nacht und Tag, Kälte und Hitze, Tageszeit und Jahreszeit.
+
+  \emph{Erde} umfasst große und kleine Entfernungen, Gefahr und Sicherheit, offenes
+  Gelände und schmale Pässe, die Unwägbarkeit von Leben und Tod.
+
+  \emph{Der Befehlshaber} steht für die Tugenden der Weisheit, der Aufrichtigkeit, des
+  Wohlwollens, des Mutes und der Strenge.
+
+  \emph{Methode und Disziplin} müssen verstanden werden als die Gliederung der Armee in
+  die richtigen Untereinheiten, die Rangordnung unter den Offizieren, die Behauptung der
+  Straßen, auf denen der Nachschub zur Armee kommt, und die Kontrolle der militärischen
+  Ausgaben.
+
+  Diese fünf Faktoren sollten jedem General vertraut sein. Wer sie kennt, wird siegreich
+  sein; wer sie nicht kennt, wird scheitern.
+\end{quotation}
+
+Diese fünf Faktoren lassen sich nicht eindeutig auf das Schachspiel übertragen.
+Beispielsweise folgen die Figuren den Befehlen des Herrschers, ohne diese zu hinterfragen
+und die Figuren müssen auch nicht in Untereinheiten gegliedert werden.
+
+Es lässt sich aber die Idee übertragen, dass das Schachspiel aus Elementen besteht, die es
+zu kennen und beherrschen gilt. Diese fünf Elemente des Schachspiels lauten: Material,
+Raum, Zeit, Bauernstruktur und Königssicherheit.
+\begin{marginfigure}
+  \begin{center}
+    \begin{tikzpicture}
+      \def \r {2}
+      \node (material)          at (18:\r)  {M};
+      \node (raum)              at (90:\r)  {R};
+      \node (zeit)              at (162:\r) {Z};
+      \node (bauernstruktur)    at (234:\r) {B};
+      \node (koenigssicherheit) at (306:\r) {K};
+
+      \draw (material) to [bend right] (raum);
+      \draw (raum) to [bend right] (zeit);
+      \draw (zeit) to [bend right] (bauernstruktur);
+      \draw (bauernstruktur) to [bend right] (koenigssicherheit);
+      \draw (koenigssicherheit) to [bend right] (material);
+
+      \draw (raum) -- (bauernstruktur) -- (material) -- (zeit) -- (koenigssicherheit) --
+      (raum);
+    \end{tikzpicture}
+  \end{center}
+\end{marginfigure}
+\emph{Material} bedeutet Truppenstärke. In 9 von 10 Fällen gewinnt der Spieler, der mehr
+Figuren hat. Im wirklichen Leben nennt man dies \emph{bigger army diplomacy}. Das Ziel von
+Taktiken ist häufig eine Figur (Material) zu gewinnen.
+
+\emph{Raum} bedeutet die Kontrolle von Feldern. Der Spieler, der mehr (und vor allem die
+richtigen) Felder kontrolliert, wird den Gegner einengen und den König schließlich Matt
+setzen.
+
+\emph{Zeit} bedeutet die Möglichkeit des Spielers Gefahren zu erzeugen. Das Anzugrecht
+muss vom Spieler immer effizient genutzt werden.
+
+Bauern sind die Seele des Schachspiels. Daher ist eine solide \emph{Bauernstruktur} der
+Grundpfeiler für eine Gewinnstellung. Bauernstrukturen können offen oder geschlossen sein,
+symmetrisch oder asymmetrisch. Die Bauernstruktur bestimmt oft, wie die restlichen Figuren
+zu ziehen sind.
+
+Für die \emph{Sicherheit des Königs} ist wichtig, dass dieser durch plötzliche
+Schachgebote keinen Taktiken zum Opfer fallen kann. Die Rochade ist einer der wichtigsten
+Züge, um den eigenen König in Sicherheit zu bringen.
+
+Jedes dieser Elemente lässt sich in andere Elemente umwandeln.
+Wer die Elemente versteht, wird eine siegreiche Stellung erreichen.
+Wer die Elemente nicht versteht, wird Taktiken zum Opfer fallen und verlieren.
+
 \subsection{Material}%
 \label{sub:material}
 
-\subsection{Zeit}%
-\label{sub:zeit}
+Wie so oft in der Menschheitsgeschichte gilt auch im Schach: wer die größere Armee hat,
+gewinnt die Schlacht. Anfangs starten beide Spieler mit der gleichen Anzahl von Figuren.
+Den Figuren werden oft die folgenden Werte zugeordnet:
+\begin{center}
+  \begin{tabular}{lr}
+    \toprule
+    Bauer & 1\\\midrule
+    Springer & 3\\\midrule
+    Läufer & 3 – 3,5\\\midrule
+    Turm & 5\\\midrule
+    Dame & 9\\\midrule
+    König & $\infty$\\
+    \bottomrule
+  \end{tabular}
+\end{center}
 
-Siehe \url{https://www.youtube.com/watch?v=c3B34oKM0oI}
+Diese Werte ergeben sich aus folgender Überlegung: das Schachbrett ist das Schlachtfeld
+unserer Armeen und dieses Schlachtfeld ist in zwei Bereiche unterteilt. Eine Seite
+\emph{gehört} Weiß und die andere Seite Schwarz. Die teilende Gerade (der Äquator) liegt
+dabei zwischen der 4. und 5. Reihe.
+\begin{marginfigure}
+  \chessboard[
+    smallboard,
+    showmover=false,
+    setpieces={},
+    pgfstyle=border,
+    color=red,
+    padding=-0.3ex,
+    markregion={a1-h4},
+    color=blue,
+    markregion={a5-h8},
+  ]
+\end{marginfigure}
+Ein Bauer kann in der gegnerischen Hälfte maximal 2 Felder kontrollieren. Dafür wird einem
+Bauern 1 Punktwert zugeordnet. Für 2 kontrollierte Felder, kriegt eine Figur 1 Punkt.
+
+Ein Bauer kontrolliert meistens 2 Felder. Ein Randbauer kontrolliert nur 1 Feld, es
+sei denn er verlässt sein Randbauerdasein und schlägt zur Mitte hin.
+Daher sollte man mit Bauern meistens zur Mitte schlagen.
+
+Türme sind einfach zu analysieren. Platziert man einen weißen Turm in die weiße Hälfte,
+dann kontrolliert er immer 4 Felder der schwarzen Hälfte. Platziert man einen Turm in der
+schwarzen Hälfte, dann kontrolliert er dort immer 10 Felder und erhält damit einen Wert
+von 5. Wichtig ist hierbei, dass ein Turm nur dann zum Spiel beiträgt, wenn er gegnerische
+Felder kontrolliert.
+
+Betrachten wir als nächstes die Läufer. Für den Läufer sollte man die Rechnung der
+kontrollierenden Felder einmal selbst durchführen und auf folgendes Ergebnis kommen:
+\begin{center}
+  \chessboard[
+    setpieces={},
+    showmover=false,
+    pgfstyle={[base,at={\pgfpoint{0pt}{-0.4ex}}]text},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 1,
+    markfields={d1,e1},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 2,
+    markfields={c1,f1},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 3,
+    markfields={b1,c2,g1,f2,d2,e2,a5,a6,a7,a8,h5,h6,h7,h8},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 4,
+    markfields={a1,a2,a3,a4,b2,b3,h1,h2,h3,h4,g2,g3,b5,g5,b8,g8},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 5,
+    markfields={c3,f3,b4,g4,d3,e3,c5,f5,c8,f8,b7,g7,b6,g6},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 6,
+    markfields={c4,f4,d5,e5,d8,e8,c7,f7,c6,f6,d7,e7,d6,e6},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 7,
+    markfields={d4,e4},
+    pgfstyle=color,
+    color=red,
+    backregion={d4-e4},
+  ]
+\end{center}
+Die besten Felder für die Läufer sind daher d4 und e4.
+Von dort kontrollieren sie 7 Felder und erhalten dafür den Wert 3,5.
+
+Weiter geht’s mit den Springern. Die Rechnung führt zu folgendem Ergebnis:
+\begin{center}
+  \chessboard[
+    setpieces={},
+    showmover=false,
+    pgfstyle={[base,at={\pgfpoint{0pt}{-0.4ex}}]text},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 1,
+    markfields={a3,h3},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 2,
+    markfields={b3,c3,d3,e3,f3,g3,a4,h4,a5,h5,a8,h8},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 3,
+    markfields={b4,g4,a7,h7,a6,h6,b8,g8,b5,g5},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 4,
+    markfields={c4,d4,e4,f4,c8,d8,e8,f8,b7,g7,b6,g6,c5,d5,e5,f5},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 6,
+    markfields={c7,d7,e7,f7,c6,d6,e6,f6},
+    pgfstyle=color,
+    color=red,
+    backregion={c6-f7},
+  ]
+\end{center}
+Damit erhält der Springer einen Wert von 3, weil er maximal 6 Felder kontrollieren kann.
+
+Zuletzt die Dame:
+\begin{center}
+  \chessboard[
+    setpieces={},
+    showmover=false,
+    pgfstyle={[base,at={\pgfpoint{0pt}{-0.4ex}}]text},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 5,
+    markfields={d1,e1},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 6,
+    markfields={c1,f1},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 7,
+    markfields={b1,g1,c2,f2,d2,e2},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 8,
+    markfields={a1,a2,a3,a4,h1,h2,h3,h4,b2,b3,b4,g2,g3,g4},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 9,
+    markfields={c3,d3,e3,f3},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 10,
+    markfields={c4,f4},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 11,
+    markfields={d4,e4},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 13,
+    markfields={a5,h5,a6,h6,a7,h7,a8,h8},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 14,
+    markfields={b5,g5,b8,g8},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 15,
+    markfields={b6,b7,g6,g7,c8,f8,c5,f5},
+    text=\fontsize{1.5ex}{1.0ex}\selectfont 16,
+    markfields={d8,e8,d5,e5,c6,f6,c7,f7,d6,e6,d7,e7},
+  ]
+\end{center}
+Da die Dame maximal 16 Felder kontrolliert, sollte ihr eigentlich ein Wert von 8
+zugeordnet werden, aber da sie die Möglichkeit besitzt dem gegnerischen König ein ewiges
+Schach zu geben und damit ein Unentschieden rauszuholen, ordnet man ihr den höheren Wert 9
+zu.
+
+Ausgehend von dieser Analyse können wir jetzt die besten Felder für unsere Figuren finden:
+\begin{center}
+  \chessboard[
+    setpieces={Bd4,Be4,Nc6,Nf6,Ra7,Rh7},
+    showmover=false,
+  ]
+\end{center}
+Auf diese Weise decken sich die Figuren gegenseitig.
+
+Diese Analyse zeigt uns, wie die Materialwerte zustande kommen. Durch diese Analyse wissen
+wir auch, dass die Figuren erst dann ihren Wert zeigen, wenn sie gegenerische Felder
+kontrollieren und nicht ungenutzt und versteckt in der eigenen Hälfte rumstehen.
 
 \subsection{Raum}%
 \label{sub:raum}
