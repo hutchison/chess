@@ -58,6 +58,8 @@
   \color{black}
 }
 
+\newcommand\kurznotiz[1]{\textcolor{Maroon}{#1}}
+
 \usepackage{hyperref}
 
 \begin{document}
@@ -687,6 +689,8 @@ Siehe \url{https://lichess.org/study/Vnzt6p8p}
 \section{Taktik}%
 \label{sec:taktik}
 
+Siehe \url{https://www.chesstactics.org}
+
 \begin{notiz}
   \begin{itemize}
     \item ungedeckte Figuren
@@ -824,6 +828,7 @@ Nxe1+ 15. Rxe1 Qg4 16. d3 Bxf2 17. Rh1 Qxg3+ 18. Kf1 Bd4 19. Ke2 Qg2+ 20. Kd1
 Qxh1+ 21. Kd2 Qg2+ 22. Kd1 Ng1 23. Nc3 Bxc3 24. bxc3 Qe2#}
 
 \paragraph{Paul Morphy – Karl von Braunschweig und Graf Isoard, Paris 1858}%
+\label{par:the_opera_game}
 
 \newchessgame
 
@@ -833,8 +838,9 @@ von Sevilla} gespielt wurde.
 Es geht los mit \mainline{1. e4 e5 2. Nf3 d6}, die Philidor-Verteidigung.
 Weiß attackiert mit \mainline{3. d4} das Zentrum.
 Schwarz versucht mit \mainline{3... Bg4} den Springer an die Dame zu fesseln.
-Das ist jedoch ein Fehler, weil Weiß mit \variation{4. dxe5 dxe5 5. Qxd8+ Kxe8 6. Nxe5}
-den Bauern und das Rochaderecht verliert.
+Das ist jedoch ein Fehler (\kurznotiz{Warum?}),
+weil Weiß mit \variation{4. dxe5 dxe5 5. Qxd8+ Kxe8 6. Nxe5} den Bauern und das
+Rochaderecht verliert.
 \begin{marginfigure}
   \chessboard[
     style=standard,
@@ -855,7 +861,10 @@ Bxf3}. Nach \mainline{5. Qxf3 dxe5 6. Bc4} bedroht Weiß f7 mit Matt.
 \end{marginfigure}
 Schwarz verteidigt mit \mainline{6... Nf6}, woraufhin Weiß mit \mainline{7. Qb3}
 antwortet.
-Damit wird weiterhin Druck auf f7 ausgeübt und sogar Matt in 2 angedroht.
+Damit wird weiterhin Druck auf f7 ausgeübt und sogar Matt in 2 angedroht
+(\kurznotiz{Wie?} z.\,B. nach \variation{7... b3} folgt \variation{8. Bxf7}
+und egal ob \variation{8...  Ke7} oder \variation{8...  Kd7}
+folgt \variation{9. Qe6#}).
 Weiterhin ist der Bauer auf b7 ungedeckt und wird jetzt durch die Dame angegriffen.
 Schwarz antwortet mit \mainline{7... Qe7} und möchte damit, falls Weiß sich mit
 \variation{8. Qxb7} den Bauern holt, mittels \variation{8... Qb4+} einen Damentausch
@@ -1147,9 +1156,8 @@ Jede Partie ist ein Rennen um die Zeit. Wenn ein Spieler am Zug ist, dann hat er
 einen Zug zur Verfügung. Diese Zeiteinheit wird im Schach \emph{Tempo} (Pl. \emph{Tempi})
 genannt. Zu Beginn jeder Partie sind beide Truppen noch in den Baracken und müssen
 mobilisiert werden. Das Rennen um die Zeit besteht darin die eigenen Truppen am
-schnellsten auf die besten Plätze zu bringen. Während das Materialverhältnis schnell
-ermittelt werden kann, müssen die Spieler selbst bestimmen, ob die Zeit gut genutzt oder
-verschwendet wurde.
+schnellsten auf die besten Plätze zu bringen. Ähnlich wie das Materialverhältnis lässt
+sich zu Beginn einer Partie beurteilen, ob die Zeit gut genutzt oder verschwendet wurde.
 
 Ein guter Ansatz für die Entwicklung der Figuren ist folgende Stellung:
 \begin{center}
@@ -1232,6 +1240,61 @@ zentralen Feld mit den Ideen \wmove{Qxd7} oder \wmove{Qxa8}.
 \end{marginfigure}
 Andererseits: wenn man in Zeitverzug ist, dann sollte man Bauerntausche vermeiden und die
 Stellung schließen. Eine geschlossene Stellung verschafft Zeit für Manöver.
+
+Schauen wir uns ein weiteres Beispiel an:
+\newchessgame
+\mainline{1. d4 d5 2. c4} ist das Damengambit.
+Die Idee ist den c-Bauern für die Entwicklung des hellen Läufers zu opfern.
+Man kann ein Gambit annehmen oder auch nicht.
+Hier wird es nicht angenommen:
+\mainline{2... c6 3. Nf3 Nf6 4. Nc3 g6 5. e3 Bg7 6. Be2 O-O 7. O-O Nd7 8. b3}
+bereitet \variation{9. Bb2} vor (was ok ist, weil die andere Tür durch \wmove{e3}
+blockiert wurde; auf d2 steht der Läufer ziemlich traurig da).
+\mainline{8... h6?}, vielleicht um den König später nach h7 zu bringen.
+\mainline{9. Bb2} und jetzt spielt Schwarz \mainline{9... Qc7?}
+\kurznotiz{War das ein guter Zug? Produktiv oder unproduktiv?}
+Der Zug ist produktiv, weil er die Dame entwickelt, aber die Dame steht auf c7 schlecht.
+Der Bauer auf d5 steht unter Spannung und kann jeden Moment abgetauscht werden.
+Dadurch öffnet sich die c-Linie und die Dame steht schutzlos da.
+Der Turm von a1 kann sich mit Tempo nach c1 entwickeln.
+Dadurch gewinnt Weiß ein Tempo.
+
+Nächstes Beispiel:
+\newchessgame
+\mainline{1. d4 c5 2. d5} entwickelt zwar keine Figur, aber macht Schwarz durch Raumgewinn
+das Leben schwer, da der Springer nicht nach c6 entwickeln kann.
+\mainline{2... e6 3. c4 Nf6 4. Nc3 d6 5. e4 b6?}
+\kurznotiz{Warum b6? Ist der Weg nach g5 für den Läufer nicht gut genug? Der Bauer auf e6
+kann doch bald abgetauscht werden. Auf b7 schaut der Läufer auf solide stehende Bauern und
+ist eher wirkungslos.}
+\mainline{6. Nb5?} soll was genau bewirken?
+Der Springer wurde schon entwickelt und wird jetzt nochmal bewegt?
+Warum stattdessen nicht \variation{6. Nf3}, \variation{6. Bd3} oder \variation{6. Bg5}?
+Lass dich nicht ablenken, sondern entwickle deine Figuren!
+\mainline{6... a6} kicks the knight away.
+\mainline{7. Nc3 Nd7 8. Bg5 Bb7} entwickelt, aber das Problem der soliden Bauernstruktur
+bleibt.
+Und jetzt der nächste Fehler von Weiß: \mainline{9. dxe6??} tauscht den zentralen Bauern
+ab, der so schön stand und Schwarz eingeengt hat.
+Das war ein Prachtbauer, für den 2 Tempi investiert wurden.
+Nach dem Tausch wurde der gute d-Bauer gegen den defensiven f-Bauern eingetauscht.
+Kein guter Tausch für Weiß.
+Stattdessen lieber \variation{9. Nf3 Be7}.
+
+Nächstes Beispiel:
+\newchessgame
+\mainline{1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 b6} für \variation{7...
+Bb7}.
+Wenn stattdessen \variation{6... Nd7}, dann wird der schwarze c-Bauer blockiert und nach
+\variation{7. Be2 Qd6 8. O-O Bd7} und nach \variation{9. c5} geht die Dame flöten.
+Also nach \variation{6... b6} folgt \mainline{7. a3 dxc4?}.
+\kurznotiz{Ist es sinnvoll, den Bauern zu nehmen? Vergleiche die Zeitsituation!}
+Nach \variation{7... dxc4} kann Weiß mit \mainline{8. Bxc4} den Läufer entwickeln.
+Durch diesen Zug hat Schwarz ein Tempo verschwendet bzw. Weiß ein Tempo geschenkt.
+Stattdessen lieber \variation{7... Bb7}, weil wenn Weiß den hellen Läufer mit
+\variation{8. Bd3} entwickeln will, dann sollte Schwarz \variation{8... dxc4} spielen,
+damit Weiß mit \variation{9. Bxc4} ein Tempo verliert.
+Daher ist es oft clever die \emph{Spannung aufzuerhalten}.
 
 \subsection{Bauernstruktur}%
 \label{sub:bauernstruktur}
@@ -1365,13 +1428,23 @@ sollen.
     in Paaren gemeinsam lösen und aufschreiben,
     freies Spiel
 
-  \item[18.12.2019] Matt in 1 Puzzles (Seite 8) gegeneinander: alle legen gemeinsam los
+  \item[19.12.2019] Matt in 1 Puzzles (Seite 8) gegeneinander: alle legen gemeinsam los
     und wer zuerst denkt fertig zu sein, sagt \emph{Stop}. Für jedes erste gefundene Matt
     zu einem Puzzle gibt es 1 Punkt, für jedes weitere 2 Punkte, aber für jedes falsche
     Matt gibt es $-2$ Punkte.
     Kurzvortrag zum besten je gespielten Zug,
     Vortrag zum Griechischen Geschenk,
     freies Spiel
+
+  \item[09.01.2020] Matt in 2 Puzzles (Seite 15),
+    Vortrag zu den Elementen des Schach,
+    Zusammenhang zwischen Material und Raum,
+    freies Spiel
+
+  \item[16.01.2020] Vortrag zum Thema \emph{Zeit im Schach},
+    \hyperref[par:the_opera_game]{das Opernspiel} wird gezeigt,
+    freies Spiel
+
 \end{description}
 
 \end{document}
