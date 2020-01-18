@@ -1,0 +1,270 @@
+\documentclass[
+  aspectratio=1610,
+  xcolor={dvipsnames},
+]{beamer}
+
+% chktex-file 1
+% chktex-file 26
+
+\usefonttheme{professionalfonts}
+\usefonttheme[stillsansseriflarge, stillsansserifsmall]{serif}
+
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+
+\usepackage[MnSymbol]{mathspec}
+\setmathfont(Digits,Latin,Greek)[
+  Numbers={Lining, Proportional}
+]{Minion Pro}
+\setmathrm{Minion Pro}
+
+\defaultfontfeatures{
+  Ligatures=TeX,
+  Scale=MatchLowercase,
+}
+\setsansfont{Gill Sans}
+\setmainfont{Minion Pro}
+\setmonofont{Fira Mono}
+
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+
+\usepackage{hyperref}
+
+\setbeamertemplate{navigation symbols}{}
+
+\graphicspath{{./bilder/}}
+
+% Schachkram:
+% siehe: http://mirrors.ctan.org/macros/latex/contrib/chessboard/chessboard.pdf
+\usepackage{chessboard}
+\usepackage{xskak}
+
+%\usepackage{showframe}
+
+\newcommand{\wplogo}{\includegraphics[height=2ex]{enwiki.png}}
+
+\author{Martin Darmüntzel}
+\title{Schach für Anfänger}
+\subtitle{Die Elemente}
+%\institute{Universität Rostock}
+%\date{6. September 2019}
+
+\begin{document}
+
+\begin{frame}{}
+  \titlepage{}
+\end{frame}
+
+\begin{frame}{Sunzis Elemente des Krieges}
+  \begin{itemize}
+    \item Gesetz der Moral
+    \item Himmel
+    \item Erde
+    \item der Befehlshaber
+    \item Methode und Disziplin
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Elemente im Schach}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Material
+        \item Raum
+        \item Zeit
+        \item Bauernstruktur
+        \item Königssicherheit
+      \end{itemize}
+    \end{column}
+
+    \pause
+
+    \begin{column}{0.4\textwidth}
+      \begin{center}
+        \begin{tikzpicture}
+          \def \r {2}
+          \node (material)          at (18:\r)  {M};
+          \node (raum)              at (90:\r)  {R};
+          \node (zeit)              at (162:\r) {Z};
+          \node (bauernstruktur)    at (234:\r) {B};
+          \node (koenigssicherheit) at (306:\r) {K};
+
+          \draw (material) to [bend right] (raum);
+          \draw (raum) to [bend right] (zeit);
+          \draw (zeit) to [bend right] (bauernstruktur);
+          \draw (bauernstruktur) to [bend right] (koenigssicherheit);
+          \draw (koenigssicherheit) to [bend right] (material);
+
+          \draw (raum) -- (bauernstruktur) -- (material) -- (zeit) -- (koenigssicherheit) --
+          (raum);
+        \end{tikzpicture}
+      \end{center}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \chessboard[
+      showmover=false,
+      setpieces={},
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{Springer}
+  \begin{center}
+    \chessboard[
+      setpieces={},
+      showmover=false,
+      pgfstyle={[base,at={\pgfpoint{0pt}{-0.4ex}}]text},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 2,
+      markfields={a1,a8,h1,h8},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 3,
+      markfields={b1,a2,g1,h2,a7,b8,g8,h7},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 4,
+      markfields={c1,d1,e1,f1,b2,g2,a3,a4,a5,a6,h3,h4,h5,h6,b7,g7,c8,d8,e8,f8},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 6,
+      markfields={b3,b4,b5,b6,c7,d7,e7,f7,g6,g5,g4,g3,f2,e2,d2,c2},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 8,
+      markfields={c3,d3,e3,f3,c4,d4,e4,f4,c5,d5,e5,f5, c6,d6,e6,f6},
+      pgfstyle=color,
+      color=orange,
+      backregion={c3-f6},
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{Läufer}
+  \begin{center}
+    \chessboard[
+      setpieces={},
+      showmover=false,
+      pgfstyle={[base,at={\pgfpoint{0pt}{-0.4ex}}]text},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 7,
+      markfields={a1,b1,c1,d1,e1,f1,g1,h1,a2,a3,a4,a5,a6,a7,h2,h3,h4,h5,h6,h7,a8,b8,c8,d8,e8,f8,g8,h8},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 9,
+      markfields={b2,b3,b4,b5,b6,b7,c2,d2,e2,f2,c7,d7,e7,f7,g2,g3,g4,g5,g6,g7},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 11,
+      markfields={c3,c4,c5,c6,f3,f4,f5,f6,d3,e3,d6,e6},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 13,
+      markfields={d4,d5,e4,e5},
+      pgfstyle=color,
+      color=orange,
+      backregion={d4-e5},
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \chessboard[
+      showmover=false,
+      setpieces={},
+      pgfstyle=border,
+      color=red,
+      padding=-0.3ex,
+      markregion={a1-h4},
+      color=blue,
+      markregion={a5-h8},
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{Läufer}
+  \begin{center}
+    \chessboard[
+      setpieces={},
+      showmover=false,
+      pgfstyle={[base,at={\pgfpoint{0pt}{-0.4ex}}]text},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 1,
+      markfields={d1,e1},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 2,
+      markfields={c1,f1},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 3,
+      markfields={b1,c2,g1,f2,d2,e2,a5,a6,a7,a8,h5,h6,h7,h8},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 4,
+      markfields={a1,a2,a3,a4,b2,b3,h1,h2,h3,h4,g2,g3,b5,g5,b8,g8},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 5,
+      markfields={c3,f3,b4,g4,d3,e3,c5,f5,c8,f8,b7,g7,b6,g6},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 6,
+      markfields={c4,f4,d5,e5,d8,e8,c7,f7,c6,f6,d7,e7,d6,e6},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 7,
+      markfields={d4,e4},
+      pgfstyle=color,
+      color=orange,
+      backregion={d4-e4},
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{Springer}
+  \begin{center}
+    \chessboard[
+      setpieces={},
+      showmover=false,
+      pgfstyle={[base,at={\pgfpoint{0pt}{-0.4ex}}]text},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 1,
+      markfields={a3,h3},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 2,
+      markfields={b3,c3,d3,e3,f3,g3,a4,h4,a5,h5,a8,h8},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 3,
+      markfields={b4,g4,a7,h7,a6,h6,b8,g8,b5,g5},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 4,
+      markfields={c4,d4,e4,f4,c8,d8,e8,f8,b7,g7,b6,g6,c5,d5,e5,f5},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 6,
+      markfields={c7,d7,e7,f7,c6,d6,e6,f6},
+      pgfstyle=color,
+      color=orange,
+      backregion={c6-f7},
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}{Dame}
+  \begin{center}
+    \chessboard[
+      setpieces={},
+      showmover=false,
+      pgfstyle={[base,at={\pgfpoint{0pt}{-0.4ex}}]text},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 5,
+      markfields={d1,e1},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 6,
+      markfields={c1,f1},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 7,
+      markfields={b1,g1,c2,f2,d2,e2},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 8,
+      markfields={a1,a2,a3,a4,h1,h2,h3,h4,b2,b3,b4,g2,g3,g4},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 9,
+      markfields={c3,d3,e3,f3},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 10,
+      markfields={c4,f4},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 11,
+      markfields={d4,e4},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 13,
+      markfields={a5,h5,a6,h6,a7,h7,a8,h8},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 14,
+      markfields={b5,g5,b8,g8},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 15,
+      markfields={b6,b7,g6,g7,c8,f8,c5,f5},
+      text=\fontsize{1.5ex}{1.0ex}\selectfont 16,
+      markfields={d8,e8,d5,e5,c6,f6,c7,f7,d6,e6,d7,e7},
+      pgfstyle=color,
+      color=orange,
+      backregion={c6-c7,d5-e8,f6-f7},
+    ]
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \chessboard[
+      setpieces={Bd4,Be4,Nc6,Nf6,Ra7,Rh7},
+      showmover=false,
+    ]
+  \end{center}
+\end{frame}
+
+\end{document}
