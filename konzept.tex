@@ -1302,13 +1302,34 @@ Daher ist es oft clever die \emph{Spannung aufzuerhalten}.
 \subsection{Sicherheit des Königs}%
 \label{sub:sicherheit_des_konigs}
 
+Siehe auch: \url{https://www.chessstrategyonline.com}
+
 \section{Eröffnungen}%
 \label{sec:eroffnungen}
 
-\begin{notiz}
-  Ziele der Eröffnung, Raum – Zeit – Material – Sicherheit des Königs, Wie erreichen
-  bestimmte Eröffnungen diese Ziele?
-\end{notiz}
+Nach den Überlegungen über die Elemente des Schachspiels, besonders über Raum und Zeit,
+ergeben sich für das Eröffnungsspiel folgende Aufgaben:
+\begin{itemize}
+  \item Erobere das Zentrum!
+  \item Entwickele Figuren!
+  \item Bring den König in Sicherheit!
+\end{itemize}
+
+Im Laufe der Schachgeschichte, gab viele Ideen wie man diese Ziele erreicht bzw. den
+Gegner daran hindert diese Ziele zu erreichen. Einige wichtige Eröffnungen sollen
+vorgestellt werden.
+
+\newchessgame
+Welcher Zug besetzt sofort zentrale Felder und eröffnet Raum für andere Figuren? Meiner
+Meinung nach erfüllt \mainline{1. e4} diese Voraussetzungen am besten. Der Königsbauer
+greift die beiden gegnerischen Felder d5 und f5 an und macht Platz für den hellen Läufer
+und die Dame.
+
+Schwarz hat viele Möglichkeiten um diesem Zug zu begegnen und jeder Zug trägt einen
+anderen Namen. Die häufigste Erwiderung ist der Zug \mainline{1... e5}, der genau die
+gleichen Ziele verfolgt. Wie geht's weiter für Weiß? \variation{2. d4} bringt wenig, da
+Schwarz mittels \variation{2... exd4} den Bauern schlagen würde und nach \variation{3.
+Qxd4 Nc6} hätte Weiß ein Tempo verloren.
 
 \subsection{Wichtige Eröffnungen}%
 \label{sub:wichtige_eroffnungen}
@@ -1322,6 +1343,113 @@ Daher ist es oft clever die \emph{Spannung aufzuerhalten}.
   \item Damengambit
   \item Sizilianische Verteidigung
 \end{itemize}
+
+\subsection{Italienische Partie}%
+\label{sub:italienische_partie}
+
+\newchessgame
+Die Italienische Partie beginnt mit \mainline{1. e4 e5 2. Nf3 Nc6 3. Bc4}.
+Die gängigsten Varianten sind
+\begin{marginfigure}
+  \begin{center}
+    \chessboard[
+      tinyboard,
+    ]
+  \end{center}
+\end{marginfigure}
+\begin{itemize}
+  \item[\variation{3... Bc5}] das Giuoco piano (das ruhige Spiel)
+  \begin{itemize}
+    \item[\variation{4. O-O}] und dann wird einfach normal weiterentwickelt. Eine
+      schärfere Folgevariante ist das Deutz-Gambit mit \variation{4... Nf6 5. d4}.
+      Hausaufgabe: mit welcher Figur sollte man nehmen bzw. nicht nehmen?
+    \item[\variation{4. c3}] um später \wmove{d4} zu spielen und das Zentrum zu erobern.
+    \item[\variation{4. d3}] Giuoco pianissimo (sehr ruhiges Spiel)
+    \item[\variation{4. b4}] ist das Evans Gambit. Normalerweise geht es danach mit
+      \variation{4... Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3} weiter.
+  \end{itemize}
+  \item[\variation{3... Nf6}] das Zweispringerspiel im Nachzuge. Ab hier kann es ruhig
+    oder scharf weitergehen.
+    \begin{itemize}
+      \item[\variation{4. d3}] ist die ruhige Variante.
+      \item[\variation{4. Ng5}] ist die scharfe Variante.
+        Läufer und Springer greifen den Schwachpunkt f7 an.
+        Was ist der beste Zug? \variation{4... d5} und dann \variation{5. exd5}.
+        Angenommen Schwarz entgegnet mit \variation{5... Nxd5}, dann kann Weiß die sog.
+        \emph{Fried-Liver-Attack} mit \variation{6. Nxf7} spielen.
+        Diese sollte man unbedingt studieren!
+        Schwarz muss hier \variation{6... Kxf7} spielen (weil der Springer die Dame und
+        den Turm gabelt) und Weiß greift weiter mit \variation{7. Qf3+} an.
+        Was ist hier der beste Zug?
+        \variation{7... Ke6} und die Engine sagt, dass das nur $+0.8$ ist, aber sein wir
+        ehrlich: wer will in dieser Stellung Schwarz spielen?
+        Wie würdet ihr \variation{7... Kg8} bestrafen?
+        Ist ein Matt in 3, egal ob der Läufer oder die Dame den Springer nimmt.
+    \end{itemize}
+  \item[\variation{3... Be7}] ist die Ungarische Verteidigung.
+  \item[\variation{3... d6}] geht, find ich aber nicht so prall. Führt zum
+    \hyperref[par:das_seekadettenmatt]{Seekadettenmatt}, wenn Schwarz nicht aufpasst.
+\end{itemize}
+
+\subsection{Robert James Fischer – Reuben Fine, New York 1963}%
+\label{sub:robert_james_fischer_reuben_fine_new_york_1963}
+
+\newchessgame
+\mainline{
+  1. e4 e5
+  2. Nf3 Nc6
+  3. Bc4 Bc5
+  4. b4}
+ist das Evans Gambit.
+
+\mainline{
+  4... Bxb4
+  5. c3 Ba5
+  6. d4 exd4
+  7. O-O dxc3
+  8. Qb3 Qe7
+  9. Nxc3 Nf6
+  10. Nd5 Nxd5
+  11. exd5 Ne5
+  12. Nxe5 Qxe5
+  13. Bb2 Qg5
+  14. h4 Qxh4
+  15. Bxg7 Rg8
+  16. Rfe1+ Kd8
+  17. Qg3
+}
+
+\subsection{Steinitz – von Bardeleben, Hastings 1895}%
+\label{sub:steinitz_von_bardeleben_hastings_1895}
+\newchessgame
+
+\mainline{
+  1. e4 e5
+  2. Nf3 Nc6
+  3. Bc4 Bc5
+  4. c3 Nf6
+  5. d4 exd4
+  6. cxd4 Bb4+
+  7. Nc3 d5
+  8. exd5 Nxd5
+  9. O-O Be6
+  10. Bg5 Be7
+  11. Bxd5 Bxd5
+  12. Nxd5 Qxd5
+  13. Bxe7 Nxe7
+  14. Re1 f6
+  15. Qe2 Qd7
+  16. Rac1 c6
+  17. d5 cxd5
+  18. Nd4 Kf7
+  19. Ne6 Rhc8
+  20. Qg4 g6
+  21. Ng5+ Ke8
+  22. Rxe7+ Kf8
+  23. Rf7+ Kg8
+  24. Rg7+ Kh8
+  25. Rxh7+
+}
 
 \subsection{Problematische Eröffnungen}%
 \label{sub:problematische_eroffnungen}
