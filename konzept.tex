@@ -1391,6 +1391,8 @@ Die gängigsten Varianten sind
     \hyperref[par:das_seekadettenmatt]{Seekadettenmatt}, wenn Schwarz nicht aufpasst.
 \end{itemize}
 
+Siehe \url{https://lichess.org/study/g17bAWuh} für die folgenden Spiele.
+
 \subsection{Robert James Fischer – Reuben Fine, New York 1963}%
 \label{sub:robert_james_fischer_reuben_fine_new_york_1963}
 
@@ -1451,13 +1453,6 @@ ist das Evans Gambit.
   25. Rxh7+
 }
 
-\subsection{Problematische Eröffnungen}%
-\label{sub:problematische_eroffnungen}
-
-\begin{itemize}
-  \item \url{https://en.wikipedia.org/wiki/Greco_Defence}
-\end{itemize}
-
 \subsection{Eröffnungsfallen}%
 \label{sub:eroffnungsfallen}
 
@@ -1495,8 +1490,16 @@ sollen.
 \section{Schachvarianten}%
 \label{sec:schachvarianten}
 
+Ein Kritikpunkt am modernen Schach ist, dass es mittlerweile zu viel Eröffnungstheorie
+gibt und es weniger auf Kreativität als auf das Auswendiglernen von theoretischen
+Varianten ankommt. Deswegen wurden einige Varianten von Schach entwickelt, die dieses
+Problem angehen oder ganz neue Ideen zum Spiel beitragen.
+
+Auf Lichess werden die folgenden Varianten angeboten, von denen hier einige erklärt werden
+sollen.
+
 \begin{itemize}
-  \item Fischer Random Chess bzw. Chess960
+  \item Fischer-Random-Chess bzw. Chess960
   \item Atomic Chess
   \item Crazyhouse
   \item Horde
@@ -1504,6 +1507,59 @@ sollen.
   \item King of the Hill
   \item Racing Kings
 \end{itemize}
+
+\paragraph{Chess960}%
+\label{par:chess960}
+
+Chess960 wurde von Bobby Fischer erfunden, der damit genau das Problem der
+Eröffnungstheorie beheben wollte. Dabei wird die Aufstellung der Figuren zu Beginn der
+Partie zufällig bestimmt. Dabei gelten folgende Regeln:
+\begin{itemize}
+  \item Die weißen Bauern stehen auf ihren üblichen Positionen.
+  \item Alle übrigen weißen Figuren stehen in der ersten Reihe.
+  \item Der weiße König steht zwischen den weißen Türmen.
+  \item Ein weißer Läufer steht auf einem weißen, der andere auf einem schwarzen Feld.
+  \item Die schwarzen Figuren werden entsprechend den weißen spiegelsymmetrisch platziert.
+\end{itemize}
+Daraus ergeben sich für jeden Läufer vier mögliche Felder.
+Für die Dame bleiben danach noch sechs Felder und für die beiden Springer fünf Felder.
+Der Rest ist zwingend, da der König zwischen den beiden Türmen steht.
+Macht insgesamt $4 \cdot 4 \cdot 6 \cdot \binom{5}{2} = 960$ Möglichkeiten.
+Die Startposition kann man mittels eines Würfels bestimmen.
+
+Weiterhin muss noch die Rochade neu definiert werden.
+Beim Chess960 landen König und Turm nach der Rochade auf genau den gleichen Felder wie
+beim normalen Schach, d.\,h. bei der kurzen Rochade landet der König auf der g-Linie und
+der Turm auf der f-Linie, während bei der langen Rochade der König auf der c-Linie und der
+Turm auf der d-Linie landet.
+Dabei dürfen weder die überquerenden noch die Zielfelder besetzt sein.
+
+\paragraph{Atomic Chess}%
+\label{par:atomic_chess}
+
+Bei Atomic Chess ist jede Figur mit einem nuklearen Sprengkopf geladen.
+Wenn eine Figur eine andere schlägt, dann wird nicht nur die geschlagene Figur, sondern
+auch die schlagende Figur entfernt.
+Zusätzlich werden auch alle Figuren (außer Bauern) im unmittelbaren Umkreis (die acht
+Felder um die geschlagene Figur) durch die Explosion entfernt.
+
+Dabei gibt es einige Besonderheiten.
+Ein Zug, der den gegnerischen König durch eine Explosion schlägt, gewinnt die Partie, egal
+ob dabei der eigene König im Schach steht.
+Der König kann keine gegnerische Figur schlagen, aber die Könige können sich verbinden,
+also nebeneinander stehen.
+In diesem Fall gibt es kein Schachgebot, weil man den eigenen König nicht durch eine
+Explosion schlagen darf.
+
+\paragraph{Tandemschach bzw. Crazyhouse}%
+\label{par:tandemschach_bzw_crazyhouse}
+
+Beim Tandemschach spielen vier Spieler an zwei Brettern in zwei Teams.
+Jeweils ein Spieler spielt Weiß, der andere Schwarz.
+Wenn eine Figur geschlagen wird, dann kann sie vom Teamkollegen als zusätzliche Figur auf
+das eigene Brett gesetzt werden.
+
+\pagebreak
 
 \section{Planung \& Reflexion}%
 \label{sec:planung_reflexion}
@@ -1576,6 +1632,9 @@ sollen.
   \item[23.01.2020] Einführung in die Italienische Partie als Beispiel für eine Eröffnung,
     Fischer – Fine, New York 1963 als Beispielpartie für das Evans Gambit,
     freies Spiel
+
+  \item[30.01.2020] Vorstellung von Schachvarianten: Chess960, Atomic Chess, Tandemschach
+    bzw. Crazyhouse
 
 \end{description}
 
