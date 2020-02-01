@@ -1,0 +1,583 @@
+\documentclass[
+%% alle weiteren Papierformat einstellbar:
+a4paper, %apaper,
+%% keine Seitenzahlen:
+%empty,
+%% Schriftgröße (12pt, 11pt (Standard)):
+11pt,
+%% kleinere Überschriften:
+%smallheadings,
+]
+{scrartcl}
+
+\input{packages.latex}
+
+\setchessboard{%
+  showmover=false
+}
+
+\title{Schachnotizen}
+\author{Martin Darmüntzel}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Bobby Fischer Teaches Chess}
+
+Die folgenden Probleme sind aus
+\href{https://en.wikipedia.org/wiki/Bobby_Fischer_Teaches_Chess}{Bobby Fischer
+Teaches Chess}.
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+\begin{center}
+  \chessboard[setfen=7k/6pQ/8/5B2/8/8/8/4K3]
+\end{center}
+
+Die weiße Dame gibt Schach. Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann schlagen
+  \item[$\square$] kann nicht schlagen
+\end{itemize}
+
+\pagebreak
+
+kann nicht schlagen
+
+Die Dame ist durch den Läufer gedeckt, daher kann der König nicht schlagen.
+Tatsächlich kann der schwarze König dem Schach auch nicht entkommen und ist
+somit schachmatt.
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+\begin{center}
+  \chessboard[setfen=k/Q/8/8/2B/8/8/4K]
+\end{center}
+
+Die weiße Dame gibt Schach. Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann schlagen
+  \item[$\square$] kann nicht schlagen
+\end{itemize}
+
+\pagebreak
+
+kann schlagen
+
+Die Dame ist nicht durch den Läufer gedeckt.
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+\begin{center}
+  \chessboard[setfen=6Rk/7p/8/5N/8/8/8/6K]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den weißen Turm schlagen
+  \item[$\square$] kann den weißen Turm nicht schlagen
+\end{itemize}
+
+\pagebreak
+
+kann den weißen Turm schlagen
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+\begin{center}
+  \chessboard[setfen=6Rk/4N2p/8/8/8/8/8/6K]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den weißen Turm schlagen
+  \item[$\square$] kann den weißen Turm nicht schlagen
+\end{itemize}
+
+\pagebreak
+
+kann den weißen Turm nicht schlagen
+
+Der Springer deckt den Turm.
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+\begin{center}
+  \chessboard[setfen=R/kp/1p/8/8/8/1K/8]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den weißen Turm schlagen
+  \item[$\square$] kann den weißen Turm nicht schlagen
+\end{itemize}
+
+\pagebreak
+
+kann den weißen Turm schlagen
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, ob der schwarze König dem Schach entkommen kann.
+
+\begin{center}
+  \chessboard[setfen=k1R/pp/8/8/8/4K/8/8]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den weißen Turm schlagen
+  \item[$\square$] kann den weißen Turm nicht schlagen
+\end{itemize}
+
+\pagebreak
+
+kann den weißen Turm nicht schlagen
+
+Schwarz ist matt, da der König sich nur ein Feld fortbewegen kann und der Turm
+somit außer Reichweite für den König ist.
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, was der schwarze König in dieser Position tun kann.
+
+\begin{center}
+  \chessboard[setfen=7k/7p/8/3B/3B/6K/8/8]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den Angreifer schlagen
+  \item[$\square$] kann flüchten
+  \item[$\square$] kann nichts von beiden tun
+\end{itemize}
+
+\pagebreak
+
+kann nichts von beiden tun
+
+Die beiden Läufer sind zu gut aufgestellt.
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, was der schwarze König in dieser Position tun kann.
+
+\begin{center}
+  \chessboard[setfen=4k2q/2pp1Q/8/1b2N/p/8/3P1PP/4K]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den Angreifer schlagen
+  \item[$\square$] kann flüchten
+  \item[$\square$] kann nichts von beiden tun
+\end{itemize}
+
+\pagebreak
+
+kann flüchten
+
+Nur ein Feld bleibt übrig – welches?
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, was der schwarze König in dieser Position tun kann.
+
+\begin{center}
+  \chessboard[setfen=4R1k/6p/6Pp/8/8/8/6K/8]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den Angreifer schlagen
+  \item[$\square$] kann flüchten
+  \item[$\square$] kann nichts von beiden tun
+\end{itemize}
+
+\pagebreak
+
+kann nichts von beiden tun
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, was der schwarze König in dieser Position tun kann.
+
+\begin{center}
+  \chessboard[setfen=7k/4N1pR/8/8/8/8/3K/8]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den Angreifer schlagen
+  \item[$\square$] kann flüchten
+  \item[$\square$] kann nichts von beiden tun
+\end{itemize}
+
+\pagebreak
+
+kann den Angreifer schlagen
+
+\pagebreak
+
+Schau dir die folgende Position an.
+Entscheide, was der schwarze König in dieser Position tun kann.
+
+\begin{center}
+  \chessboard[setfen=rk/1pP/1P2Q/8/8/8/8/7K]
+\end{center}
+
+Der schwarze König:
+\begin{itemize}
+  \item[$\square$] kann den Angreifer schlagen
+  \item[$\square$] kann flüchten
+  \item[$\square$] kann nichts von beiden tun
+\end{itemize}
+
+\pagebreak
+
+kann nichts von beiden tun
+
+\pagebreak
+
+Schau dir die folgende Position an.
+
+\begin{center}
+  \chessboard[setfen=8/8/2P/3K1k/2R3p/2q/8/8/]
+\end{center}
+
+Schwarz ist am Zug. Welcher Zug führt zu schachmatt?
+
+\pagebreak
+
+\begin{center}
+  \chessboard[
+    pgfstyle=straightmove,
+    markmoves={c3-e5},
+    setfen=8/8/2P/3K1k/2R3p/2q/8/8/
+  ]
+\end{center}
+
+\pagebreak
+
+Schau dir die folgende Position an.
+
+\begin{center}
+  \chessboard[setfen=2R3k/8/6P/5N/6K/8/8/8/]
+\end{center}
+
+Der weiße Turm setzt den schwarzen König schach.
+Der schwarze König ist matt, der er keine Möglichkeit zur Flucht hat.
+
+Welche Figuren von Weiß decken die möglichen Fluchtfelder?
+\begin{itemize}
+  \item \textsf{f8} wird gedeckt durch den Turm
+  \item \textsf{f7} wird gedeckt durch
+  \item \textsf{g7} wird gedeckt durch
+  \item \textsf{h7} wird gedeckt durch
+  \item \textsf{h8} wird gedeckt durch
+\end{itemize}
+
+\pagebreak
+
+\begin{itemize}
+  \item \textsf{f8} wird gedeckt durch den Turm
+  \item \textsf{f7} wird gedeckt durch den Bauern
+  \item \textsf{g7} wird gedeckt durch den Springer
+  \item \textsf{h7} wird gedeckt durch den Bauern
+  \item \textsf{h8} wird gedeckt durch den Turm
+\end{itemize}
+
+\pagebreak
+
+Schau dir die folgende Position an.
+
+\begin{center}
+  \chessboard[setfen=2B1k/6P/6K/Q2N/8/8/8/8/]
+\end{center}
+
+Welche Figuren von Weiß decken die möglichen Fluchtfelder?
+\begin{itemize}
+  \item \textsf{d8} wird gedeckt durch
+  \item \textsf{d7} wird gedeckt durch
+  \item \textsf{e7} wird gedeckt durch
+  \item \textsf{f7} wird gedeckt durch
+  \item \textsf{f8} wird gedeckt durch
+\end{itemize}
+
+Welche weiße Figur bietet dem schwarzen König Schach?
+
+\pagebreak
+
+\begin{itemize}
+  \item \textsf{d8} wird gedeckt durch die Dame
+  \item \textsf{d7} wird gedeckt durch den Läufer
+  \item \textsf{e7} wird gedeckt durch den Springer
+  \item \textsf{f7} wird gedeckt durch den König
+  \item \textsf{f8} wird gedeckt durch den Bauern
+\end{itemize}
+
+Keine weiße Figur bietet dem schwarzen König Schach.
+Schwarz hat keinen gültigen Zug mehr; daher liegt hier ein \textbf{Patt} vor.
+
+\pagebreak
+
+Schau dir die folgende Position an.
+
+\begin{center}
+  \chessboard[setfen=3r1k/1q1P2b/7Q/p3p2p/1p/1B3P/PPP/1K1R/]
+\end{center}
+
+Weiß ist am Zug. Welcher Zug führt zu schachmatt?
+
+\pagebreak
+
+\begin{center}
+  \chessboard[
+    pgfstyle=straightmove,
+    markmoves={h6-d6},
+    setfen=3r1k/1q1P2b/7Q/p3p2p/1p/1B3P/PPP/1K1R/
+  ]
+\end{center}
+
+\pagebreak
+
+Schau dir die folgende Position an.
+
+\begin{center}
+  \chessboard[setfen=Q2k/8/2P/1KB/8/8/8/8/]
+\end{center}
+
+Auf welches einzige Feld kann der schwarze König flüchten?
+
+\pagebreak
+
+\begin{center}
+  \chessboard[
+    pgfstyle=straightmove,
+    markmoves={d8-c7},
+    setfen=Q2k/8/2P/1KB/8/8/8/8/
+  ]
+\end{center}
+
+\pagebreak
+
+Schau dir die folgende Position an.
+
+\begin{center}
+  \chessboard[setfen=6k/8/4KN1P/8/8/B/8/8/]
+\end{center}
+
+Auf welches einzige Feld kann der schwarze König flüchten?
+
+\pagebreak
+
+\begin{center}
+  \chessboard[
+    pgfstyle=straightmove,
+    markmoves={g8-h8},
+    setfen=6k/8/4KN1P/8/8/B/8/8/
+  ]
+\end{center}
+
+\pagebreak
+
+Schau dir die folgende Position an.
+
+\begin{center}
+  \chessboard[setfen=8/8/8/2K4k/6R/8/8/7Q/]
+\end{center}
+
+Durch welchen Zug kann der schwarze König dem Schach entkommen?
+
+\pagebreak
+
+\begin{center}
+  \chessboard[
+    pgfstyle=straightmove,
+    markmoves={h5-g4},
+    setfen=8/8/8/2K4k/6R/8/8/7Q/
+  ]
+\end{center}
+
+\pagebreak
+
+Schau dir die folgende Position an.
+
+\begin{center}
+  \chessboard[setfen=K1q/1r/8/8/8/4k/8/8/]
+\end{center}
+
+Kann sich der weiße König durch Schlagen des Turms retten?
+\begin{itemize}
+  \item[$\square$] ja
+  \item[$\square$] nein (schachmatt)
+\end{itemize}
+
+\pagebreak
+
+nein (schachmatt)
+
+Die schwarze Dame gibt Schach und deckt den Turm. Weiß ist schachmatt.
+
+\pagebreak
+
+Schau dir die folgenden Positionen an.
+
+\begin{center}
+  A \chessboard[setfen=7k/5K/8/8/8/7R/8/8/]
+  \qquad
+  B \chessboard[setfen=8/8/7k/5K/8/8/7R/8/]
+\end{center}
+
+In welchen Stellungen ist Schwarz schachmatt?
+\begin{itemize}
+  \item[$\square$] nur A
+  \item[$\square$] nur B
+  \item[$\square$] beide
+  \item[$\square$] keine
+\end{itemize}
+
+\pagebreak
+
+nur A
+
+In Stellung B hat der schwarze König mit \textsf{g7} noch ein Fluchtfeld.
+
+\pagebreak
+
+\section{Eigene Spiele}
+
+\subsection{Gegen Sophie, Lichess, 23. Januar 2019}%
+\label{sub:gegen_sophie_lichess_23_januar_2019}
+
+\newchessgame
+
+\setchessboard{showmover=true}
+
+Siehe auch \url{https://lichess.org/rrdGlwBD}. Ich spiele Weiß, Sophie Schwarz.
+Ich eröffne mit \mainline{1. d4} und Sophie spielt \mainline{1... g5}. Sie
+sagte, dass sie eher „intuitiv spielt“, was ich daran erkenne, dass sie ihren
+Bauern ohne Deckung ins Feld schickt. Ihr Bauer wird direkt von meinem schwarzen
+Läufer attackiert. Ihr Zug war nicht gut.
+
+\chessboard[
+  pgfstyle=straightmove,
+  arrow=to,
+  linewidth=0.5mm,
+  markmoves={c1-g5},
+]
+
+Ich nehme mir den Bauern mit \mainline{2. Bg5} und Sophie spielt \mainline{2...
+f6}, um meinen Läufer zu verscheuchen. Damit öffnet sie jedoch c7 für Attacken
+auf den König. Meine Idee ist jetzt, dass ich den Läufer opfere und dafür den
+Weg für meine Dame nach h5 freimache, damit sie von dort den König Matt setzen
+kann.
+
+Stattdessen hätte sie den Bauern aufgeben und woanders öffnen sollen.
+Die Engine schlägt \variation{2... c5} vor.
+
+\chessboard[
+  pgfstyle=straightmove,
+  arrow=to,
+  linewidth=0.5mm,
+  markmoves={d1-h5, h5-e8},
+]
+
+Daher spiele ich \mainline{3. e3} und Sophie tappt in die Falle und nimmt den
+Läufer mit \mainline{3... fxg5}. Wie angekündigt muss ich nur noch \mainline{4.
+Qh5#} für Schachmatt spielen.
+
+\chessboard[showmover=false]
+
+\subsection{Gegen Michi, Lichess, 25. Februar 2019}%
+\label{sub:gegen_michi_lichess_}
+
+\newchessgame{}
+\setchessboard{showmover=true}
+
+Siehe auch \url{https://lichess.org/SEdL55j4lYxt}. Michi spielt mit Weiß sein
+geliebtes Queens Gambit und gehe darauf mit dem Queens Gambit Declined ein.
+
+Nach \mainline{1. d4 d5 2. c4 e6} spielt er \mainline{3. e3}, was ich ein
+bisschen zu passiv finde.
+
+\chessboard[
+  inverse=true,
+]
+
+Leider gibt es zu diesem Zug keine Theorie in der Wikipedia, also müssen wir
+selbst nachdenken. Schauen wir uns mögliche Varianten an:
+\begin{itemize}
+  \item \variation{3... dxc4} lädt ein zu \variation{4. Bxc4} und dann hab ich
+    nichts gewonnen.
+
+    \chessboard[
+      inverse=true,
+      setfen=rnbkqbnr/ppp2ppp/4p/8/2BP/4P/PP3PPP/RNBQK1NR
+    ]
+
+\end{itemize}
+
+\subsection{Gegen Egon, Rostocker Schachverein, 13. Juni 2019}
+
+Ich bin Weiß.
+
+\newchessgame{}
+
+\mainline{
+  1. d4 d5
+  2. c4 e6
+  3. Bf4 c6
+  4. e3 Nf6
+  5. cxd5 exd5
+  6. Nc3 Bf5
+  7. Bd3 Bg6
+  8. Nf3 Bb4
+  9. O-O O-O
+  10. a3 Bxc3
+  11. bxc3 Ne4
+  12. Bxe4 Bxe4
+  13. Ne5 f6
+  14. Ng4 Nd7
+  15. f3 Bg6
+  16. Qd2 Qe7
+  17. Rfe1 Rfe8
+  18. Re2 Nb6
+  19. a4 Nc4
+  20. Qe1 Qd7
+  21. h3 Re6
+  22. e4 dxe4
+  23. fxe4 Rae8
+  24. Nf2 Qe7
+  25. Rb1 b6
+  26. Rb4 Na5
+}
+
+\chessboard{}
+
+Stockfish sagt $-1.2$, sieht also nicht gut aus für mich.
+
+\end{document}
