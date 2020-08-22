@@ -340,7 +340,7 @@ Weiß hat nur drei mögliche Züge und alle führen zu Matt.
 
 Taktische Motive: Matt, Abzug
 
-Quelle: \url{https://lichess.org/Kjr6x9qz/black#61} % chktex 29
+Quelle: \url{https://lichess.org/Kjr6x9qz/black#61}
 
 \pagebreak % neues Puzzle
 
@@ -554,6 +554,8 @@ Quelle: \url{https://lichess.org/zN2hPmc9/black#87}
   ]
 \end{center}
 
+\index{Matt}
+
 \pagebreak
 
 Wunderschönes Matt in maximal 5 Zügen: \mainline{39... Rd2+} scheucht den König.
@@ -610,25 +612,92 @@ Weiß hat drei Möglichkeiten:
     \end{center}
 \end{itemize}
 
+Taktische Motive: Matt
+
 Quelle: \url{https://lichess.org/training/95056}
+(\href{https://lichess.org/OsB56nUh/black}{Partie})
+
+\pagebreak % neues Puzzle
+
+\begin{center}
+  \newchessgame[
+    setfen=r2qr1k1/ppp2ppp/5n2/8/3P4/2PQ1N2/PP4PP/2RK3R b - - 0 1,
+    moveid=1b,
+  ]
+  \chessboard[
+    style=puzzle,
+    backfields={a1,c1},
+    inverse=true,
+  ]
+
+  Schwierigkeitsgrad: 1698
+\end{center}
+
+\index{Gabel}
 
 \pagebreak
-
-\url{https://lichess.org/training/95287}
 
 Forks forks forks!
 
+f2 ist das Ziel für den Springer für die königliche Gabel. Also \mainline{1... Ng4} und
+egal wie Weiß zu parieren versucht, es wird immer gegabelt. Am besten ist wohl
+\mainline{2. Rc2 Ne3+}.
+
+Taktische Motive: Gabel
+
+Quelle: \url{https://lichess.org/training/95287}
+(\href{https://lichess.org/dcfLW2L9/black}{Partie})
+
+\pagebreak % neues Puzzle
+
+\begin{center}
+  \newchessgame[
+    setfen=r4k2/pp2pprp/3q4/1B1P4/4P3/2Q2b2/P4P1P/2R1RK2 b - - 3 1,
+    moveid=1b,
+  ]
+  \chessboard[
+    style=puzzle,
+    backfields={d2,c3},
+    inverse=true,
+  ]
+
+  Schwierigkeitsgrad: 1683
+\end{center}
+
+\index{Matt}
+\index{Opfer}
+
 \pagebreak
 
-\url{https://lichess.org/training/95288}
+Matt in 3 mit Turmopfer: \mainline{1.. Rg1+ 2. Kxg1 Qg6+ 3. Kf1 Qg2#}
 
-Matt in 3, mit Turmopfer
+Taktische Motive: Matt, Opfer
+
+Quelle: \url{https://lichess.org/training/95288}
+(\href{https://lichess.org/p4auwhl8/black}{Partie})
+
+\pagebreak % neues Puzzle
+
+\begin{center}
+  \newchessgame[
+    setfen=1r2r1k1/2q2pp1/2p2b1p/npPp4/Q2P4/P1P1B2P/3N1PP1/1R2R1K1 w - b6 0 1,
+    moveid=1w,
+  ]
+  \chessboard[
+    style=puzzle,
+    backfields={b7,b5},
+    inverse=false,
+  ]
+
+  Schwierigkeitsgrad: 1576
+\end{center}
 
 \pagebreak
 
-\url{https://lichess.org/training/95261}
+En passant gewinnt den Springer \mainline{1. cxb6 Rxb6 2. Qxa5}.
 
-En passant!
+Quelle: \url{https://lichess.org/training/95261}
+(\href{https://lichess.org/braQIghn/white#44}{Partie})
 
 \pagebreak
 
@@ -956,7 +1025,70 @@ Schwarz opfert die Dame mit \mainline{2... Qf3+ 3. Bxf3}. Zuletzt gibt's Matt mi
   ]
 \end{center}
 
-Quelle: \url{https://lichess.org/cTjkVmfl/black#51}
+Quelle: \url{https://lichess.org/training/122444}
+(\href{https://lichess.org/cTjkVmfl/black#51}{Partie})
+
+\index{Matt}
+\index{Damenopfer}
+\index{Opfer}
+
+\pagebreak % neues Puzzle
+
+\begin{center}
+  \newchessgame[
+    setfen=r2q1r2/1pp3kp/p5pb/2pPp2n/2P1P3/P1NB2N1/1P1Q4/1K5R w - - 0 1,
+    moveid=1w,
+  ]
+  \chessboard[
+    style=puzzle,
+    backfields={f4,h5},
+    inverse=false,
+  ]
+\end{center}
+
+\index{Materialgewinn}
+
+\pagebreak
+
+Unser Springer schlägt den schwarzen Springer und öffnet die Linie. Unser Turm drängt den
+König vom Läufer weg und die Dame holt den Läufer: \mainline{1. Nxh5 gxh5 2. Rg1+ Kh8 3.
+Qxh6}
+
+Wenn der König nach f6 ausweicht, dann ist es Matt in 2.
+
+Taktische Motive: Materialgewinn
+
+Quelle: \url{https://lichess.org/training/102971}
+(\href{https://lichess.org/training/102971}{Partie})
+
+\pagebreak % neues Puzzle
+
+\begin{center}
+  \newchessgame[
+    setfen=8/1R5p/6bk/3P2RP/6PK/r7/3r4/8 w - - 5 1,
+    moveid=1w,
+  ]
+  \chessboard[
+    style=puzzle,
+    backfields={g7,h6},
+    inverse=false,
+  ]
+
+  Schwierigkeitsgrad: 1654
+\end{center}
+
+\index{Matt}
+
+\pagebreak
+
+Matt in 2: \mainline{1. Rxg6 hxg6 2. g5#}
+
+Taktische Motive: Matt
+
+Quelle: \url{https://lichess.org/training/118997}
+(\href{https://lichess.org/puwyfdHb/white}{Partie})
+
+\pagebreak % Ende
 
 \printindex
 
