@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import requests
 import json
 import time
@@ -9,6 +12,7 @@ lichess_url = 'https://lichess.org/training/'
 l = 'lichess.puzzle = '
 script_end = '</script>'
 puzzles_filename = 'puzzles.json'
+sleep_duration = 0.25
 
 def get_puzzle(i: int):
     r = requests.get(lichess_url + str(i))
@@ -39,13 +43,6 @@ def puzzle_already_loaded(puzzles, i):
         return False
 
 
-def sort_puzzles(puzzles, key: str):
-    return [
-        (p['id'], p[key])
-        for p in sorted(puzzles, key=itemgetter(key))
-    ]
-
-
 def main(start: int, end: int):
     puzzles = read_puzzles(puzzles_filename)
 
@@ -54,7 +51,7 @@ def main(start: int, end: int):
             try:
                 p = get_puzzle(i)
                 puzzles.append(p)
-                time.sleep(1)
+                time.sleep(sleep_duration)
                 print(f'{i} wird heruntergeladen')
             except:
                 print(f'Problem bei {i}')
@@ -71,6 +68,6 @@ if __name__ == '__main__':
         end = int(sys.argv[2])
         main(start, end)
 
-    puzzles = sort_puzzles(read_puzzles(puzzles_filename), 'rating')
-    for i, rating in puzzles:
-        print(f'{i}\t{rating}')
+    puzzles = sorted(read_puzzles(puzzles_filename), key=itemgetter('rating'))
+    for p in puzzles:
+        print(f"https://lichess.org/training/{p['id']}\t{p['rating']}\t{p['vote']}")
