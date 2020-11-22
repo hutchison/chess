@@ -6,11 +6,12 @@ import json
 import time
 import sys
 from operator import itemgetter
+from pathlib import Path
 
 
 lichess_url = 'https://lichess.org/training/'
-l = 'lichess.puzzle = '
-script_end = '</script>'
+l = 'LichessPuzzle('
+script_end = ')})</script>'
 puzzles_filename = 'puzzles.json'
 sleep_duration = 0.25
 
@@ -36,25 +37,24 @@ def read_puzzles(input_filename: str):
 
 
 def puzzle_already_loaded(puzzles, i):
-    for p in puzzles:
-        if p['id'] == i:
-            return True
-    else:
-        return False
+    return i in puzzles
 
 
 def main(start: int, end: int):
-    puzzles = read_puzzles(puzzles_filename)
+    if Path(puzzles_filename).is_file():
+        puzzles = read_puzzles(puzzles_filename)
+    else:
+        puzzles = {}
 
     for i in range(start, end):
-        if not puzzle_already_loaded(puzzles, i):
+        if not puzzle_already_loaded(puzzles, str(i)):
             try:
-                p = get_puzzle(i)
-                puzzles.append(p)
+                puzzles[i] = get_puzzle(i)
                 time.sleep(sleep_duration)
                 print(f'{i} wird heruntergeladen')
-            except:
+            except Exception as inst:
                 print(f'Problem bei {i}')
+                print(inst)
         else:
             print(f'{i} wurde schon geladen')
 
@@ -68,6 +68,7 @@ if __name__ == '__main__':
         end = int(sys.argv[2])
         main(start, end)
 
-    puzzles = sorted(read_puzzles(puzzles_filename), key=itemgetter('rating'))
+    puzzle_list = list(read_puzzles(puzzles_filename).values())
+    puzzles = sorted(puzzle_list, key=itemgetter('rating'))
     for p in puzzles:
         print(f"https://lichess.org/training/{p['id']}\t{p['rating']}\t{p['vote']}")
