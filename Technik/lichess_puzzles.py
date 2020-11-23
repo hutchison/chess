@@ -71,4 +71,9 @@ if __name__ == '__main__':
     puzzle_list = list(read_puzzles(puzzles_filename).values())
     puzzles = sorted(puzzle_list, key=itemgetter('rating'))
     for p in puzzles:
-        print(f"https://lichess.org/training/{p['id']}\t{p['rating']}\t{p['vote']}")
+        print(
+            f"https://lichess.org/training/{p['id']}\t"
+            f"{p['rating']}\t"
+            f"{p['vote']}\t"
+            f"{p['attempts']}"
+        )
