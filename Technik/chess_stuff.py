@@ -14,7 +14,8 @@ class Puzzle:
         self.depth = depth
         self.white = white
         self.black = black
-        self.url = url + '\\#' + str(len(board.move_stack))
+        self.url = url
+        self.move = str(len(board.move_stack))
 
         self.solution = mate_in_n(board, depth)
         self.length = number_of_solutions(self.solution)
@@ -49,6 +50,7 @@ def read_games(pgn_file):
             nr_games += 1
             print(
                 f"\rreading games: {len(games)}/{nr_games}",
+                "terminated normally",
                 file=sys.stderr,
                 end="\r"
             )
@@ -230,11 +232,15 @@ def number_of_pieces(board):
 def find_puzzles(games, nr, sort_func=abs):
     # sort_func sortiert die Puzzle. abs sortiert nach Anzahl Figuren und len
     # sortiert nach Anzahl der Lösungen.
+    print(
+        f"searching for mate in {nr} in {len(games)} games",
+        file=sys.stderr
+    )
     puzzles = []
     for i, game in enumerate(games):
         ps = find_mate_in(game, nr)
         print(
-            f"\r{i}/{len(games)}: {len(ps)}\t{len(puzzles)}",
+            f"\r{i}/{len(games)}: {len(puzzles)} puzzles found",
             file=sys.stderr,
             end="\r"
         )
@@ -365,7 +371,7 @@ def tex_solutions(puzzles, nr):
 
 
 def tex_url(url):
-    return r'\href{' + url + r'}{\texttt{' + url[8:] + '}}'
+    return r'\href{' + url + r'}{\small{\texttt{' + url[8:] + '}}}'
 
 
 def tex_urls(urls):
