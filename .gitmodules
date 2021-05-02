@@ -1,0 +1,3 @@
+[submodule "Technik/lichess-puzzler"]
+	path = Technik/lichess-puzzler
+	url = https://github.com/ornicar/lichess-puzzler.git
