@@ -1,3 +1,6 @@
 [submodule "Technik/lichess-puzzler"]
 	path = Technik/lichess-puzzler
 	url = https://github.com/ornicar/lichess-puzzler.git
+[submodule "Technik/chess-puzzle-maker"]
+	path = Technik/chess-puzzle-maker
+	url = https://github.com/linrock/chess-puzzle-maker.git
