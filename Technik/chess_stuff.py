@@ -387,6 +387,25 @@ def tex_urls(urls):
     return t
 
 
+def time_duration(game):
+    main_time, increment = map(int, game.headers['TimeControl'].split('+'))
+    t = (
+            {'prev': main_time, 'curr': 0, 'total_move_time': 0, 'diff': 0},
+            {'prev': main_time, 'curr': 0, 'total_move_time': 0, 'diff': 0}
+    )
+
+    for node in game.mainline():
+        turn = 1 if node.turn() else 0
+
+        if node.ply() > 2:
+            t[turn]['curr'] = node.clock()
+            t[turn]['diff'] = t[turn]['curr'] - t[turn]['prev']
+            t[turn]['total_move_time'] += increment - t[turn]['diff']
+            t[turn]['prev'] = t[turn]['curr']
+
+    return t[0]['total_move_time'] + t[1]['total_move_time']
+
+
 b = chess.Board(fen='7K/8/8/5kq1/8/8/8/8 b - - 6 62')
 m1 = chess.Board(fen='8/7K/5k2/6q1/8/8/8/8 b - - 8 63')
 m21 = chess.Board(fen='8/8/8/8/8/5k1K/6p1/4q3 b - - 1 79')
