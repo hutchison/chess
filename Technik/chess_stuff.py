@@ -388,7 +388,11 @@ def tex_urls(urls):
 
 
 def time_duration(game):
-    main_time, increment = map(int, game.headers['TimeControl'].split('+'))
+    try:
+        main_time, increment = map(int, game.headers['TimeControl'].split('+'))
+    except ValueError:
+        return None
+
     t = (
             {'prev': main_time, 'curr': 0, 'total_move_time': 0, 'diff': 0},
             {'prev': main_time, 'curr': 0, 'total_move_time': 0, 'diff': 0}
@@ -400,7 +404,9 @@ def time_duration(game):
         if node.ply() > 2:
             t[turn]['curr'] = node.clock()
             t[turn]['diff'] = t[turn]['curr'] - t[turn]['prev']
-            t[turn]['total_move_time'] += increment - t[turn]['diff']
+            move_time = increment - t[turn]['diff']
+            if move_time >= 0:
+                t[turn]['total_move_time'] += move_time
             t[turn]['prev'] = t[turn]['curr']
 
     return t[0]['total_move_time'] + t[1]['total_move_time']

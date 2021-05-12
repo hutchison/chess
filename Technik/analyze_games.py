@@ -24,9 +24,12 @@ if __name__ == '__main__':
         game.duration = time_duration(game)
         game.plys = game.end().ply()
 
+    games = [game for game in games if game.duration]
+
     for game in sorted(games, key=lambda g: g.duration):
         print(
             f'{game.headers["White"]} vs. {game.headers["Black"]}',
+            game.headers['Site'],
             precisedelta(game.duration),
             game.plys,
             round(game.duration/game.plys, 2),
@@ -39,5 +42,5 @@ if __name__ == '__main__':
 
     print('ply stats')
     plys = [game.plys for game in games]
-    describe(plys)
-    print('d/ply:', sum(durations) / sum(plys))
+    describe(plys, f=lambda x: round(x, 2))
+    print('d/ply:', round(sum(durations) / sum(plys), 2))
