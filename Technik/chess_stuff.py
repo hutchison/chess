@@ -36,14 +36,16 @@ class Puzzle:
 
 
 def read_games(pgn_file):
-    with open(pgn_file) as pgn:
-        games = []
+    games = []
+    nr_games = 0
+    accepted_termination_modes = {'Normal', 'Time forfeit'}
 
+    with open(pgn_file) as pgn:
         game = chess.pgn.read_game(pgn)
-        nr_games = 0
 
         while game is not None:
-            if game.headers['Termination'] == 'Normal':
+            termination = game.headers['Termination']
+            if termination in accepted_termination_modes:
                 games.append(game)
             game = chess.pgn.read_game(pgn)
 

@@ -1,7 +1,9 @@
-from statistics import mean, stdev, median
-from humanize import precisedelta
 import sys
-from chess_stuff import time_duration, read_games
+from statistics import mean, median, stdev
+
+from humanize import precisedelta
+
+from chess_stuff import read_games, time_duration
 
 
 def describe(data, f=lambda x: x):
@@ -26,6 +28,14 @@ if __name__ == '__main__':
 
     games = [game for game in games if game.duration]
 
+    print(
+        'Game',
+        'URL',
+        'Duration',
+        'Plys',
+        'Time/Move',
+        sep='\t',
+    )
     for game in sorted(games, key=lambda g: g.duration):
         print(
             f'{game.headers["White"]} vs. {game.headers["Black"]}',
