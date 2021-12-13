@@ -1,0 +1,146 @@
+\documentclass[
+  a4paper,
+  justified,
+  nobib,
+]{tufte-handout}
+
+% chktex-file 1
+% chktex-file 11
+% chktex-file 12
+
+% Deutsche Sprache bei Silbentrennung und Datum:
+\usepackage[ngerman]{babel}
+
+\title{Logisches Schach – Zug für Zug}
+\author{Original von Irving Chernev – übersetzt von Martin Darmüntzel}
+%\publisher{Hochschulsport der Universität Rostock}
+%\date{} % without \date command, current date is supplied
+
+% page background color
+% Comment out the following line if you do want to add a page background color (e.g. for
+% printing)
+% \pagecolor{LightChamois}
+
+% Schachkram:
+% siehe: http://mirrors.ctan.org/macros/latex/contrib/chessboard/chessboard.pdf
+\usepackage{chessboard}
+\usepackage{xskak}
+
+\def\arrowcolor{orange!80}
+\def\arrowlinewidth{2pt}
+\def\arrowopacity{0.618}
+
+\storechessboardstyle{standard}{%
+  arrow=to,
+  color=\arrowcolor,
+  linewidth=\arrowlinewidth,
+  opacity=\arrowopacity,
+  pgfstyle=straightmove,
+  shortenend=0.618ex,
+  moverbottomlift=-3ex,
+  movertoplift=-2ex,
+  movershift=-1.618ex,
+  marginleft=false,
+  marginright=false,
+  %marginrightwidth=0pt,
+  %marginleftwidth=0pt,
+  marginbottomwidth=1.5em,
+}
+\renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
+
+\usepackage{enumerate}
+
+\newenvironment{notiz}{
+  \color{Maroon}
+  \paragraph*{Notiz}
+}{
+  \color{black}
+}
+
+\newcommand\kurznotiz[1]{\textcolor{Maroon}{#1}}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+\maketitle
+
+\section{Spiel 1: von Scheve – Teichmann, Berlin 1907, Giuoco Piano}%
+\label{sec:spiel_1_von_scheve_teichmann}
+
+Die Hauptaufgabe in der Eröffnung lautet: bringe die Figuren ins Spiel – weg von der
+letzten Reihe hinein in das aktive Spiel.
+
+Kein Angriff (schon gar keine Mattkombination) funktioniert mit einer oder zwei Figuren.
+
+Alle Figuren müssen entwickelt werden und jede hat eine Aufgabe zu erfüllen.
+
+Für den Anfang ist es eine gute Idee gleich zwei Figuren auf einmal freizulassen.
+Dies kann durch das Vorrücken eines Zentrumsbauern geschehen:
+
+\newchessgame
+\mainline{1. e4}
+
+\begin{marginfigure}
+  \chessboard[
+    style=standard,
+    smallboard,
+  ]
+\end{marginfigure}
+
+Dies ist ein exzellenter Eröffnungszug.
+Weiß verankert einen Bauern im Zentrum und öffnet Linien für Dame und Läufer.
+Der nächste Zug, sofern er erlaubt wird, wird \variation{2. d4} sein.
+Die beiden Bauern werden dann vier Felder auf der fünften Reihe (c5, d5, e5 und f5)
+kontrollieren und Schwarz daran hindern Figuren auf diese wichtigen Felder zu setzen.
+
+Wie soll Schwarz auf diesen ersten Zug von Weiß reagieren? Er darf keine Zeit mit
+bedeutungslosen Zügen wie \variation{1... h6} oder \variation{1... a6} verschwenden.
+Diese und andere ziellose Züge tragen nichts zur Entwicklung der Figuren bei und
+behindern auch nicht die von Weiß angedrohte Bedrohung der Besetzung des Zentrums.
+
+\emph{Schwarz muss um einen gleichen Anteil der wichtigen Felder im Zentrum kämpfen.
+Schwarz muss die Besetzung des Zentrums erstreiten.}
+
+Wozu der ganze Stress um das Zentrum? Warum ist es so wichtig?
+
+Figuren, die im Zentrum stehen, haben die höchste Aktionsfreiheit und können ihre
+Angriffkraft am besten ausspielen.
+Ein Springer beispielsweise kann aus dem Zentrum heraus acht Felder angreifen, während er
+am Rand auf vier Felder beschränkt ist.
+Er ist nur ein halber Springer!
+
+Die Besetzung des Zentrums bedeutet die Kontrolle über das wertvollste Gebiet.
+Es lässt den gegnerischen Figuren weniger Raum und erschwert die Verteidigung, da sich die
+Figuren gegenseitig in die Quere kommen.
+
+Die Besetzung des Zentrums bzw. die Kontrolle aus der Entfernung baut eine Barriere auf,
+die die gegnerischen Kräfte bei der harmonischen Zusammenarbeit stört.
+Der Widerstand einer gespaltenen Armee ist normalerweise nicht sehr effektiv.
+
+\mainline{1... e5}
+
+Sehr gut!
+Schwarz besteht auf einer fairen Aufteilung des Zentrums.
+Er fixiert dort einen Bauern und befreit zwei Figuren.
+
+\mainline{2. Nf3}
+
+\begin{marginfigure}
+  \chessboard[
+    style=standard,
+    smallboard,
+  ]
+\end{marginfigure}
+
+Der beste Zug auf dem Brett!
+
+Der Springer wird mit einer Drohung entwickelt – der Angriff auf den Bauern.
+Das gewinnt Zeit, da Schwarz nicht so frei entwickeln kann, wie er möchte.
+\emph{Er muss zuerst den Bauern retten} und das schränkt die Möglichkeiten der eigenen
+Züge ein.
+
+Der Springer wird \emph{zum Zentrum hin} entwickelt, was den Spielraum des Angriffs
+erweitert.
+
+\end{document}
