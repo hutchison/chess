@@ -1,0 +1,267 @@
+\documentclass[
+  a4paper,
+  justified,
+  nobib,
+  ngerman,
+]{tufte-handout}
+
+% chktex-file 1
+% chktex-file 11
+% chktex-file 12
+
+% Deutsche Sprache bei Silbentrennung und Datum:
+\usepackage{babel}
+
+\title{The Sensei Speedrun}
+\author{Daniel Naroditsky}
+%\publisher{Hochschulsport der Universität Rostock}
+%\date{} % without \date command, current date is supplied
+
+% page background color
+% Comment out the following line if you do want to add a page background color (e.g. for
+% printing)
+% \pagecolor{LightChamois}
+
+% Schachkram:
+% siehe: http://mirrors.ctan.org/macros/latex/contrib/chessboard/chessboard.pdf
+\usepackage{chessboard}
+\usepackage{xskak}
+
+\def\arrowcolor{orange!80}
+\def\arrowlinewidth{2pt}
+\def\arrowopacity{0.618}
+
+\storechessboardstyle{standard}{%
+  arrow=to,
+  color=\arrowcolor,
+  linewidth=\arrowlinewidth,
+  opacity=\arrowopacity,
+  pgfstyle=straightmove,
+  shortenend=0.618ex,
+  moverbottomlift=-3ex,
+  movertoplift=-2ex,
+  movershift=-1.618ex,
+  marginleft=false,
+  marginright=false,
+  %marginrightwidth=0pt,
+  %marginleftwidth=0pt,
+  marginbottomwidth=1.5em,
+}
+\renewcommand\xskakcomment[1]{{\normalfont{#1}}}%
+
+\usepackage{enumerate}
+
+\newenvironment{notiz}{
+  \color{Maroon}
+  \paragraph*{Notiz}
+}{
+  \color{black}
+}
+
+\newcommand\kurznotiz[1]{\textcolor{Maroon}{#1}}
+
+\usepackage{hyperref}
+
+\usepackage{cleveref}
+
+\begin{document}
+
+\maketitle
+
+Das Ziel dieses Speedruns soll sein, mit verständlichen Mitteln Partien zu gewinnen und
+die Varianten und Methoden nachvollziehbar zu erklären.
+
+\section{SenseiDanya (700) – marycp (965)}%
+\label{sec:senseidanya_marycp}
+
+\newchessgame
+
+Zu Beginn wird auf jeden Fall \variation{1. e4} gespielt. Dabei wird das Schottische
+Vierspringerspiel angestrebt (four knight scotch).
+
+\mainline{1. e4 e5 2. Nf3 Qf6} zeigt jedoch, dass der Gegner anderes im Sinn hat
+(\cref{fig:partie1_d1}).
+\begin{marginfigure}
+  \chessboard[style=standard, tinyboard]
+  \caption{Diagramm 1}%
+  \label{fig:partie1_d1}
+\end{marginfigure}
+Der letzte Zug von Schwarz ist aus mehreren Gründen schlecht: es wird keine Leichtfigur
+entwickelt, die Dame wird zu früh rausgeholt und f6 wird für die Entwicklung des Springers
+blockiert.
+
+Wie kann dieser Zug ausgenutzt werden?
+Zuerst wird ein Entwicklungsvorsprung herausgeholt und erst dann wird das Zentrum
+geöffnet.
+Für die Entwicklung gibt es mehrere Möglichkeiten: \variation{3. Nc3} oder \variation{3.
+c3} mit der Idee \variation{4. d4}. Daniel spielt lieber \mainline{3. Nc3}.
+
+Der Gegner antwortet mit \mainline{3... c6}. Daniel möchte jetzt doch schon das Zentrum
+öffnen und entschließt sich für \mainline{4. d4} (\cref{fig:partie1_d2}).
+\begin{marginfigure}
+  \chessboard[style=standard, tinyboard]
+  \caption{Diagramm 2}%
+  \label{fig:partie1_d2}
+\end{marginfigure}
+Nach \mainline{4... exd4} gäbe es jetzt die Möglichkeit für den Zwischenzug \variation{5.
+Bg5} um ein Tempo auf die Dame zu gewinnen, aber Daniel hält es einfach und nimmt mit dem
+Springer zurück (\mainline{5. Nxd4}) worauf Schwarz diesen Springer mit dem Läufer
+angreift: \mainline{5... Bc5} (\cref{fig:partie1_d3}).
+\begin{marginfigure}
+  \chessboard[style=standard, tinyboard]
+  \caption{Diagramm 3}%
+  \label{fig:partie1_d3}
+\end{marginfigure}
+Wie geht’s jetzt weiter? Den Springer verteidigen oder zurückziehen?
+
+Der Springer kann mit dem Läufer verteidigt werden, sodass dieser gleich entwickelt wird.
+Der Springer kann von Schwarz nicht weiter angegriffen werden und der Läufer selbst wird
+durch einen Bauern verteidigt.
+Es spricht also nichts gegen \mainline{6. Be3}.
+
+Schwarz spielt \mainline{6... d6}, wahrscheinlich um den Läufer zu verteidigen, und Platz
+für den anderen Läufer und den Springer zu machen.
+
+Welche Figuren muss Weiß noch entwickeln?
+Der König muss rochieren bzw. in Sicherheit gebracht werden.
+Der Läufer von f1 muss entwickelt werden.
+Die Dame und die Türme müssen auch ins Spiel kommen.
+
+Wenn der Läufer entwickelt wird, wäre die Möglichkeit für kurze Rochade offen.
+Tatsächlich spricht auch nichts gegen eine lange Rochade.
+Wohin soll der Läufer?
+Wenn er auf d3 geht, dann hängt der Springer – das geht also nicht.
+Bleiben nur e2 und c4.
+Auf c4 ist er aktiver, also \mainline{7. Bc4}.
+
+Was machen wir, wenn \variation{7... b5} gespielt wird?
+Dann kann ein Springer geopfert werden, denn z.\,B. nach \variation{8. Ncxb5 cxb5 9. Bd5}
+gewinnt Weiß im nächsten Zug den Turm auf a8.
+
+Daniel sagt eher: wenn \variation{7... b5} gespielt wird, ziehen wir den Läufer zurück
+mittels \variation{8. Bb3}.
+
+Schwarz spielt \mainline{7... Nh6} – ein ungewöhnlicher Entwicklungszug, da der Springer
+an den Rand geht.
+Was ist die Idee dahinter?
+Es ist nicht die Entwicklung des Läufers auf g4 um die Dame anzugreifen – wir würden mit
+der Dame einfach ausweichen.
+Es ist viel mehr die Drohung von \variation{8... Ng4} um den Springer gegen den Läufer auf
+e3 abzutauschen und die Bauernstruktur von Weiß zu zerstören.
+
+Wie kann diese Idee verhindert werden?
+Dafür gibt es zwei Möglichkeiten: \variation{8. f3} oder \variation{8. h3}. In 90\,\% der
+Fälle ist \variation{8. h3} die richtige Entscheidung, daher wird das auch gespielt:
+\mainline{8. h3} (\cref{fig:partie1_d4}).
+\begin{marginfigure}
+  \chessboard[style=standard, tinyboard]
+  \caption{Diagramm 4}%
+  \label{fig:partie1_d4}
+\end{marginfigure}
+Schwarz rochiert kurz: \mainline{8... O-O}.
+Da Weiß schon einen Bauern auf der Königsseite gezogen hat (und damit eine mögliche
+Schwäche induziert hat) und Harry der h-Bauer als Anker für den Vorstoß g4 dienen könnte,
+ist es vielleicht besser lang zu rochieren.
+Dies wird durch \mainline{9. Qd2} vorbereitet.
+
+Schwarz greift den Läufer auf c4 mittels \mainline{9... b5} an.
+Daniel erkennt eine mögliche taktische Kombination (siehe oben), sagt aber, dass es
+ziemlich \emph{messy} würde und zieht den Läufer stattdessen mittels \mainline{10. Bb3}
+zurück.
+\begin{notiz}
+  TODO: diese Taktik nochmal genauer aufdröseln. So eindeutig ist es nämlich nicht.
+\end{notiz}
+
+Schwarz entwickelt den Springer mittels \mainline{10... Na6} an den Rand und Weiß rochiert
+– wie geplant – lang: \mainline{11. O-O-O} (\cref{fig:partie1_d5}).
+Es wäre auch möglich gewesen einen Bauern mittels \variation{11. Nxc6} zu gewinnen.
+\begin{marginfigure}
+  \chessboard[style=standard, tinyboard]
+  \caption{Diagramm 5}%
+  \label{fig:partie1_d5}
+\end{marginfigure}
+Nach der Rochade sind alle Figuren entwickelt und durch die gegenüberliegene Rochade kann
+jetzt der Angriff auf dem Königsflügel gestartet werden.
+
+Schwarz spielt \mainline{11... Bb6} um Platz für weitere Bauernvorstöße zu machen.
+Weiß schnappt sich den ungedeckten Bauern \mainline{12. Nxc6}.
+Dadurch hängen bei Schwarz die Bauern auf b5 und d6.
+Schwarz spielt den Springer näher zum Zentrum mittels \mainline{12... Nc5}
+(\cref{fig:partie1_d6}).
+\begin{marginfigure}
+  \chessboard[style=standard, tinyboard, pgfstyle=circle, color=red, backfields={b5,d6}]
+  \caption{Diagramm 6}%
+  \label{fig:partie1_d6}
+\end{marginfigure}
+
+Weiß könnte jetzt einen der beiden Bauern nehmen, aber schauen wir uns die Konsequenzen
+an:
+\begin{itemize}
+  \item Nach \variation{13. Nxb5} wird der Springer vom Zentrum wegbewegt und der Bauer
+    auf e4 hängt, sodass Schwarz mit \variation{13... Nxe4} gleichzeitig die Dame angreift
+    und den Bauern auf d6 verteidigt.
+
+    \begin{center}
+      \chessboard[
+        style=standard,
+        smallboard,
+        setfen=r1b2rk1/p4ppp/1bNp1q1n/1N6/4n3/1B2B2P/PPPQ1PP1/2KR3R w - - 0 14,
+        backmoves={e4-d2, e4-d6},
+      ]
+    \end{center}
+
+  \item Nach \variation{13. Qxd6 Qxd6 14. Rxd6} könnte Schwarz alle Figuren abtauschen
+    (\variation{14... Nxb3 15. axb3 Bxe3 16. fxe3}) und würde Weiß mit zwei
+    Dop"-pel"-bau"-ern das Endspiel schwer machen.
+
+    Das ist kein Weltuntergang und die Stellung ist immer noch gut für Weiß, aber es nervt
+    doch.
+
+    \begin{center}
+      \chessboard[
+        style=standard,
+        smallboard,
+        setfen=r1b2rk1/p4ppp/2NR3n/1p6/4P3/1PN1P2P/1PP3P1/2K4R b - - 0 16,
+        pgfstyle=circle,
+        backfields={b2,b3,e3,e4},
+      ]
+    \end{center}
+\end{itemize}
+
+Gibt es noch einen besseren Zug?
+Der Zug \mainline{13. Nd5} bringt den Springer ins Zentrum und greift die Dame an.
+Falls die Dame auf g6 ausweicht, könnte Weiß eine Springergabel auf e7 ansetzen.
+Auf e6 könnte die Dame mittels \variation{14. Nde7+} durch einen Abzugsangriff gewonnen
+werden.
+Schwarz müsste jetzt zunächste mit dem Springer den Läufer auf b3 nehmen und dann die Dame
+auf e6 setzen.
+
+Stattdessen spielt Schwarz \mainline{13... Qg6} und läuft direkt in die Gabel hinein.
+Es ist ziemlich egal, mit welchem Springer die Gabel ausgeführt wird, daher spielt Daniel
+\mainline{14. Nce7+ Kh8 15. Nxg6+ fxg6} (\cref{fig:partie1_d7}).
+\begin{marginfigure}
+  \chessboard[style=standard, tinyboard]
+  \caption{Diagramm 7}%
+  \label{fig:partie1_d7}
+\end{marginfigure}
+
+Wie kann Weiß mit diesem Materialvorteil die Partie sicher zum Sieg führen?
+Prinzipiell gilt: zerstöre die Bauernstruktur des Gegners und damit die Stellung des
+Gegners.
+
+Hier können wir jedoch etwas geschickter an die Sache gehen.
+Der schwarze König hat sich hinter den Bauern versteckt.
+Können wir diesen Schutz öffnen?
+Ja, mit \mainline{16. Bxh6 gxh6}.
+Damit wird die lange Diagonale frei und es ist ein Matt in 3 (\cref{fig:partie1_d8}).
+\begin{marginfigure}
+  \chessboard[style=standard, tinyboard]
+  \caption{Diagramm 8, Matt in 3}%
+  \label{fig:partie1_d8}
+\end{marginfigure}
+Entweder \variation{17. Qc3+} oder \variation{17. Qd4+} und dann jeweils
+\variation{17... Rf6 18. Qxf6+ Kg8 19. Ne7+#}.
+
+In der Partie wurde jedoch \mainline{17. Qc3+ Kg8 18. Ne7#} gespielt.
+
+\end{document}
